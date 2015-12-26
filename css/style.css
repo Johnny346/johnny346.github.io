@@ -253,3 +253,42 @@ span {
     display: block;
   }
 }
+
+@media only screen and (max-width: 350px) {
+  .flex-box {
+    font-size: .8em;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .headerContact {
+    display: inline-block;
+    margin: 0px;
+    padding-right: 0px;
+  }
+
+  .biopic {
+    float: left;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .biopic {
+    float: left;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .biopic {
+    height: 80%;
+    width: 80%;
+  }
+}
+
