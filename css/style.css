@@ -254,7 +254,7 @@ span {
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
   .flex-box {
     font-size: .8em;
     display: block;
@@ -262,7 +262,7 @@ span {
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
   .headerContact {
     display: inline-block;
     margin: 0px;
