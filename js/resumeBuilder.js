@@ -76,7 +76,7 @@ var projects = {
             "datesWorked": "December 2014 - January 2015",
             "description": "Created an online calculator for students who receive their results as fractions at the end of the year.",
             "images": ["images/program1.png"],
-            "url": "www.myresultscalculator.com"
+            "url": "http://myresultscalculator.com"
         },
         {
             "title": "Online Portfolio",
