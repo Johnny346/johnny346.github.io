@@ -1,17 +1,17 @@
 
 var bio = {
-		"name" : "John Mulcahy",
-		"role" : "Web Developer",
-		"contacts" : {
-			"mobile" : "+353879007991",
-			"email" : "Johnnymul346@gmail.com",
-			"github" : "Johnny346",
-			"location" : "Co. Limerick, Ireland"
-		},
-		"welcomeMessage" : "Hi my name is John Mulcahy and I am pursuing my passion in web development",
-		"skills" :
-		["HTML", "CSS" , "Programming" , "JavaScript" , "Bootstrap" , "Git"],
-		"bioPic" : "images/profile.png"
+        "name" : "John Mulcahy",
+        "role" : "Web Developer",
+        "contacts" : {
+            "mobile" : "+353879007991",
+            "email" : "Johnnymul346@gmail.com",
+            "github" : "Johnny346",
+            "location" : "Co. Limerick, Ireland"
+        },
+        "welcomeMessage" : "Hi my name is John Mulcahy and I am pursuing my passion in web development",
+        "skills" :
+        ["HTML", "CSS" , "Programming" , "JavaScript" , "Bootstrap" , "Git"],
+        "bioPic" : "images/profile.png"
 }
 
 var work = {

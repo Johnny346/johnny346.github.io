@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html>
 <!--
 This is an HTML document. It contains information about how elements in the website
 are arranged. In other words, it describes the layout of a website.
@@ -17,39 +17,31 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 <head>
   <!-- This tells the browser how to read the document. -->
 	<meta charset="utf-8">
-
-  <!-- Tells the browser what the title of this page should be. -->
+	<!-- Tells the browser what the title of this page should be. -->
 	<title>John Mulcahy Resume</title>
-
-  <!-- Load the page styles. -->
+	<!-- Load the page styles. -->
 	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<!--
+	  jQuery is a common JavaScript library for reading and making changes to the
+	  Document Object Model (DOM). The DOM is a tree that contains information
+	  about what is actually visible on a website.
 
-  <!--
-  jQuery is a common JavaScript library for reading and making changes to the
-  Document Object Model (DOM). The DOM is a tree that contains information
-  about what is actually visible on a website.
-
-  While HTML is a static document, the browser converts HTML to the
-  DOM and the DOM can change. In fact, JavaScript's power comes from
-  its ability to manipulate the DOM, which is essentially a JavaScript
-  object. When JavaScript makes something interesting happen on a
-  website, it's likely the action happened because JavaScript changed
-  the DOM. jQuery is fast and easy to use, but it doesn't do anything
-  you can't accomplish with vanilla (regular) JavaScript.
-  -->
+	  While HTML is a static document, the browser converts HTML to the
+	  DOM and the DOM can change. In fact, JavaScript's power comes from
+	  its ability to manipulate the DOM, which is essentially a JavaScript
+	  object. When JavaScript makes something interesting happen on a
+	  website, it's likely the action happened because JavaScript changed
+	  the DOM. jQuery is fast and easy to use, but it doesn't do anything
+	  you can't accomplish with vanilla (regular) JavaScript.
+	  -->
 	<script src="js/jQuery.js"></script>
-
-  <!-- More on helper.js in the class -->
+	<!-- More on helper.js in the class -->
 	<script src="js/helper.js"></script>
-
-  <!--
-  Uncomment the <script> tag below when you're ready to add an interactive
-  Google Map to your resume!
-  -->
-  <script src="https://maps.googleapis.com/maps/api/js"></script>
-  <script>js/google-map.js</script>
-
-
+	  <!--
+	  Uncomment the <script> tag below when you're ready to add an interactive
+	  Google Map to your resume!
+	  -->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<meta name="viewport" content="width=device-width">
 </head>
 <body unresolved>
@@ -60,44 +52,54 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 		<div style='clear: both;'>
 		</div>
 		<div id="workExperience" class='gray'>
-			<h2>Work Experience</h2>
+			<h2>
+				Work Experience
+			</h2>
 		</div>
 		<div id="projects">
-			<h2>Projects</h2>
+			<h2>
+				Projects
+			</h2>
 		</div>
 		<div id="education" class='gray'>
-			<h2>Education</h2>
+			<h2>
+				Education
+			</h2>
 		</div>
 		<div class="mapDiv" >
-			<h2>Where I've Lived and Worked</h2>
+			<h2>
+				Where I've Lived and Worked
+			</h2>
 			<div class="map-responsive">
 				<div id="map">
-			</div>
+				</div>
 			</div>
 		</div>
 		<div id="letsConnect" class='dark-gray footer-space'>
-			<h2 class='orange center-text'>Let's Connect</h2>
+			<h2 class='orange center-text'>
+				Let's Connect
+			</h2>
 			<ul id="footerContacts" class="flex-box">
 			</ul>
 		</div>
 	</div>
-
-  <!--
+	<!--
   The next line tells the browser where to download the JavaScript file you'll be
   writing. In resumeBuilder.js, you'll be writing code that builds the resume
   dynamically when this website, index.html, is opened.
   -->
 	<script src="js/resumeBuilder.js"></script>
-<script> function initialize() {
-            var mapCanvas = document.getElementById('map');
-            var mapOptions = {
-              center: new google.maps.LatLng(52.66634, -8.637348),
-              zoom: 13,
-              mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
-            var map = new google.maps.Map(mapCanvas, mapOptions)
-          }
-          google.maps.event.addDomListener(window, 'load', initialize);</script>
+	<script> function initialize() {
+			var mapCanvas = document.getElementById('map');
+			var mapOptions = {
+				center: new google.maps.LatLng(52.66634, -8.637348),
+				zoom: 13,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+			var map = new google.maps.Map(mapCanvas, mapOptions)
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
 
   <!--
   These scripts are written in JavaScript. You'll be breaking them down as part of

@@ -67,8 +67,8 @@ h2, h3, h4, h5 {
 }
 
 .headerContact {
-	display: inline-block;
-	margin: 20px;
+  display: inline-block;
+  margin: 20px;
   padding-right: 38px;
 }
 
@@ -86,11 +86,11 @@ a {
 }
 
 .welcome-message {
-	display: block;
-	font-style: italic;
-	font-size: 18px;
-	color: #F3F3F3;
-	line-height: 28px;
+  display: block;
+  font-style: italic;
+  font-size: 18px;
+  color: #F3F3F3;
+  line-height: 28px;
 }
 
 #skillsH3 {
@@ -106,7 +106,7 @@ a {
 }
 
 .skillList {
-	list-style: none;
+ list-style: none;
 }
 
 .orange {
@@ -216,36 +216,41 @@ span {
   }
 }
 
+#mapDiv {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+.map-responsive {
+  overflow: hidden;
+  position: relative;
+  margin-right: 15px;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
 #map {
   display: block;
-  height: 380px;
-  width: 1200px;
+  height: 300px;
+  width: 1100px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-#mapDiv {
-  height: 90%;
-  width: 90%;
-  padding-bottom: 5%;
+@media all and (max-width: 300px) {
+  #map {
+  height: 280px;
+  width: 280px;
+  }
 }
 
-.map-responsive {
-    overflow: hidden;
-    padding-bottom: 29.25%;
-    position: relative;
-    height: 0;
-}
-
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
 
 @media only screen and (min-width: 750px) {
   #skillsH3,
@@ -262,11 +267,12 @@ span {
   }
 }
 
+
 @media only screen and (max-width: 400px) {
   .headerContact {
     display: inline-block;
-    margin: 0px;
-    padding-right: 0px;
+    margin: 0;
+    padding-right: 0;
   }
 
   .biopic {
@@ -292,3 +298,29 @@ span {
   }
 }
 
+@media all and (max-width: 1300px)  and (min-width: 676px) {
+  .flex-box {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media all and (max-width: 350px) {
+  div > img {
+  height: 80%;
+  width: 80%;
+  }
+}
+
+@media all and (max-width: 409px) {
+  #header > h1 {
+  display: block;
+  }
+}
+
+@media all and (max-width: 472px) {
+  .work-entry > p {
+  line-height: 26px;
+  padding-top: 25px;
+  }
+}
