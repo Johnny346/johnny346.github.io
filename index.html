@@ -14,8 +14,9 @@ The <head> of a website generally links to important resources the page will
 need to load. You'll see a lot of <link>s to CSS files for styles and
 <scripts> for JavaScript files to build interactions.
 -->
+
 <head>
-  <!-- This tells the browser how to read the document. -->
+	<!-- This tells the browser how to read the document. -->
 	<meta charset="utf-8">
 	<!-- Tells the browser what the title of this page should be. -->
 	<title>John Mulcahy Resume</title>
@@ -37,13 +38,14 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 	<script src="js/jQuery.js"></script>
 	<!-- More on helper.js in the class -->
 	<script src="js/helper.js"></script>
-	  <!--
+	<!--
 	  Uncomment the <script> tag below when you're ready to add an interactive
 	  Google Map to your resume!
 	  -->
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<meta name="viewport" content="width=device-width">
 </head>
+
 <body unresolved>
 	<div id="main">
 		<div id="header" class="center-content clearfix">
@@ -66,7 +68,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 				Education
 			</h2>
 		</div>
-		<div class="mapDiv" >
+		<div class="mapDiv">
 			<h2>
 				Where I've Lived and Worked
 			</h2>
@@ -89,19 +91,9 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   dynamically when this website, index.html, is opened.
   -->
 	<script src="js/resumeBuilder.js"></script>
-	<script> function initialize() {
-			var mapCanvas = document.getElementById('map');
-			var mapOptions = {
-				center: new google.maps.LatLng(52.66634, -8.637348),
-				zoom: 10,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-				}
-			var map = new google.maps.Map(mapCanvas, mapOptions)
-			}
-			google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
+	<script src="js/googlemap"></script>
 
-  <!--
+	<!--
   These scripts are written in JavaScript. You'll be breaking them down as part of
   a quiz. Essentially, the next few lines are checking to see if you have not
   changed each section of the resume. If you have not made any changes to a section
@@ -110,39 +102,39 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   -->
 
 	<script type="text/javascript">
-    // Notice how all of a sudden there's JavaScript inside this HTML
-    // document? You can write JavaScript between <script> tags. At the end of your
-    // JavaScript, don't forget the closing script tag with the slash (/).
+		// Notice how all of a sudden there's JavaScript inside this HTML
+		// document? You can write JavaScript between <script> tags. At the end of your
+		// JavaScript, don't forget the closing script tag with the slash (/).
 
 
-    // Also, this is a JavaScript style comment. You can comment in JavaScript with:
+		// Also, this is a JavaScript style comment. You can comment in JavaScript with:
 
-    //   two slashes for all following characters on a single line, or
+		//   two slashes for all following characters on a single line, or
 
-    /*
-        an opening and closing set of slash asterisks for block comments.
-    */
+		/*
+		    an opening and closing set of slash asterisks for block comments.
+		*/
 
 
-	if(document.getElementsByClassName('flex-item').length === 0) {
-		document.getElementById('topContacts').style.display = 'none';
-	}
-	if(document.getElementsByTagName('h1').length === 0) {
-		document.getElementById('header').style.display = 'none';
-	}
-	if(document.getElementsByClassName('work-entry').length === 0) {
-		document.getElementById('workExperience').style.display = 'none';
-	}
-	if(document.getElementsByClassName('project-entry').length === 0) {
-		document.getElementById('projects').style.display = 'none';
-	}
-	if(document.getElementsByClassName('education-entry').length === 0) {
-		document.getElementById('education').style.display = 'none';
-	}
-	if(document.getElementsByClassName('flex-item').length === 0) {
-		document.getElementById('letsConnect').style.display = 'none';
-	}
-
+		if (document.getElementsByClassName('flex-item').length === 0) {
+			document.getElementById('topContacts').style.display = 'none';
+		}
+		if (document.getElementsByTagName('h1').length === 0) {
+			document.getElementById('header').style.display = 'none';
+		}
+		if (document.getElementsByClassName('work-entry').length === 0) {
+			document.getElementById('workExperience').style.display = 'none';
+		}
+		if (document.getElementsByClassName('project-entry').length === 0) {
+			document.getElementById('projects').style.display = 'none';
+		}
+		if (document.getElementsByClassName('education-entry').length === 0) {
+			document.getElementById('education').style.display = 'none';
+		}
+		if (document.getElementsByClassName('flex-item').length === 0) {
+			document.getElementById('letsConnect').style.display = 'none';
+		}
 	</script>
 </body>
+
 </html>
