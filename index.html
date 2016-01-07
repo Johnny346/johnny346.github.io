@@ -42,7 +42,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 	  Uncomment the <script> tag below when you're ready to add an interactive
 	  Google Map to your resume!
 	  -->
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
 	<meta name="viewport" content="width=device-width">
 </head>
 
@@ -68,14 +68,8 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 				Education
 			</h2>
 		</div>
-		<div class="mapDiv">
-			<h2>
-				Where I've Lived and Worked
-			</h2>
-			<div class="map-responsive">
-				<div id="map">
-				</div>
-			</div>
+		 <div id="mapDiv">
+			<h2>Where I've Lived and Worked</h2>
 		</div>
 		<div id="letsConnect" class='dark-gray footer-space'>
 			<h2 class='orange center-text'>
@@ -91,7 +85,6 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   dynamically when this website, index.html, is opened.
   -->
 	<script src="js/resumeBuilder.js"></script>
-	<script src="js/googlemap.js"></script>
 
 	<!--
   These scripts are written in JavaScript. You'll be breaking them down as part of
@@ -133,6 +126,9 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 		}
 		if (document.getElementsByClassName('flex-item').length === 0) {
 			document.getElementById('letsConnect').style.display = 'none';
+		}
+		if(document.getElementById('map') === null) {
+			document.getElementById('mapDiv').style.display = 'block';
 		}
 	</script>
 </body>
