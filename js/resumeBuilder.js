@@ -167,7 +167,7 @@ education.display = function () {
 			},
 			{
 				'title': 'Website project Goat farm',
-				'dates': 'September 2015 - Noverber 2015',
+				'dates': 'September 2015 - November 2015',
 				'description': 'Created a goat farm website as a project.',
 				'images': ['images/murphys.png'],
 				'url': 'http://murphysgoatfarm.com'
