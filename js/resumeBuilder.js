@@ -80,6 +80,9 @@ work.display = function () {
 				'dates': '2010 - 2013',
 				'location': 'Cork, Ireland',
 				'degree': 'B.Sc.Horticulture',
+				'majors' : [
+							'Computers'
+							],
 				'url': 'www.cit.ie'
 			}
 			],
@@ -99,7 +102,7 @@ work.display = function () {
 			{
 				'school': 'Udacity',
 				'title': 'Front-end developer Nano-Degree',
-				'date': 'NJune 2016',
+				'date': 'June 2016',
 				'url': 'https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001'
 			}
 		]
