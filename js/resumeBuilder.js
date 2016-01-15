@@ -52,21 +52,7 @@ bio.display = function () {
 				'title': 'Factory Operator',
 				'location': 'Abbeyfeale, Co. Limerick, Ireland',
 				'dates': 'September 2013 - Present',
-				'description': 'I am currently working full time in the Kostal Factory as a general operator. I work as part of a team with regards the production of on board chargers for hybrid electric cars. This is a manual assembly line for high voltage car electronics.'
-			},
-			{
-				'employer': 'Anne Barret',
-				'title': 'Garden Center Assistant',
-				'location': 'Newcastle west, Co. Limerick, Ireland',
-				'dates': 'February 2012 - January 2013',
-				'description': 'I provided customers with assistance and advice when necessary. Was involved in the running and promotion of the business while keeping the garden center clean and well maintained at all times.'
-			},
-			{
-				'employer': 'Forestry and Garden machinery shop',
-				'title': 'Sales Assistant and Service Technician',
-				'location': 'Newcastle west, Co. Limerick, Ireland',
-				'dates': 'May 2011 - December 2012',
-				'description': 'This was part time work where I had to work efficiently at repairing and servicing garden machinery. I offered customer service and advice where applicable and also doing Sales of products and services.'
+				'description': 'I am currently working full time in the Kostal Factory as a general operator. I work as part of a team with regards the production of on board chargers for hybrid electric cars. This is a manual assembly line for high voltage car electronics. Through my experience as an operator in the automobile electronics industry I have developed an ability to be observant of defects and detail while working in a time efficient manner.'
 			}
 		]
 	};
