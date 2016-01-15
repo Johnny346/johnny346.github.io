@@ -52,7 +52,7 @@ bio.display = function () {
 				'title': 'Factory Operator',
 				'location': 'Abbeyfeale, Co. Limerick, Ireland',
 				'dates': 'September 2013 - Present',
-				'description': 'I am currently working full time in the Kostal Factory as a general operator. I work as part of a team with regards the production of on board chargers for hybrid electric cars. This is a manual assembly line for high voltage car electronics. Through my experience as an operator in the automobile electronics industry I have developed an ability to be observant of defects and detail while working in a time efficient manner.'
+				'description': 'I am currently working full time in the Kostal Factory as a general operator. I Work as part of a team on the production of circuit boards for hybrid electric cars. Through my experience as an operator in the automobile electronics industry I have developed an ability to be observant of defects and detail while working in a time efficient manner.'
 			}
 		]
 	};
@@ -80,9 +80,6 @@ work.display = function () {
 				'dates': '2010 - 2013',
 				'location': 'Cork, Ireland',
 				'degree': 'B.Sc.Horticulture',
-				'majors' : [
-							'Computers','Business'
-							],
 				'url': 'www.cit.ie'
 			}
 			],
@@ -90,19 +87,19 @@ work.display = function () {
 			{
 				'school': 'Udacity',
 				'title': 'Object-Oriented Javascript',
-				'date': 'October 2014',
+				'date': 'January 2016',
 				'url': 'https://www.udacity.com/course/ud015'
 			},
 			{
 				'school': 'Udacity',
 				'title': 'Javascript Basics',
-				'date': 'October 2014',
+				'date': 'October 2015',
 				'url': 'https://www.udacity.com/course/ud804'
 			},
 			{
 				'school': 'Udacity',
 				'title': 'Front-end developer Nano-Degree',
-				'date': 'November 2015',
+				'date': 'NJune 2016',
 				'url': 'https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001'
 			}
 		]
