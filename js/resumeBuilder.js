@@ -156,7 +156,7 @@ education.display = function () {
 				'dates': 'September 2015 - November 2015',
 				'description': 'Created a goat farm website as a project.',
 				'images': ['images/murphys.png'],
-				'url': 'http://murphysgoatfarm.com'
+				'url': 'irish-bike-hire/index.html'
 			}
 		]
 	};
