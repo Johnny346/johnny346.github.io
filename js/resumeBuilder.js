@@ -138,11 +138,11 @@ education.display = function () {
 	var projects = {
 		'projects': [
 			{
-				'title': 'www.collegeresultscalculator.com',
+				'title': 'College results calculator',
 				'dates': 'December 2014 - January 2015',
 				'description': 'Created an online calculator for students who receive their results as fractions at the end of the year.',
 				'images': ['images/program1.png'],
-				'url': 'www.myresultscalculator.com'
+				'url': 'http://www.myresultscalculator.com'
 			},
 			{
 				'title': 'Online Portfolio',
@@ -156,13 +156,13 @@ education.display = function () {
 				'dates': 'September 2015 - November 2015',
 				'description': 'Created a goat farm website as a project.',
 				'images': ['images/murphys.png'],
-				'url': 'wwww.murphysgoatfarm.com'
+				'url': 'www.murphysgoatfarm.com'
 			},
 			{
 				'title': 'Website project Bicycle Hire',
 				'dates': 'January 2016 - November 2015',
 				'description': 'Created a bicycle hire website as a project.',
-				'images': ['images/murphys.png'],
+				'images': ['images/bike-hire-webpage-small.png'],
 				'url': 'irish-bike-hire/index.html'
 			}
 		]
