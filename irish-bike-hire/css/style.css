@@ -255,6 +255,10 @@ body, html {
 		width: 99%;
 		height: 99%;
 	}
+
+	.btn-success {
+		font-size: 11px;
+	}
 }
 
 @media only screen and (max-width: 991px) and (min-width: 760px) {
