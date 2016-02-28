@@ -231,6 +231,11 @@ footer .glyphicon {
 		width: 99%;
 		height: 200px;
 	}
+
+	.values-image img {
+		width: 99%;
+		height: 200px;
+	}
 }
 
 @media screen and (max-width: 312px) and (min-width: 259px) {
@@ -238,10 +243,20 @@ footer .glyphicon {
 		width: 200px;
 		height: 200px;
 	}
+
+	.values-image img {
+		width: 200px;
+		height: 200px;
+	}
 }
 
 @media screen and (max-width: 258px) {
 	.about-image img {
+		width: 130px;
+		height: 130px;
+	}
+
+	.values-image img {
 		width: 130px;
 		height: 130px;
 	}
