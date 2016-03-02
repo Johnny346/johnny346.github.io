@@ -128,6 +128,11 @@ h4 {
 	color: #fff;
 }
 
+.panel-body img {
+		width: 200px;
+		height: 200px;
+}
+
 @media screen and (max-width: 350px) {
 	.panel-body img {
 		width: 90%;
