@@ -165,6 +165,13 @@ h4 {
 	color: #fff !important;
 }
 
+@media screen and (max-width: 413px) {
+	.navbar-brand {
+		font-size: 13px;
+		margin-bottom: 20px;
+	}
+}
+
 footer .glyphicon {
 	font-size: 20px;
 	margin-bottom: 20px;
