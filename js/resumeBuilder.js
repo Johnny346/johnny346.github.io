@@ -154,7 +154,7 @@ education.display = function () {
 			{
 				'title': 'Website project Goat farm',
 				'dates': 'September 2015 - November 2015',
-				'description': 'Created a goat farm website as a project.',
+				'description': 'Designed a goat farm website as a project.',
 				'images': ['images/murphys.png'],
 				'url': 'www.murphysgoatfarm.com'
 			},
@@ -164,6 +164,13 @@ education.display = function () {
 				'description': 'Created a bicycle hire website as a project.',
 				'images': ['images/bike-hire-webpage-small.png'],
 				'url': 'irish-bike-hire/index.html'
+			},
+			{
+				'title': 'Website project Personal Blog',
+				'dates': 'January 2016 - May 2016',
+				'description': 'Developed and coded a personal photography blog',
+				'images': ['images/blog-small.png'],
+				'url': 'Blog/index.html'
 			}
 		]
 	};
