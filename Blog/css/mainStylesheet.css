@@ -12,6 +12,11 @@ p {
 	margin-bottom: 45px;
 }
 
+@media screen and (max-width: 480px) {
+    .margin-small {
+        margin-bottom: 25px;
+    }
+}
 .bg-1 {
 	background-color: #474e5d; /* Dark Blue */
 	color: #ffffff;
