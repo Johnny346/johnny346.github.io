@@ -12,7 +12,7 @@ p {
 	margin-bottom: 45px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
     .margin-small {
         margin-bottom: 25px;
     }
