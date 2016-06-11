@@ -13,13 +13,21 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-    .margin-small {
-        margin-bottom: 25px;
-    }
+	.margin-small {
+		margin-bottom: 25px;
+		margin-top: 10px;
+	}
 }
+
+.container-fluid {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
 .bg-1 {
-	background-color: #474e5d; /* Dark Blue */
 	color: #ffffff;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 .bg-2 {
@@ -37,10 +45,7 @@ p {
 	color: #fff;
 }
 
-.container-fluid {
-	padding-top: 70px;
-	padding-bottom: 70px;
-}
+
 
 .images-padding-top {
 	padding-top: 0;
@@ -63,4 +68,16 @@ p {
 .carousel-inner > .item > a > img {
 	width: 70%;
 	margin: auto;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	width: 55%;
+	margin: auto;
+}
+
+@media screen and (max-width: 550px) {
+	.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+		width: 100%;
+		margin: auto;
+	}
 }
