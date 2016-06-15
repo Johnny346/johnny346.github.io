@@ -113,16 +113,12 @@ h4 {
 	border-bottom-right-radius: 0px;
 }
 
-.panel-footer {
-	background-color: white !important;
-}
-
 .panel-footer h3 {
 	font-size: 32px;
 }
 
 .panel-footer h4 {
-	color: #aaa;
+	color: #fff;
 	font-size: 14px;
 }
 
@@ -183,9 +179,10 @@ h4 {
 	background-color: rgba(222, 221, 221, 0.27);
 }
 
-/*color dark grey for panel footer*/
+/*color light grey for panel footer*/
 .panel-footer {
-	background-color: #24182a !important;
+	background-color: rgba(84, 74, 74, 0.55) !important;
+	color: #fff;/*text color white*/
 }
 /*color red for the line (hr)*/
 hr {
