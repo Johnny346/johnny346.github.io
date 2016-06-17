@@ -1,7 +1,7 @@
 body {
 	margin-left: 0;
 	margin-right: 0;
-	background-color: rgba(133, 153, 224, 0.61);
+	background-color: rgba(154, 176, 254, 0.25);
 }
 
 body, html {
@@ -417,6 +417,7 @@ body, html {
 	box-shadow: 5px 5px #636363;
 	border-radius: 5px;
 	border-left: 1px solid #F5F5F5;
+	background-color: #fff;
 }
 
 @media only screen and (max-width: 730px) {

@@ -51,8 +51,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="194.51929"
-     inkscape:cy="117.779"
+     inkscape:cx="166.77992"
+     inkscape:cy="64.80143"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -75,7 +75,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -91,14 +91,6 @@
        height="365.71429"
        x="1782.8572"
        y="-241.92351" />
-    <rect
-       style="opacity:0.97699998;fill:#00407d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4138-3"
-       width="280.02142"
-       height="146.32097"
-       x="2.2335525"
-       y="905.66138"
-       ry="36.98954" />
     <rect
        style="opacity:0.97699998;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.00099993;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4138-5"
@@ -718,65 +710,94 @@
        x="773.45551"
        y="-392.92624"
        ry="14.394673" />
-    <text
-       transform="scale(1.030094,0.9707852)"
-       sodipodi:linespacing="125%"
-       id="text4269"
-       y="1061.4357"
-       x="35.009022"
-       style="font-style:normal;font-weight:normal;font-size:36.90145874px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#00407d;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#00407d;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         y="1061.4357"
-         x="35.009022"
-         id="tspan4271"
-         sodipodi:role="line">BIKE HIRE</tspan></text>
     <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4273"
-       width="248.34697"
-       height="117.65075"
-       x="19.519855"
-       y="919.65442"
-       ry="31.017866" />
-    <text
-       transform="scale(1.0029967,0.99701222)"
-       sodipodi:linespacing="125%"
-       id="text4275"
-       y="1023.2645"
-       x="37.849747"
-       style="font-style:normal;font-weight:normal;font-size:33.84042358px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#00407d;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#00407d;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         y="1023.2645"
-         x="37.849747"
-         id="tspan4277"
-         sodipodi:role="line">BIKE</tspan></text>
-    <text
-       transform="scale(0.87556244,1.142123)"
-       sodipodi:linespacing="125%"
-       id="text4279"
-       y="861.39996"
-       x="43.251251"
-       style="font-style:normal;font-weight:normal;font-size:59.17951584px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#00407d;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#00407d;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         y="861.39996"
-         x="43.251251"
-         id="tspan4281"
-         sodipodi:role="line">IRISH</tspan></text>
+       style="opacity:1;fill:#e5ebfe;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4244"
+       width="283.48911"
+       height="153.82516"
+       x="-9.0139217"
+       y="902.28583"
+       ry="3.817687"
+       transform="matrix(0.99990933,-0.01346601,0.00998919,0.99995011,0,0)" />
+    <path
+       style="opacity:1;fill:#e5ebfe;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4246"
+       sodipodi:type="arc"
+       sodipodi:cx="110"
+       sodipodi:cy="889.86224"
+       sodipodi:rx="15"
+       sodipodi:ry="7.5"
+       sodipodi:start="5.4512741"
+       sodipodi:end="5.4106778"
+       sodipodi:open="true"
+       d="m 120.10196,884.31809 a 15,7.5 0 0 1 1.08829,10.53861 15,7.5 0 0 1 -21.06508,0.65107 15,7.5 0 0 1 -1.515858,-10.52539 15,7.5 0 0 1 21.034308,-0.86471" />
+    <rect
+       ry="36.98954"
+       y="905.15631"
+       x="2.2335432"
+       height="146.32097"
+       width="280.02142"
+       id="rect4248"
+       style="opacity:0.97699998;fill:#00407d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:31.78764915px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#d8193a;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="141.98665"
-       y="1025.2759"
-       id="text4792"
+       style="font-style:normal;font-weight:normal;font-size:36.90145874px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#00407d;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="35.009018"
+       y="1060.9154"
+       id="text4250"
        sodipodi:linespacing="125%"
-       transform="scale(1.0057476,0.99428526)"><tspan
+       transform="scale(1.030094,0.9707852)"><tspan
          sodipodi:role="line"
-         id="tspan4794"
+         id="tspan4252"
+         x="35.009018"
+         y="1060.9154"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#00407d;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">BIKE HIRE</tspan></text>
+    <rect
+       ry="31.017866"
+       y="919.14935"
+       x="19.519859"
+       height="117.65075"
+       width="248.34697"
+       id="rect4254"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:33.84042358px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#00407d;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="37.849754"
+       y="1022.7579"
+       id="text4256"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0029967,0.99701225)"><tspan
+         sodipodi:role="line"
+         id="tspan4258"
+         x="37.849754"
+         y="1022.7579"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#00407d;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">BIKE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:59.17951584px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#00407d;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="43.251263"
+       y="860.95776"
+       id="text4260"
+       sodipodi:linespacing="125%"
+       transform="scale(0.87556244,1.142123)"><tspan
+         sodipodi:role="line"
+         id="tspan4262"
+         x="43.251263"
+         y="860.95776"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#00407d;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">IRISH</tspan></text>
+    <text
+       transform="scale(1.0057476,0.99428525)"
+       sodipodi:linespacing="125%"
+       id="text4264"
+       y="1024.7679"
+       x="141.98665"
+       style="font-style:normal;font-weight:normal;font-size:31.78764915px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#d8193a;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d8193a;fill-opacity:1"
+         y="1024.7679"
          x="141.98665"
-         y="1025.2759"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d8193a;fill-opacity:1">HIRE</tspan></text>
+         id="tspan4266"
+         sodipodi:role="line">HIRE</tspan></text>
   </g>
 </svg>
