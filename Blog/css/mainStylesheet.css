@@ -50,8 +50,7 @@ p {
 }
 
 .bg-2 p {
-	margin-left: 290px;
-	margin-right: 290px;
+	margin: 0 auto;
 }
 
 .bg-3 {
