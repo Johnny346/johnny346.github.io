@@ -6,6 +6,7 @@ body {
 	background-image: url(images/free-yoga.png);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
+	background-position: fixed;
 }
 
 #navbar-brand {
@@ -25,14 +26,15 @@ p {
 }
 
 .jumbotron {
-	background-color: rgba(173, 66, 66, 0.21); /*red color*/
+	background-color: rgba(173, 66, 66, 0.1); /*red color*/
 	text-align: center;
 	width: 100%;
-	height: 29.8em;
+	height: 29em;
 	border-size: 0;
-	padding-top: 50px;
+	padding-top: 150px;
 	padding-right: 60px;
 	padding-left: 60px;
+	margin-bottom: 0;
 }
 
 .jumbotron > h2 , p {
@@ -40,8 +42,8 @@ p {
 }
 
 .navbar {
-	opacity: 0.5;
-	filter: alpha(opacity=50); /* For IE8 and earlier */
+	opacity: 0.9;
+	filter: alpha(opacity=90); /* For IE8 and earlier */
 	padding-top: 15px;
 	padding-bottom: 15px;
 	border: 0;
@@ -49,7 +51,6 @@ p {
 	margin-bottom: 0;
 	font-size: 14px;
 	letter-spacing: 5px;
-
 }
 
 
@@ -102,6 +103,6 @@ button {
 
 footer {
 	background-color: rgba(117, 88, 88, 0.56);
-	padding-top: 25px;
-	padding-bottom: 30px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
