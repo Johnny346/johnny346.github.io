@@ -17,9 +17,6 @@ p {
 	font-size: 16px;
 }
 
-@media screen and (min-width: 677px) and (max-width: 767px) {
-
-}
 
 .text-center {
 	text-align: center;
@@ -29,12 +26,44 @@ p {
 	background-color: rgba(173, 66, 66, 0.1); /*red color*/
 	text-align: center;
 	width: 100%;
-	height: 29em;
 	border-size: 0;
 	padding-top: 150px;
 	padding-right: 60px;
 	padding-left: 60px;
 	margin-bottom: 0;
+}
+
+@media screen and (max-width: 811px) {
+	body {
+		background-image: none;
+	}
+}
+
+@media screen and (max-width: 810px) {
+	.jumbotron {
+		height: auto;
+	}
+
+	.jumbotron-background-image {
+		background-color: none;
+		background-image: url(images/free-yoga.png);
+		background-size: auto 29em;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+@media screen and (max-width: 311px) {
+	.jumbotron-background-image {
+		background-image: none;
+	}
+	.jumbotron {
+		background-color: rgba(173, 66, 66, 0.1); /*red color*/
+		border-size: 0;
+		padding-top: 150px;
+		padding-right: 0;
+		padding-left: 0;
+	}
 }
 
 .jumbotron > h2 , p {
