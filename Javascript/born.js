@@ -28,7 +28,7 @@ BRN.Common =
 
 		init: function()
 		{
-			 $(".nav-logo").hover(function(){
+			 $("#hov").hover(function(){
 			 		$(".background-overlay").fadeIn();
 				},
 				function(){
