@@ -162,7 +162,7 @@ BRN.Navigation =
 					$("body").addClass('nav-hover');
 
 					// Create a slide down animation for the ul container here
-					$(this).children('ul').stop(true, false, true).slideToggle();
+					$(this).children('ul').stop().slideToggle();
 
 					$(this).find("a").addClass("active");
 					BRN.Common.backgroundOverlay.show();
