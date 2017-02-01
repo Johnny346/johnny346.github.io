@@ -1,0 +1,379 @@
+body {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5em;
+	font-size: 1.1em;
+	background-color: #ffffff;
+}
+
+#bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.page {
+	margin-right: auto;
+	margin-left: auto;
+	width: 960px;
+	background-color: #ffffff;
+}
+
+.pageTitle h1 {
+	text-align: center;
+	color: black;
+	margin-left: 50px;
+	text-transform: uppercase;
+	display: inline;
+	line-height: 1em;
+}
+
+#headerColorGreen {
+	color: #2ed71c;
+	background-color: #fbf7f7;
+	border-radius: 10px;
+	padding: 3px;
+}
+
+.pageTitle {
+	border: 1px solid #7DAEFD;
+	margin: 13px;
+	margin-top: 0;
+	border-radius: 15px;
+	height: 75px;
+	padding-top: 10px;
+	background-color: #2f9cec; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#2f9cec, #efefef); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#2f9cec, #efefef); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2f9cec, #efefef); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2f9cec, #efefef); /* Standard syntax */
+}
+
+nav {
+	width: 930px;
+	border: 1px solid #7DAEFD;
+	margin: 15px;
+	border-radius: 25px;
+	background-color: #efefef; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#efefef, #ffffff); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#efefef, #ffffff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#efefef, #ffffff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#efefef, #ffffff); /* Standard syntax */
+}
+
+nav ul li a {
+	text-decoration: none;
+	display: inline-block;
+	color: blue;
+	font-size: .8em;
+}
+
+ a:hover {
+	color: orange;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 4px;
+}
+
+nav li {
+	display: inline;
+	border: 1px solid green;
+	text-align: center;
+	margin-right: 20px;
+	padding: 5px;
+	text-transform: uppercase;
+	background-color: #fff8ed;
+	border-radius: 25px;
+}
+
+ li:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.homeButton {
+	display: center;
+	padding: 3px;
+	margin-left: 10px;
+	padding-left: 60px;
+	margin-bottom: 10px;
+	padding-right: 60px;
+	display: inline;
+	float: left;
+	border: 1px solid green;
+	border-radius: 25px;
+}
+
+.homeButton a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 1.1em;
+}
+
+.homeButton a:hover {
+	color: orange;
+}
+
+.firstLi {
+	padding-left: 75px;
+	padding-right: 75px;
+	margin-left: 35px;
+}
+
+.secondLi {
+	padding-left: 65px;
+	padding-right: 70px;
+}
+
+.thirdLi {
+	padding-left: 20px;
+	padding-right: 15px;
+}
+
+.fourthLi {
+	padding-right: 25px;
+	padding-left: 20px;
+	margin-right: 10px;
+	margin-left: 35px;
+}
+
+.fifthLi {
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
+.sixthLi {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+#firstArticle {
+	height: 100%;
+	border: 1px solid #7DAEFD;
+	margin: 10px;
+	padding: 10px;
+	padding-left: 20px;
+	border-radius: 25px;
+	background-color: #efefef; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#efefef, #ffffff); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#efefef, #ffffff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#efefef, #ffffff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#efefef, #ffffff); /* Standard syntax */
+}
+
+#firstArticle h2 {
+	background-color: #efefef;
+	margin-left: 15px;
+	width: 250px;
+	border: 1px solid #7DAEFD;
+	padding: 15px;
+	border-radius: 15px;
+	text-align: center;
+	background-color: #2ed71c; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#2ed71c, #efefef); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#2ed71c, #efefef); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2ed71c, #efefef); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2ed71c, #efefef); /* Standard syntax */
+}
+
+#firstArticle img {
+	float: right;
+	margin-right: 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#firstArticle p {
+	width: 450px;
+	padding: 10px;
+}
+
+#secondArticle {
+	height: 25em;
+	border: 1px solid #7DAEFD;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 25px;
+	background-color: #efefef; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#efefef, #ffffff); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#efefef, #ffffff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#efefef, #ffffff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#efefef, #ffffff); /* Standard syntax */
+}
+
+#secondArticle h2 {
+	background-color: #efefef;
+	text-align: center;
+	border: 1px solid #7DAEFD;
+	margin-left: 15px;
+	border-radius: 15px;
+	width: 250px;
+	padding: 15px;
+	background-color: #2ed71c; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#2ed71c, #efefef); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#2ed71c, #efefef); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2ed71c, #efefef); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2ed71c, #efefef); /* Standard syntax */
+}
+
+#secondArticle img {
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#secondArticle p {
+	width: 450px;
+	padding: 10px;
+	float: right;
+	padding-right: 40px;
+}
+
+.greetingStyle {
+	margin-left: 40px;
+}
+
+.header-article2 {
+	display: none;
+}
+
+footer {
+	background-color: rgba(196, 197, 203, 1);
+	height: 60px;
+}
+
+footer p {
+	text-align: right;
+	padding: 10px;
+}
+
+.Article h1 {
+	background-color: #efefef;
+	text-align: center;
+	border: 1px solid #7DAEFD;
+	margin-left: 15px;
+	border-radius: 15px;
+	width: 250px;
+	padding: 15px;
+	background-color: #2ed71c; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#2ed71c, #efefef); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#2ed71c, #efefef); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2ed71c, #efefef); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2ed71c, #efefef); /* Standard syntax */
+}
+
+.Article {
+	height: 25em;
+	border: 1px solid #7DAEFD;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 25px;
+	background-color: #efefef; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#efefef, #ffffff); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#efefef, #ffffff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#efefef, #ffffff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#efefef, #ffffff); /* Standard syntax */
+}
+
+.Article img {
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Article p {
+	width: 450px;
+	padding: 10px;
+	float: right;
+	padding-right: 40px;
+}
+
+/*types of drones*/
+section .droneTypesSection {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+section .droneTypesSection img {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.typeList {
+	padding-left: 20px;
+}
+
+.typeList li a {
+	text-transform: uppercase;
+	color: blue;
+	text-decoration: none;
+}
+
+/*Uses of drones*/
+.droneUsesHeader h2 {
+	margin-left: 20px;
+}
+
+section .droneUsesSection {
+	margin-left: 60px;
+	margin-right: 40px;
+	padding-bottom: 30px;
+}
+
+section .droneUsesSection img {
+	padding-left: 80px;
+}
+
+section .droneUsesSection p {
+	width: 300px;
+	display: inline;
+	float: left;
+	margin-right: 120px;
+}
+
+/*drone footage*/
+iframe {
+	margin-left: 190px;
+	border: 0;
+}
+
+#droneFootageSection header h2 {
+	text-align: center;
+}
+
+/*hobby/commercial drones page*/
+.sectionMargin {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+/*rules and regulation page*/
+.rulesList li:hover {
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+}
+
+/*hobby & commercial drones*/
+.articleSection h3 {
+	background-color: #efefef;
+	margin-left: 15px;
+	width: 250px;
+	border: 1px solid #7DAEFD;
+	padding: 15px;
+	border-radius: 15px;
+	text-align: center;
+	background-color: #2ed71c; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#2ed71c, #efefef); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#2ed71c, #efefef); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2ed71c, #efefef); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2ed71c, #efefef); /* Standard syntax */
+}
+
+/*technology used*/
+.list li:hover {
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+}
