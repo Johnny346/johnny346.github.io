@@ -1,0 +1,99 @@
+body {
+	margin: 0 auto;
+}
+
+
+#body {
+	width: 100%;
+}
+
+#headerNav {
+	display: inline;
+	width: 20%;
+	float: left;
+}
+#pageContent {
+	display: inline;
+	width: 60%;
+	float: right;
+}
+
+.box {
+	border: 2px solid red;
+	height: 700px;
+	width: 80%;
+	display: inline-block;
+	float: right;
+}
+
+.menu {
+	overflow-x: hidden;
+	position: static;
+	display: inline-block;
+}
+
+.menu-open {
+	left: 20%;
+}
+
+.menu-open .menu-side {
+	left: 0;
+}
+
+.menu-side,
+.menu {
+	-webkit-transition: left 0.5s ease;
+	-moz-transition: left 0.5s ease;
+	transition: left 0.5s ease;
+}
+
+.menu-side {
+	background-color: #333;
+	border-left: 1px solid #000;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	padding: 10px;
+}
+
+.list-nav {
+	padding-top: 20px;
+}
+
+.list-nav a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 23px;
+	display: block;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+.list-nav a:hover {
+	color: #40badc;
+}
+
+.side-details {
+	padding-top: 40px;
+}
+
+.side-details > h6 {
+	padding-top: 15px;
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+.side-details-button {
+	margin-top: -10px;
+	margin-left: 40px;
+}
+
+.side-details-button {
+	background-color: white;
+	color: black;
+}
+
+

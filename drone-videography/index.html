@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Irish Drone Videography</title>
+<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/customstylesheet.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+</head>
+<body id="body">
+	<header id="headerNav">
+		<nav class="menu-side">
+			<div class="list-nav">
+				<a href="index.html">
+					Home
+				</a>
+				<a href="about.html">
+					About
+				</a>
+				<a href="#services">
+					Services
+				</a>
+				<a href="contactform.html">
+					Contact
+				</a>
+			</div>
+			<button type="button" class="menu-toggle side-details-button details2">
+				Close menu
+			</button>
+			<hr>
+			<div class="side-details">
+				<h6>
+					Call:<br/>+353879007991
+				</h6>
+				<h6>
+					Email:<br/>Johnnymul346@gmail.com
+				</h6>
+				<br/>
+				<button type="button" class="menu-toggle side-details-button">
+					Close menu
+				</button>
+			</div>
+		</nav>
+	</header>
+	<!--<div class="nav nav-icon navbar-nav navbar-right">
+		<a class="menu-toggle" href="">
+			<img src="images/button_icon.png" alt="icon link"/>
+		</a>
+	</div>-->
+	<div id="pagecontent">
+		<!--page -->
+		<div class="box">
+		</div>
+		<!--<footer>
+			<div class="navbar navbar-inverse navbar-bottom navbar-fixed-bottom" role="navigation">
+				<div class="container">
+					<div class="navbar-text pull-left ">
+						<div class="navbar-details">
+							<p>
+								<script>
+									var year = new Date();document.write("&copy;" + " " + year.getFullYear() + " " + "All Rights Reserved.");
+								</script>
+							</p>
+							<p>
+								Johnnymul346@gmail.com
+							</p>
+							<p>
+								+353879007991
+							</p>
+						</div>
+					</div>
+					<div class="navbar-text navbar-footer pull-right">
+						<a href="contactform.html">
+							<i class="fa fa-envelope-o fa-2x">
+							</i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>-->
+	</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script>
+			(function(){
+				//toggle side menu code
+				var body = $("body");
+				$(".menu-toggle").bind("click", function(){
+					body.toggleClass("menu-open");
+
+					if (body.hasClass("menu-open")){
+						var page = $("demo");
+
+						$(".demo").bind("click", function(){
+							body.toggleClass("menu-open");
+							body.removeClass("menu-open");
+							})
+					}
+
+					return false;
+					})
+
+				})();
+		</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
