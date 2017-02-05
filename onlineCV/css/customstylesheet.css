@@ -179,6 +179,10 @@ h2 {
 		width: 29%;
 		height: auto;
 	}
+
+	#page-content {
+		margin: 0;
+	}
 }
 
 @media screen and (max-width: 437px) {
