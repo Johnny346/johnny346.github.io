@@ -47,7 +47,7 @@
 				<p>CSS3</p>
 				<div class="progress-container">
 					<div id="transition-4" class="progressbar text-color teal css3-skill-transition">
-						<div class="text-center text-white teal">60%</div>
+						<div class="text-center text-white teal">70%</div>
 					</div>
 				</div>
 				<p>Photography</p>
@@ -118,24 +118,71 @@
 			<script>
 			//google map code
 				var myCenter = new google.maps.LatLng(51.8969, -8.4863);
+				var marker;
 
 				function initialize() {
 				var mapProp = {
 					center:myCenter,
-					zoom:12,
-					scrollwheel:false,
-					draggable:false,
+					zoom:8,
+					scrollwheel:true,
+					draggable:true,
 					mapTypeId:google.maps.MapTypeId.ROADMAP
 				};
 
 				var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-				var marker = new google.maps.Marker({
-					position:myCenter,
+				marker = new google.maps.Marker({
+					map: map,
+					title: 'Currently living here',
+					draggable: true,
+					animation: google.maps.Animation.DROP,
+					position: {lat: 51.8969, lng: -8.48637}
+
 				});
 
+				var pinLocation = new google.maps.Marker({
+					map: map,
+					title: 'Newcaslte West',
+					draggable: true,
+					animation: google.maps.Animation.DROP,
+					position: {lat: 52.4488, lng: -9.0546}
+
+				});
+
+				var newpinLocation = new google.maps.Marker({
+					map: map,
+					title: 'Clonakilty',
+					draggable: true,
+					animation: google.maps.Animation.DROP,
+					position: {lat: 51.6203, lng: -8.9055}
+
+				});
+
+				var newpinLocation2 = new google.maps.Marker({
+					map: map,
+					title: 'Abbeyfeale',
+					draggable: true,
+					animation: google.maps.Animation.DROP,
+					position: {lat: 52.3862 , lng: -9.2971}
+
+				});
+
+				marker.addListener('click', toggleBounce);
+
+
 					marker.setMap(map);
+					pinLocation.setMap(map);
+					newpinLocation.setMap(map);
+					newpinLocation2.setMap(map);
 				}
+
+				function toggleBounce() {
+					if (marker.getAnimation() !== null) {
+					marker.setAnimation(null);
+					} else {
+					marker.setAnimation(google.maps.Animation.BOUNCE);
+}
+}
 
 				google.maps.event.addDomListener(window, 'load', initialize);
 			</script>
