@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="css/customstylesheet.css" rel="stylesheet"/>
+	<title>John Mulcahy Resume</title>
+</head>
+<body>
+	<!--page content-->
+	<div id="page-content">
+		<section class="bio-section">
+			<header class="box">
+				<img src="https://scontent-ams3-1.xx.fbcdn.net/v/t1.0-9/14906956_1357044944308263_461957600404481452_n.jpg?oh=45c3dd20765b6e4f9cd924b638443c79&oe=58FF8AEE" alt="profile picture">
+				<h2>John Mulcahy</h2>
+			</header>
+			<div class="container">
+				<p><i class="fa fa-briefcase fa-fw margin-right text-color"></i>Web Developer</p>
+				<p><i class="fa fa-home fa-fw margin-right text-color"></i>Cork, Ireland</p>
+				<p><i class="fa fa-envelope fa-fw margin-right text-color"></i>Johnnymul346@mail.com</p>
+				<p><i class="fa fa-phone fa-fw margin-right text-color"></i>+353879007991</p>
+				<hr>
+				<h4><b><i class="fa fa-asterisk fa-fw margin-right text-color"></i>Skills</b></h4>
+				<p>HTML5</p>
+				<div class="progress-container">
+					<div class="progressbar text-color teal" style="width:90%">
+						<div class="text-center text-white teal">90%</div>
+					</div>
+				</div>
+				<p>JavaScript</p>
+				<div class="progress-container">
+					<div class="progressbartext-color teal" style="width:80%">
+						<div class="text-center text-white teal">80%</div>
+					</div>
+				</div>
+				<p>Web Design</p>
+				<div class="progress-container">
+					<div class="progressbar text-color teal" style="width:75%">
+						<div class="text-center text-white teal">75%</div>
+					</div>
+				</div>
+				<p>CSS3</p>
+				<div class="progress-container">
+					<div class="progressbar text-color teal" style="width:60%">
+						<div class="text-center text-white teal">60%</div>
+					</div>
+				</div>
+				<p>Photography</p>
+				<div class="progress-container">
+					<div class="progressbar text-color teal" style="width:50%">
+						<div class="text-center text-white teal">50%</div>
+					</div>
+				</div>
+				<br>
+				<h4><b><i class="fa fa-globe fa-fw margin-right text-color"></i>Languages</b></h4>
+				<p>English</p>
+				<div class="progress-container">
+					<div class="progressbar teal" style="width:100%"></div>
+				</div>
+				<p>German</p>
+				<div class="progress-container">
+					<div class="progressbar teal" style="width:50%"></div>
+				</div>
+				<br>
+			</div>
+		</section>
+
+		<!--work experience information section-->
+		<section class="work-section container">
+			<header><h2><i class="fa fa-suitcase fa-fw margin-right text-color"></i>Work Experience</h2></header>
+			<div class="container">
+				<h5 class="opacity-font"><b>Front End Developer / Drone Videography Website</b></h5>
+				<h6 class="text-color"><i class="fa fa-calendar fa-fw margin-right"></i>Jan 2017 - <span class="current"><strong>Currently</strong></span></h6>
+				<p>I have developed and built a single page website to advertise videography services for drones. This site utilises HTML3, CSS3, JavaScript and AngularJS in order to give it a professional look and feel.</p>
+				<hr>
+			</div>
+			<div class="container">
+				<h5 class="opacity-font"><b>Web Developer / College Assignments</b></h5>
+				<h6 class="text-color"><i class="fa fa-calendar fa-fw margin-right"></i>Sep 2016 - Dec 2016</h6>
+				<p>Created multiple websites to be built using the latest standers of HTM5 and CSS3.</p>
+				<hr>
+			</div>
+			<div class="container">
+				<h5 class="opacity-font"><b>Web Design / <a href="http://johnmulcahydesigns.com/">Portfolio (JohnMulcahyDesign.com)</a></b></h5>
+				<h6 class="text-color"><i class="fa fa-calendar fa-fw margin-right"></i>June 2016 - Aug 2016</h6>
+				<p>Developed a Portfolio as a personal project to showcase my webdesign work.</p><br>
+			</div>
+		</section>
+
+		<!--education information section-->
+		<section class="education-section container">
+			<header><h2><i class="fa fa-certificate fa-fw margin-right text-color"></i>Education</h2></header>
+			<div class="container">
+				<h5 class="opacity-font"><b>Griffith College Cork</b></h5>
+				<h6 class="text-color"><i class="fa fa-calendar fa-fw margin-right"></i><span class="current"><strong>Currently</strong></span></h6>
+				<p>Bsc in Computer Science Level 7</p>
+				<hr>
+			</div>
+			<div class="container">
+				<h5 class="opacity-font"><b>Cork Institute of Technology</b></h5>
+				<h6 class="text-color"><i class="fa fa-calendar fa-fw margin-right"></i>2010 - 2013</h6>
+				<p>Bsc Degree in Horticulture</p>
+				<hr>
+			</div>
+		</section>
+	</div>
+
+	<section class="work-map">
+		<header><h2 class="location text-white">Where I have lived and Worked</h2></header>
+			<div id="googleMap" style="height:400px;width:100%; margin-top:1em;"></div>
+				<!-- Add Google Maps -->
+			<script src="http://maps.googleapis.com/maps/api/js"></script>
+			<script>
+				var myCenter = new google.maps.LatLng(51.8969, -8.4863);
+
+				function initialize() {
+				var mapProp = {
+					center:myCenter,
+					zoom:12,
+					scrollwheel:false,
+					draggable:false,
+					mapTypeId:google.maps.MapTypeId.ROADMAP
+				};
+
+				var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+				var marker = new google.maps.Marker({
+					position:myCenter,
+				});
+
+					marker.setMap(map);
+				}
+
+				google.maps.event.addDomListener(window, 'load', initialize);
+			</script>
+	</section>
+
+	<footer>
+		<p>Find me on social media.</p>
+		<i class="fa fa-facebook-official text-white  hover-text-blue"></i>
+		<i class="fa fa-instagram text-white  hover-text-purple"></i>
+		<i class="fa fa-snapchat text-white  hover-text-yellow"></i>
+		<i class="fa fa-pinterest-p text-white  hover-text-red"></i>
+		<i class="fa fa-twitter text-white  hover-text-blue"></i>
+		<i class="fa fa-linkedin text-white  hover-text-purple"></i>
+	</footer>
+</body>
+</html>
