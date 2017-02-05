@@ -28,43 +28,43 @@
 				<h4><b><i class="fa fa-asterisk fa-fw margin-right text-color"></i>Skills</b></h4>
 				<p>HTML5</p>
 				<div class="progress-container">
-					<div class="progressbar text-color teal" style="width:90%">
+					<div id="transition-1" class="progressbar text-color teal html-transition">
 						<div class="text-center text-white teal">90%</div>
 					</div>
 				</div>
 				<p>JavaScript</p>
 				<div class="progress-container">
-					<div class="progressbartext-color teal" style="width:80%">
+					<div id="transition-2" class="progressbartext-color teal javascript-transition">
 						<div class="text-center text-white teal">80%</div>
 					</div>
 				</div>
 				<p>Web Design</p>
 				<div class="progress-container">
-					<div class="progressbar text-color teal" style="width:75%">
+					<div id="transition-3" class="progressbar text-color teal webdesign-skill-transition">
 						<div class="text-center text-white teal">75%</div>
 					</div>
 				</div>
 				<p>CSS3</p>
 				<div class="progress-container">
-					<div class="progressbar text-color teal" style="width:60%">
+					<div id="transition-4" class="progressbar text-color teal css3-skill-transition">
 						<div class="text-center text-white teal">60%</div>
 					</div>
 				</div>
 				<p>Photography</p>
 				<div class="progress-container">
-					<div class="progressbar text-color teal" style="width:50%">
+					<div id="transition-5"class="progressbar text-color teal photo-skill-transition">
 						<div class="text-center text-white teal">50%</div>
 					</div>
 				</div>
 				<br>
 				<h4><b><i class="fa fa-globe fa-fw margin-right text-color"></i>Languages</b></h4>
 				<p>English</p>
-				<div class="progress-container">
-					<div class="progressbar teal" style="width:100%"></div>
+				<div id="transition-6" class="progress-container english-lang teal">
+					<div class="progressbar teal"></div>
 				</div>
 				<p>German</p>
-				<div class="progress-container">
-					<div class="progressbar teal" style="width:50%"></div>
+				<div id="transition-7" class="progress-container german-lang teal">
+					<div class="progressbar teal"></div>
 				</div>
 				<br>
 			</div>
@@ -116,6 +116,7 @@
 				<!-- Add Google Maps -->
 			<script src="http://maps.googleapis.com/maps/api/js"></script>
 			<script>
+			//google map code
 				var myCenter = new google.maps.LatLng(51.8969, -8.4863);
 
 				function initialize() {
@@ -149,5 +150,19 @@
 		<i class="fa fa-twitter text-white  hover-text-blue"></i>
 		<i class="fa fa-linkedin text-white  hover-text-purple"></i>
 	</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script>
+			(function(){
+				//load skill levels progression transition
+				$("#transition-5").addClass("photography-skill-transition");
+				$("#transition-1").addClass("html5-transition");
+				$("#transition-2").addClass("javascript-skill-transition");
+				$("#transition-3").addClass("web-skill-transition");
+				$("#transition-4").addClass("css-skill-transition");
+				$("#transition-6").addClass("english-lang-transition");
+				$("#transition-7").addClass("german-lang-transition");
+			})();
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </body>
 </html>

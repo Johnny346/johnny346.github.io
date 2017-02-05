@@ -246,3 +246,75 @@ footer {
 
 
 
+.html-transition {
+	width: 30%;
+	-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+	transition: width 2s;
+}
+
+.html5-transition {
+	width: 90%;
+}
+
+.javascript-transition {
+	width: 20%;
+	-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+	transition: width 2s;
+}
+
+.javascript-skill-transition {
+	width: 80%;
+}
+
+.photo-skill-transition {
+	width: 10%;
+	-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+	transition: width 2s;
+}
+
+.photography-skill-transition {
+	width: 50%;
+}
+
+.webdesign-skill-transition {
+	width: 10%;
+	-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+	transition: width 2s;
+}
+
+.web-skill-transition {
+	width: 75%;
+}
+
+.css3-skill-transition {
+	width: 10%;
+	-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+	transition: width 2s;
+}
+
+.css-skill-transition {
+	width: 60%;
+}
+
+.english-lang {
+	width: 10%;
+	-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+	transition: width 2s;
+}
+
+.english-lang-transition {
+	width: 100%;
+}
+
+.german-lang {
+	width: 10%;
+	-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+	transition: width 2s;
+}
+
+.german-lang-transition {
+	width: 50%;
+}
+
+
+
