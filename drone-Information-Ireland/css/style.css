@@ -248,8 +248,8 @@ footer {
 }
 
 footer p {
-	text-align: right;
-	padding: 10px;
+	text-align: center;
+	padding: .8em;
 }
 
 .Article h1 {
@@ -340,6 +340,25 @@ section .droneUsesSection p {
 iframe {
 	margin-left: 190px;
 	border: 0;
+}
+
+.weather-map iframe {
+	margin: 0;
+}
+
+.weather-map h2 {
+	text-align: center;
+	width: 100%;
+	padding: 1.5em;
+}
+
+#index-footer {
+	margin-top: 0;
+}
+
+#index-footer p {
+	padding: .8em;
+	margin: 0;
 }
 
 #droneFootageSection header h2 {
