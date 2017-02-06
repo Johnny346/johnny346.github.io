@@ -5,7 +5,6 @@ body {
 	line-height: 1.5em;
 	font-size: 1.1em;
 	background-color: #ffffff;
-	width: 100%;
 }
 
 #bg {
@@ -18,30 +17,19 @@ body {
 }
 
 .page {
-	margin-right: 11.1967%;
-	margin-left: 11.1967%;
-	width: 77.607%;
+	margin-right: auto;
+	margin-left: auto;
+	width: 960px;
 	background-color: #ffffff;
 }
 
 .pageTitle h1 {
 	text-align: center;
 	color: black;
-	margin-left: 5.208%;
+	margin-left: 50px;
 	text-transform: uppercase;
 	display: inline;
 	line-height: 1em;
-}
-
-.page header img {
-	width: 100%;
-	height: 400px;
-}
-
-@media screen and (max-width: 730px) {
-	.page header img {
-		height: 41.66%;
-	}
 }
 
 #headerColorGreen {
@@ -56,7 +44,7 @@ body {
 	margin: 13px;
 	margin-top: 0;
 	border-radius: 15px;
-	height: 4.2em;
+	height: 75px;
 	padding-top: 10px;
 	background-color: #2f9cec; /* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(#2f9cec, #efefef); /* For Safari 5.1 to 6.0 */
@@ -65,8 +53,19 @@ body {
 	background: linear-gradient(#2f9cec, #efefef); /* Standard syntax */
 }
 
+.page header img {
+	width: 100%;
+	height: 400px;
+}
+
+@media screen and (max-width: 730px) {
+	.page header img {
+		height: 41.66%;
+	}
+}
+
 nav {
-	width: 96.875%;
+	width: 930px;
 	border: 1px solid #7DAEFD;
 	margin: 15px;
 	border-radius: 25px;
@@ -106,11 +105,6 @@ nav li {
 
  li:hover {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-section {
-	width: 100%;
-	display: block;
 }
 
 .homeButton {
@@ -169,18 +163,6 @@ section {
 	padding-right: 25px;
 }
 
-@media screen and (max-width: 1020px) {
-	.pageTitle h1 {
-		font-size: 1.5em;
-	}
-
-
-	.homeButton {
-		padding: 5px;
-		margin: 5px;
-	}
-}
-
 #firstArticle {
 	height: 100%;
 	border: 1px solid #7DAEFD;
@@ -198,7 +180,7 @@ section {
 #firstArticle h2 {
 	background-color: #efefef;
 	margin-left: 15px;
-	width: 50%;
+	width: 250px;
 	border: 1px solid #7DAEFD;
 	padding: 15px;
 	border-radius: 15px;
@@ -219,16 +201,15 @@ section {
 }
 
 #firstArticle p {
-	width: 45%;
+	width: 450px;
 	padding: 10px;
 }
 
-#firstArticle2 {
-	height: 100%;
+#secondArticle {
+	height: 25em;
 	border: 1px solid #7DAEFD;
 	margin: 10px;
 	padding: 10px;
-	padding-left: 20px;
 	border-radius: 25px;
 	background-color: #efefef; /* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(#efefef, #ffffff); /* For Safari 5.1 to 6.0 */
@@ -237,14 +218,14 @@ section {
 	background: linear-gradient(#efefef, #ffffff); /* Standard syntax */
 }
 
-#firstArticle2 h2 {
+#secondArticle h2 {
 	background-color: #efefef;
-	margin-left: 15px;
-	width: 250px;
-	border: 1px solid #7DAEFD;
-	padding: 15px;
-	border-radius: 15px;
 	text-align: center;
+	border: 1px solid #7DAEFD;
+	margin-left: 15px;
+	border-radius: 15px;
+	width: 250px;
+	padding: 15px;
 	background-color: #2ed71c; /* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(#2ed71c, #efefef); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(#2ed71c, #efefef); /* For Opera 11.1 to 12.0 */
@@ -252,41 +233,20 @@ section {
 	background: linear-gradient(#2ed71c, #efefef); /* Standard syntax */
 }
 
-#firstArticle2 img {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	float: right;
-	display: inline-block;
-	margin-right: 30px;
+#secondArticle img {
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
 	height: 250px;
 	width: 350px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#firstArticle2 p {
-	width: 45%;
+#secondArticle p {
+	width: 450px;
 	padding: 10px;
-	display: inline-block;
-}
-
-
-@media screen and (max-width: 1175px) {
-	nav ul li {
-		display: block;
-		padding-left: 100%;
-		padding-right: 100%;
-		margin-left: 0;
-		margin-right: 0;
-		margin-bottom: 5px;
-	}
-
-	.firstLi {
-		margin: 0;
-		margin-bottom: 5px;
-	}
-
-	.fourthLi {
-		margin: 0;
-		margin-bottom: 5px;
-	}
+	float: right;
+	padding-right: 40px;
 }
 
 .greetingStyle {
@@ -303,8 +263,8 @@ footer {
 }
 
 footer p {
-	text-align: center;
-	padding: .8em;
+	text-align: right;
+	padding: 10px;
 }
 
 .Article h1 {
@@ -407,15 +367,6 @@ iframe {
 	padding: 1.5em;
 }
 
-#index-footer {
-	margin-top: 0;
-}
-
-#index-footer p {
-	padding: .8em;
-	margin: 0;
-}
-
 #droneFootageSection header h2 {
 	text-align: center;
 }
@@ -450,55 +401,4 @@ iframe {
 /*technology used*/
 .list li:hover {
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
-}
-
-@media screen and (max-width: 620px) {
-
-	#firstArticle {
-		height: 100%;
-		margin: 10px;
-		padding: 10px;
-		padding-left: 20px;
-	}
-
-	#firstArticle h2 {
-		width: 50%;
-		padding: 15px;
-	}
-
-	#firstArticle img {
-		margin-right: 30px;
-		width: 80%;
-	}
-
-	#firstArticle p {
-		width: 100%;
-		padding: 10px;
-	}
-
-	#firstArticle2 {
-		height: 100%;
-		margin: 10px;
-		padding: 10px;
-		padding-left: 20px;
-	}
-
-	#firstArticle2 h2 {
-		width: 50%;
-		padding: 15px;}
-
-	#firstArticle2 img {
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		margin-right: 30px;
-		width: 80%;
-	}
-
-	#firstArticle2 p {
-		width: 100%;
-		padding: 10px;
-	}
-
-	.weather-map h2 {
-		padding: 0;
-	}
 }
