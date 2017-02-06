@@ -96,6 +96,11 @@ nav li {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+section {
+	width: 100%;
+	display: block;
+}
+
 .homeButton {
 	display: center;
 	padding: 3px;
@@ -169,7 +174,7 @@ nav li {
 #firstArticle h2 {
 	background-color: #efefef;
 	margin-left: 15px;
-	width: 250px;
+	width: 50%;
 	border: 1px solid #7DAEFD;
 	padding: 15px;
 	border-radius: 15px;
@@ -188,15 +193,16 @@ nav li {
 }
 
 #firstArticle p {
-	width: 450px;
+	width: 45%;
 	padding: 10px;
 }
 
-#secondArticle {
-	height: 25em;
+#firstArticle2 {
+	height: 100%;
 	border: 1px solid #7DAEFD;
 	margin: 10px;
 	padding: 10px;
+	padding-left: 20px;
 	border-radius: 25px;
 	background-color: #efefef; /* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(#efefef, #ffffff); /* For Safari 5.1 to 6.0 */
@@ -205,14 +211,14 @@ nav li {
 	background: linear-gradient(#efefef, #ffffff); /* Standard syntax */
 }
 
-#secondArticle h2 {
+#firstArticle2 h2 {
 	background-color: #efefef;
-	text-align: center;
-	border: 1px solid #7DAEFD;
 	margin-left: 15px;
-	border-radius: 15px;
 	width: 250px;
+	border: 1px solid #7DAEFD;
 	padding: 15px;
+	border-radius: 15px;
+	text-align: center;
 	background-color: #2ed71c; /* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(#2ed71c, #efefef); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(#2ed71c, #efefef); /* For Opera 11.1 to 12.0 */
@@ -220,18 +226,17 @@ nav li {
 	background: linear-gradient(#2ed71c, #efefef); /* Standard syntax */
 }
 
-#secondArticle img {
-	float: left;
-	margin-top: 20px;
-	margin-left: 20px;
+#firstArticle2 img {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	float: right;
+	display: inline-block;
+	margin-right: 30px;
 }
 
-#secondArticle p {
-	width: 450px;
+#firstArticle2 p {
+	width: 45%;
 	padding: 10px;
-	float: right;
-	padding-right: 40px;
+	display: inline-block;
 }
 
 .greetingStyle {
