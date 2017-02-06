@@ -259,12 +259,14 @@ nav li {
 
 footer {
 	background-color: rgba(196, 197, 203, 1);
-	height: 60px;
+	height: 80px;
+	margin-top: 0;
 }
 
 footer p {
-	text-align: right;
-	padding: 10px;
+	text-align: center;
+	padding: 20px;
+	margin-top: 0;
 }
 
 .Article h1 {
