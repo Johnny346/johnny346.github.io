@@ -3,7 +3,7 @@ body {
 	margin-bottom: 0;
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5em;
-	font-size: 1.1em;
+	font-size: 16px;
 	background-color: #ffffff;
 }
 
@@ -19,7 +19,7 @@ body {
 .page {
 	margin-right: auto;
 	margin-left: auto;
-	width: 960px;
+	width: 90%;
 	background-color: #ffffff;
 }
 
@@ -163,7 +163,7 @@ nav li {
 	padding-right: 25px;
 }
 
-#firstArticle {
+.firstArticle {
 	height: 100%;
 	border: 1px solid #7DAEFD;
 	margin: 10px;
@@ -177,7 +177,7 @@ nav li {
 	background: linear-gradient(#efefef, #ffffff); /* Standard syntax */
 }
 
-#firstArticle h2 {
+.firstArticle h2 {
 	background-color: #efefef;
 	margin-left: 15px;
 	width: 250px;
@@ -192,7 +192,7 @@ nav li {
 	background: linear-gradient(#2ed71c, #efefef); /* Standard syntax */
 }
 
-#firstArticle img {
+.firstArticle img {
 	float: right;
 	margin-right: 30px;
 	height: 250px;
@@ -200,13 +200,13 @@ nav li {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#firstArticle p {
+.firstArticle p {
 	width: 450px;
 	padding: 10px;
 }
 
 #secondArticle {
-	height: 25em;
+	height: 100%;
 	border: 1px solid #7DAEFD;
 	margin: 10px;
 	padding: 10px;
@@ -311,6 +311,10 @@ footer p {
 	padding-right: 40px;
 }
 
+.navhr {
+	display: none;
+}
+
 /*types of drones*/
 section .droneTypesSection {
 	margin-left: 40px;
@@ -359,12 +363,17 @@ iframe {
 	border: 0;
 }
 
+section .weather-map iframe {
+	display: block;
+}
+
 .weather-map iframe {
 	margin: 0;
 }
 
 .weather-map h2 {
 	text-align: center;
+	display: block;
 	width: 100%;
 	padding: 1.5em;
 }
@@ -403,4 +412,141 @@ iframe {
 /*technology used*/
 .list li:hover {
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (min-width:960px){
+	.page {
+		width:960px;
+	}
+
+
+}
+
+@media screen and (max-width:960px){
+	nav {
+		width: 96%;
+	}
+
+	.pageTitle h1 {
+		font-size: 1.7em;
+	}
+
+	.firstLi {
+		margin-left: 0;
+	}
+
+	.fourthLi {
+		margin-left: 0;
+	}
+
+	#secondArticle p, #.firstArticle p {
+		width: 45%;
+	}
+}
+
+@media screen and (max-width:948px){
+	nav ul li {
+		display: inline-block;
+		clear: both;
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	.firstLi,.secondLi, .thirdLi, .fourthLi, .fifthLi,.sixthLi {
+		margin: 0;
+		padding: 0;
+		border-radius: 12px;
+		border: 0;
+		border-bottom: 1px solid #DDA54F;
+	}
+
+	.navhr {
+		display: block;
+	}
+
+	nav ul li a {
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width:790px){
+	.pageTitle h1 {
+		font-size: 1.5em;
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width:580px){
+	nav,.pageTitle {
+		width: 100%;
+		margin: 0;
+		border-radius: 0;
+	}
+
+	.page header img {
+		margin-bottom: -5px;
+		padding: 0;
+	}
+
+	.weather-map h2 {
+		width: 80%;
+	}
+
+	#index-footer {
+		margin-top: -5px;
+	}
+}
+
+@media screen and (max-width:840px){
+	body,.page {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width:637px){
+	.homeButton {
+		padding: .5em;
+		margin: 0;
+	}
+
+	.pageTitle h1 {
+		display: inline-block;
+		clear: both;
+		width: 100%;
+		padding: .8em;
+		margin: 0;
+	}
+
+	.pageTitle {
+		height: 100%;
+	}
+}
+
+@media screen and (max-width:400px){
+	.pageTitle h1 {
+		font-size: 1.2em;
+		padding-left: 0;
+	}
+
+	.firstArticle h2 {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width:769px){
+	.firstArticle p {
+		display: block;
+		width: 100%;
+		padding: 10px;
+	}
+
+	.firstArticle img {
+		display: block;
+		width: 100%;
+		margin: 0;
+		margin-bottom: 20px;
+	}
 }
