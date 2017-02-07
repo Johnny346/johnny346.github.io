@@ -500,9 +500,10 @@ section .weather-map iframe {
 }
 
 @media screen and (max-width:840px){
-	body,.page {
-		width: 100%;
+	.page {
+		width: 99%;
 		margin: 0;
+		padding: 0;
 	}
 }
 
@@ -533,6 +534,10 @@ section .weather-map iframe {
 
 	.firstArticle h2 {
 		width: 70%;
+	}
+
+	body img {
+		display: none;
 	}
 }
 
