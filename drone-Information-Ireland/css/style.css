@@ -495,7 +495,7 @@ section .weather-map iframe {
 	}
 
 	#index-footer {
-		margin-top: -5px;
+		margin-top: -10px;
 	}
 }
 
@@ -536,7 +536,7 @@ section .weather-map iframe {
 		width: 70%;
 	}
 
-	body img {
+	#bg {
 		display: none;
 	}
 }
