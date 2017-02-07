@@ -1,7 +1,6 @@
 body {
 	margin: 0 auto;
 	padding-top: 10px;
-	width: 100%;
 	background-color: #efefef;
 }
 
@@ -315,6 +314,5 @@ footer {
 .german-lang-transition {
 	width: 50%;
 }
-
 
 
