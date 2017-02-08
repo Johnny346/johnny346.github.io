@@ -99,7 +99,7 @@ nav li {
 	margin-right: 20px;
 	padding: 5px;
 	text-transform: uppercase;
-	background-color: #fff8ed;
+	background-color: #d1e9f6;
 	border-radius: 25px;
 }
 
@@ -511,7 +511,7 @@ section .weather-map iframe {
 		padding: 0;
 		border-radius: 12px;
 		border: 0;
-		border-bottom: 1px solid #DDA54F;
+		border-bottom: 1px solid #24221F;
 	}
 
 	.navhr {
