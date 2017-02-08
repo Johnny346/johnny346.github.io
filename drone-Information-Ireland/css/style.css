@@ -618,6 +618,14 @@ section .weather-map iframe {
 		display: none;
 	}
 
+	body {
+		margin: 0;
+	}
+
+	.page {
+		width: 100%;
+	}
+
 	.articleSection h3 {
 		width: 70%;
 	}
