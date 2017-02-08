@@ -470,14 +470,18 @@ section .weather-map iframe {
 		width: 45%;
 	}
 
-	section .droneUsesSection p,.droneUsesSection h2 {
+	section .droneUsesSection h2 {
 		clear: both;
 		width: 100%;
 	}
 
-	.droneUsesSection p {
+	section .droneUsesSection p {
 		margin: 1em;
 		padding: 0;
+		display: block;
+		clear: both;
+		width: 100%;
+		float: none;
 	}
 
 	section .droneUsesSection  {
