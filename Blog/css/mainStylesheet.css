@@ -264,3 +264,9 @@ button {
 .paddingBottom0 {
 	padding-bottom : 0;
 }
+
+@media screen and (min-width: 700px) {
+	.gallery-container {
+		padding-left: 75px;
+	}
+}
