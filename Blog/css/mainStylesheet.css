@@ -70,6 +70,7 @@ p {
 .images-padding-top {
 	padding-top: 0;
 }
+
 .navbar {
 	background-color: #fff;
 	padding-top: 15px;
@@ -169,6 +170,7 @@ table {
 table #rates {
 	width: 380px;
 }
+
 th, td {
 	border-radius: 3px;
 	color: #333;
@@ -217,7 +219,6 @@ th.descending:after {
 }
 
 .about:after {
-	content: "";
 	display: table;
 	clear: both;
 }
@@ -225,6 +226,14 @@ th.descending:after {
 .about h2 {
 	text-align: left;
 	float: left;
+}
+
+#about {
+	width: 100%;
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("http://s20.postimg.org/8rbk958fh/seat_side.jpg");
 }
 
 .bio {
