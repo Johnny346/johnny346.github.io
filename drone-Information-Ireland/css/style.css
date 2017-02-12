@@ -445,7 +445,10 @@ section .weather-map iframe {
 	.page {
 		width:960px;
 	}
-
+	
+	nav ul {
+		margin-left: 15px;
+	}
 
 }
 
