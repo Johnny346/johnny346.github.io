@@ -92,6 +92,11 @@ nav ul {
 	padding: 4px;
 }
 
+nav ul:first-child {
+	padding-top: 20px;
+}
+
+
 nav li {
 	display: inline;
 	border: 1px solid green;
@@ -311,9 +316,6 @@ footer p {
 	padding-right: 40px;
 }
 
-.navhr {
-	display: none;
-}
 
 /*types of drones*/
 section .droneTypesSection {
@@ -515,10 +517,6 @@ section .weather-map iframe {
 		border-radius: 12px;
 		border: 0;
 		border-bottom: 1px solid #24221F;
-	}
-
-	.navhr {
-		display: block;
 	}
 
 	nav ul li a {
