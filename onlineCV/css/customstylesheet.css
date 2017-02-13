@@ -308,6 +308,28 @@ footer {
 
 @media screen and (max-width: 816px) {
 	.portfolio-section {
-		width: 100%;
+
 	}
+}
+
+@media screen and (max-width: 816px) {
+	.portfolio-section {
+		width: 100%;
+		-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+		-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+		animation-name: example;
+		animation-duration: 2s infinate;
+	}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+	0% {width: 59%;}
+	100% {width: 100%;}
+}
+
+/* Standard syntax */
+@keyframes example {
+	0% {width: 59%;}
+	100% {width: 100%;}
 }

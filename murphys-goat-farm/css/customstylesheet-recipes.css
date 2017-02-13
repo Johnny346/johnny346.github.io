@@ -1,0 +1,17 @@
+.con {
+	width: 100%;
+	height: 470px;
+	background-image: url(http://s9.postimg.org/wf1k8rl9r/recipe_image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.row {
+	border-top: 1px solid #ccccff;
+}
+
+.recipe-color {
+	color:  #ffb84d;
+}
+

@@ -1,0 +1,311 @@
+body {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.navbarTop {
+	padding-bottom: 50px;
+	background-color: #fff;
+}
+
+.navbar-brand {
+	width: 150px;
+	padding-left: 100px;
+}
+
+.navbar-brand img {
+	height: 120px;
+	width: 120px;
+}
+
+.fa-facebook {
+	padding-left: 35px;
+}
+
+.fa-twitter {
+	padding-left: 10px;
+}
+
+.description > h1{
+	height: 100%;
+	padding: 30px;
+	font-family: "Open Sans Condensed", sans-serif;
+	line-height: 170%;
+	font-size: 3em;
+}
+
+.team-image img {
+	height: 220px;
+	width: 290px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.caption > h3{
+	color: #ffb84d;
+}
+
+.thumbnail {
+	border: none;
+}
+
+@media all and (max-width: 2000px) and (min-width: 990px) {
+	.description > h1 {
+		padding-top: 40px;
+		padding-bottom: 30px;
+		padding-left: 225px;
+		padding-right: 225px;
+	}
+}
+
+@media all and (max-width: 767px) and (min-width: 0px) {
+	.navbar-brand {
+		display: none;
+	}
+}
+
+@media all and (max-width: 767px) and (min-width: 0px) {
+	 #brand-name {
+		display: inline-block;
+		float: left;
+		font-size: 140%;
+	}
+}
+
+@media all and (max-width: 3000px) and (min-width: 768px) {
+	 #brand-name {
+		display: none;
+	}
+}
+
+@media all and (max-width: 767px) and (min-width: 0px) {
+	.navbar {
+		height: 20px;
+	}
+}
+
+#left-button {
+	float: left;
+	margin: 10px;
+}
+
+.container-fluid > .collapse > ul {
+	display: inline-block;
+	float: none;
+	margin: 60px auto 0px auto;
+	text-align: center;
+}
+
+@media all and (max-width: 878px) and (min-width: 768px) {
+	.container-fluid > .collapse > ul {
+		display: inline-block;
+		float: right;
+		margin-top: 120px;
+		padding-right: 75px;
+		text-align: center;
+	}
+
+	.navbar-brand {
+		width: 150px;
+		padding-left: 30px;
+	}
+}
+
+@media all and (max-width: 1039px) and (min-width: 879px) {
+	.container-fluid > .collapse > ul {
+		display:inline-block;
+		float: left;
+		margin-top: 170px;
+		text-align: center;
+	}
+}
+
+.nav > li > a {
+	display: block;
+	padding: 10px;
+	padding-right: 45px;
+}
+
+.act {
+	color: black;
+}
+
+.con {
+	width: 100%;
+	height: 470px;
+	background-image: url(http://s23.postimg.org/k5w9tu92j/goatfarm.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}​
+
+.navbar-collapse {
+	text-align:center;
+}
+
+.navbarTop {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin: auto;
+	border-style: none;
+}
+
+.imageBox > h1 {
+	margin-top:  330px;
+	padding: 30px;
+	text-align: center;
+	z-index: 1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	color: #543737;
+	font: 60px Georgia;
+	font-weight: lighter;
+	background-color: #ffffff;
+	background-color: hsla(0, 0%, 98%, 0.4);
+}
+
+@media all and (max-width: 1040px) and (min-width: 767px) {
+	.imageBox > h1 {
+		margin-top: 440px;
+	}
+}
+
+@media all and (max-width: 767px) and (min-width: 445px) {
+	.imageBox > h1 {
+		margin-top:  200px;
+	}
+}
+
+@media all and (max-width: 445px) and (min-width: 0px) {
+	.imageBox > h1 {
+		margin-top: 140px;
+		font-size: 320%;
+	}
+}
+
+@media all and (max-width: 300px) and (min-width: 0px) {
+	.imageBox > h1 {
+		padding-top: 80px;
+		padding-right: 0;
+		padding-left: 0;
+		font-size: 290%;
+	}
+}
+
+
+.navbar-fixed-bottom {
+	position: absolute;
+}
+
+.headerText {
+	margin-left: 140px;
+	margin-right: 140px;
+	margin-bottom: 40px;
+}
+
+.nav-container {
+	height: 170px;
+	padding-top: 45px;
+}
+
+.navbar-fixed-bottom {
+	position: relative;
+	background-color: white;
+	border-style: none;
+}
+
+.text-about {
+	text-align: center;
+	color: #337AB7;
+}
+
+.cheese-description {
+	text-align: left;
+	height: 100%;
+	width: auto;
+	padding-left: 15px;
+}
+
+
+.cheese1 img {
+	height: 260px;
+	width: 380px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.cheese-image-align-left {
+	text-align: left;
+}
+
+.row-height-auto {
+	height: 100%;
+	padding: 20px;
+}
+
+.story-description {
+	text-align: left;
+	height: 100%;
+	width: auto;
+	padding-left:15px;
+}
+
+.homePageImage img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 280px;
+		height: 210px;
+	}
+
+@media all and (max-width: 368px) and (min-width: 0px){
+	.resized-image-small > img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.map-responsive {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.map-responsive iframe {
+	left: 0;
+	top: 0;
+	height: 400px;
+	width: 100%;
+}
+
+.contactDetails {
+	text-align: center;
+	padding: 20px;
+}
+
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.navbar-fixed-bottom {
+	border-top: 2px solid grey;
+}
+
+@media all and (max-width: 368px){
+	.description > h1{
+		padding: 30px;
+		font-family: "Open Sans Condensed", sans-serif;
+		line-height: 140%;
+		font-size: 2em;
+	}
+}
+
+@media all and (max-width: 368px){
+	.row-height-auto {
+		padding: 4px;
+	}
+}
