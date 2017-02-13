@@ -21,6 +21,7 @@
 			<li><a data-toggle="tab" href="#menu1">Wind</a></li>
 			<li><a data-toggle="tab" href="#menu2">Clouds</a></li>
 			<li><a data-toggle="tab" href="#menu3">Temp</a></li>
+			<li><a data-toggle="tab" href="#menu4">Waves</a></li>
 		</ul>
 
 		<div class="tab-content">
@@ -40,10 +41,14 @@
 				<h3>Temp map</h3>
 				<iframe width="100%" height="450" src="https://embed.windytv.com/embed2.html?lat=53.339&lon=-6.260&zoom=5&level=surface&overlay=temp&menu=true&message=&marker=&forecast=12&calendar=now&location=ip&type=map&actualGrid=&metricWind=kt&metricTemp=%C2%B0C" frameborder="0"></iframe>
 			</div>
+			<div id="menu4" class="tab-pane active">
+				<h3>Wave map</h3>
+				<iframe width="100%" height="450" src="https://embed.windytv.com/embed2.html?lat=53.339&lon=-6.260&zoom=5&level=surface&overlay=waves&menu=true&message=true&marker=true&forecast=12&calendar=now&location=coordinates&type=map&actualGrid=&metricWind=kt&metricTemp=%C2%B0C" frameborder="0"></iframe>
+			</div>
 		</div>
 	</div>
 	<footer id="index-footer">
-			<p>Copyright 2017</p>
+			<p>John Mulcahy Copyright 2017</p>
 	</footer>
 	<script type="text/javascript">
 			//remove active class on iframes as page loads
@@ -53,6 +58,7 @@
 					$('#menu1').removeClass("active");
 					$('#menu2').removeClass("active");
 					$('#menu3').removeClass("active");
+					$('#menu4').removeClass("active");
 				}
 
 

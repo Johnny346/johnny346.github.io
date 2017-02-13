@@ -2,7 +2,7 @@ body {
 	margin: 0 auto;
 	padding-top: 20px;
 	font-size: 16px;
-	background-color: #efefef;
+	background-color: #6cfc5d;
 }
 
 @media screen and (max-width:800px) {
@@ -16,7 +16,7 @@ body {
 }
 
 #index-footer {
-	background-color: rgba(186, 209, 205, 1);
+	background-color: #6cfc5d;
 	text-align: center;
 	height: 80px;
 }
