@@ -308,12 +308,6 @@ footer {
 
 @media screen and (max-width: 816px) {
 	.portfolio-section {
-
-	}
-}
-
-@media screen and (max-width: 816px) {
-	.portfolio-section {
 		width: 100%;
 		-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
 		-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
