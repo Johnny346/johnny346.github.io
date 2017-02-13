@@ -3,12 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Drone Information For Ireland</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script type="text/javascript">
+				/*$('#menu1').addClass("active");
+				$('#menu2').addClass("active");
+				$('#menu3').addClass("active");*/
+	</script>
 </head>
 <body>
 	<img src="images/landscape.png" id="bg" alt="source http://feelgrafix.com/data/landscape/landscape-7.jpg">
@@ -65,28 +71,22 @@
 			</ul>
 
 			<div class="tab-content">
-				<div id="home" class="tab-pane  active">
+				<div id="home" class="tab-pane fade in active">
 					<h3>Rain map</h3>
 					<iframe width="100%" height="450" src="https://embed.windytv.com/embed2.html?lat=53.3389&lon=-6.2595&zoom=&level=surface&overlay=rain&menu=&message=&marker=&forecast=12&calendar=now&location=coordinates&type=map&actualGrid=&metricWind=kt&metricTemp=%C2%B0C" frameborder="0"></iframe>
 				</div>
-				<div id="menu1" class="tab-pane active">
+				<div id="menu1" class="tab-pane fade in active">
 					<h3>Wind map</h3>
 					<iframe width="100%" height="450" src="https://embed.windytv.com/embed2.html?lat=53.339&lon=-6.260&zoom=5&level=surface&overlay=wind&menu=true&message=&marker=&forecast=12&calendar=now&location=ip&type=map&actualGrid=&metricWind=kt&metricTemp=%C2%B0C" frameborder="0"></iframe>
 				</div>
-				<div id="menu2" class="tab-pane active">
+				<div id="menu2" class="tab-pane fade in active">
 					<h3>Cloud map</h3>
 					<iframe width="100%" height="450" src="https://embed.windytv.com/embed2.html?lat=53.339&lon=-6.260&zoom=5&level=surface&overlay=clouds&menu=true&message=&marker=&forecast=12&calendar=now&location=ip&type=map&actualGrid=&metricWind=kt&metricTemp=%C2%B0C" frameborder="0"></iframe>
 				</div>
-				<div id="menu3" class="tab-pane active">
+				<div id="menu3" class="tab-pane fade in active">
 					<h3>Temp map</h3>
 					<iframe width="100%" height="450" src="https://embed.windytv.com/embed2.html?lat=53.339&lon=-6.260&zoom=5&level=surface&overlay=temp&menu=true&message=&marker=&forecast=12&calendar=now&location=ip&type=map&actualGrid=&metricWind=kt&metricTemp=%C2%B0C" frameborder="0"></iframe>
-				</div><script type="text/javascript">
-				//remove active class on iframes as page loads
-				$('#menu1').removeClass("active");
-				$('#menu2').removeClass("active");
-				$('#menu3').removeClass("active");
-
-		</script>
+				</div>
 			</div>
 		</section>
 		<footer id="index-footer">
@@ -94,5 +94,17 @@
 		</footer>
 	</div>
 
+	<script type="text/javascript">
+			//remove active class on iframes as page loads after 3 seconds
+			setTimeout(function() { timer(); }, 3000);
+
+				function timer(){
+					$('#menu1').removeClass("active");
+					$('#menu2').removeClass("active");
+					$('#menu3').removeClass("active");
+				}
+
+
+	</script>
 </body>
 </html>
