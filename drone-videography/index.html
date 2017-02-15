@@ -13,35 +13,32 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
 	<link href="css/customstylesheet.css" rel="stylesheet"/>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 	<div id="page">
 		<div class="menuButton">
+			<h3>NimbleDrones</h3>
 			<a class="menu-toggle" href="#">Menu</a>
 		</div>
-		<header id="headerNav">
-			<nav class="menu-side">
-				<img src="http://s20.postimg.org/u3j26tsdp/broken_landscape.jpg" alt="Chania" width="120" height="120">
+
+			<nav class="menu-side navbar ">
+				<img src="http://s20.postimg.org/u3j26tsdp/broken_landscape.jpg" alt="Chania" width="190" height="120">
 				<div class="list-nav">
-					<a href="index.html">About</a>
-					<a href="about.html">Projects</a>
-					<a href="#services">Services</a>
-					<a href="contactform.html">Pricing</a>
-					<a href="about.html">Equipment</a>
-					<a href="#services">Faq + Saftey standards</a>
-					<a href="about.html">Project Stats</a>
-					<a href="contactform.html">Contact</a>
-					<a href="contactform.html">Weather Forecast</a>
-				</div>
-				<hr>
-				<div class="side-details">
-					<h6>Call:<br/>+353879007991</h6>
-					<h6>Email:<br/>Johnnymul346@gmail.com</h6>
-					<br/>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#section1">Projects</a></li>
+						<li><a href="#section2">About</a></li>
+						<li><a href="#section3">Services</a></li>
+						<li><a href="#section4">Pricing</a></li>
+						<li><a href="#section5">Equipment</a></li>
+						<li><a href="#section6">Faq + Safety standards</a></li>
+						<!--<li><a href="about.html">Project Stats</a></li>-->
+						<li><a href="#section7">Contact</a></li>
+						<!--<li><a href="contactform.html">Weather Forecast</a></li>-->
+					</ul>
 				</div>
 			</nav>
-		</header>
+
 		<div id="pageContent">
-			<div class="container-fluid">
+			<div class="container-fluid" id="carousel-section">
 				<!-- carousel section -->
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
@@ -57,35 +54,35 @@
 
 						<div class="item active">
 							<img src="http://s20.postimg.org/u3j26tsdp/broken_landscape.jpg" alt="Chania" width="460" height="200">
-							<div class="carousel-caption">
+							<!--<div class="carousel-caption">
 								<h3>Chania</h3>
 								<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-							</div>
+							</div>-->
 						</div>
 
-					<div class="item">
-						<img src="https://s20.postimg.org/m9p198j8t/20150616_215348.jpg" alt="Chania" width="460" height="200">
-						<div class="carousel-caption">
-							<h3>Chania</h3>
-							<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+						<div class="item">
+							<img src="https://s20.postimg.org/m9p198j8t/20150616_215348.jpg" alt="Chania" width="460" height="200">
+							<!--<div class="carousel-caption">
+									<h3>Chania</h3>
+									<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+								</div>-->
 						</div>
-					</div>
 
-					<div class="item">
-						<img src="https://s20.postimg.org/4fy4lopkd/DSC_0108_2.jpg" alt="Flower" width="460" height="200">
-						<div class="carousel-caption">
-							<h3>Flowers</h3>
-							<p>Beatiful flowers in Kolymbari, Crete.</p>
+						<div class="item">
+							<img src="https://s20.postimg.org/4fy4lopkd/DSC_0108_2.jpg" alt="Flower" width="460" height="200">
+							<!--<div class="carousel-caption">
+									<h3>Chania</h3>
+									<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+								</div>-->
 						</div>
-					</div>
 
-					<div class="item">
-						<img src="http://s20.postimg.org/s2x3zqlm5/water_scene.jpg" alt="Flower" width="460" height="200">
-						<div class="carousel-caption">
-							<h3>Flowers</h3>
-							<p>Beatiful flowers in Kolymbari, Crete.</p>
+						<div class="item">
+							<img src="http://s20.postimg.org/s2x3zqlm5/water_scene.jpg" alt="Flower" width="460" height="200">
+							<!--<div class="carousel-caption">
+									<h3>Chania</h3>
+									<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+								</div>-->
 						</div>
-					</div>
 
 					</div>
 
@@ -101,14 +98,7 @@
 				</div>
 			</div>
 			<div class="container-fluid">
-				<section>
-					<!--About section-->
-					<h2>About</h2>
-					<p>We are a interior design service that focus sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-				</section>
-			</div>
-			<div class="container-fluid">
-				<section>
+				<section id="section1">
 					<!--Projects section-->
 					<h2><i class="fa fa-certificate fa-fw margin-right text-color"></i>Projects</h2>
 					<div class="row">
@@ -228,18 +218,25 @@
 				</section>
 			</div>
 			<div class="container-fluid">
+				<section id="section2">
+					<!--About section-->
+					<h2>About</h2>
+					<p>We are a interior design service that focus sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p><p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+				</section>
+			</div>
+			<div class="container-fluid">
 				<!--Services section-->
-				<section>
+				<section id="section3">
 					<h2>Services</h2>
-					<p>We are a interior design service that focus on what's  proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+					<p>We are a interior design service that focus on what's  proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p><p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 				</section>
 			</div>
 			<div class="container-fluid">
 				<!--Pricing section-->
-				<section>
+				<section id="section4">
 					<h2>Pricing</h2>
 					<p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-					<p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+					<p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p><p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 				</section>
 				<!--Price calculator section-->
 				<section>
@@ -249,15 +246,16 @@
 			</div>
 			<div class="container-fluid">
 				<!--Equipment section-->
-				<section>
-					<h2>Equipment Used</h2>
+				<section id="section5">
+					<h2>Equipment Used</h2><p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 					<p>We are a interior design service that focus on what's  proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 				</section>
 			</div>
 			<div class="container-fluid">
 				<!--FAQ section-->
-				<section>
+				<section id="section6">
 					<h2>FAQ</h2>
+					<p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 					<p>We are a interior design service that  culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 				</section>
 				<!--Safety section-->
@@ -268,7 +266,7 @@
 			</div>
 			<div class="container-fluid">
 				<!--Contact section-->
-				<section>
+				<section id="section7">
 					<h2>Contact</h2>
 					<p>We are a interior design service that  culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 				</section>
