@@ -1,9 +1,11 @@
 body {
 	margin: 0 auto;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #e9f9f6;
 }
 
-
-#body {
+#page {
 	width: 100%;
 }
 
@@ -12,12 +14,13 @@ body {
 	width: 20%;
 	float: left;
 }
+
 #pageContent {
-	border: 2px solid red;
-	height: 700px;
+	height: auto;
 	width: 80%;
 	display: inline-block;
 	float: right;
+	text-align: center;
 }
 
 /*navigation menu*/
@@ -43,9 +46,9 @@ body {
 }
 
 .menu-side {
-	background-color: #333;
+	background-color: rgba(126, 180, 178, 1);
 	border-left: 1px solid #000;
-	color: #fff;
+	color: #000000;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -59,63 +62,14 @@ body {
 	display: none;
 }
 
-@media screen and (max-width: 1070px) {
-	.menu-side {
-		left: -20%;
-	}
-
-	.menu-toggle img {
-		float: right;
-	}
-
-	.menuButton {
-		display: block;
-		width: 100%;
-		height: 3em;
-		border: 2px solid red;
-	}
-
-	#headerNav {
-		width: -20%;
-	}
-
-	#pageContent{
-		border: 2px solid red;
-		height: 700px;
-		width: 100%;
-		display: block;
-	}
-}
-
-@media screen and (max-width: 970px) {
-	.menu-side {
-		left: -60%;
-		width: 30%;
-	}
-}
-
-@media screen and (max-width: 650px) {
-	.menu-side {
-		left: -60%;
-		width: 50%;
-	}
-}
-
-@media screen and (max-width: 405px) {
-	.menu-side {
-		left: -70%;
-		width: 70%;
-	}
-}
-
 .container {
 	width: 100%;
 }
 
 .list-nav a {
-	color: #FFFFFF;
+	color: #000000;
 	text-decoration: none;
-	font-size: 23px;
+	font-size: 1.3em;
 	display: block;
 	padding-top: 20px;
 	padding-left: 10px;
@@ -150,4 +104,70 @@ body {
 	position: relative;
 	width: 100%;
 	float: right;
+}
+
+
+@media screen and (max-width: 1070px) {
+	.menu-side {
+		left: -20%;
+	}
+
+	.menu-toggle img {
+		float: right;
+	}
+
+	.menuButton {
+		display: block;
+		width: 100%;
+		height: 3em;
+		border: 2px solid red;
+	}
+
+	.menuButton a {
+		float: right;
+	}
+
+	#headerNav {
+		width: -20%;
+	}
+
+	#pageContent{
+		width: 100%;
+		display: block;
+	}
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	width: 100%;
+}
+
+@media screen and (max-width: 970px) {
+	.menu-side {
+		left: -60%;
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.menu-side {
+		left: -60%;
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 405px) {
+	.menu-side {
+		left: -70%;
+		width: 70%;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+		width: 100%;
+		height: 500px;
+		margin: auto;
+	}
 }
