@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Self replicator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+	body {
+		text-align: center;
+		width: 100%;
+	}
+	#box {
+		width: 1180px;
+		height: 500px;
+		margin-left: 5%;
+		border: 1px solid black;
+	}
+
+	.innerBoxH {
+		width: 49px;
+		height: 49px;
+		border: 1px solid black;
+		display: inline-block;
+		margin: 1px;
+	}
+
+	.innerBoxH:hover {
+		background-color: black;
+		cursor: pointer;
+	}
+
+
+</style>
+</head>
+<body>
+<div><h1>Self Replicating Machine</h1></div>
+<div id="box"></div>
+
+<script type="text/javascript">
+	//var userColor = prompt("enter the number of red");
+	//var box = document.createElement(addBox());
+	var row;
+	var color;
+	//document.getElementById('box').innerHTML = addbox();
+
+	//creates 9 vertical rows
+	for(var i=0;i<=8;i++) {
+		addBox("r" + i);
+	}
+
+	//add horizontal rows using unique id for each div
+	function addBox(row) {
+
+	//start self replicating engine
+			var div = document.createElement("div");
+
+		for(var i=0;i<=22;i++) {
+			//function to get random colors
+			var red = "red";
+			var green = "rgba(58, 215, 9, 1)";
+			var blue = "blue";
+			var yellow = "yellow";
+			var rn = Math.floor(Math.random()*10);
+
+			if(rn <= 3){
+				color = red;
+			}else if(rn <=5) {
+				color = blue;
+			}else if(rn <=8) {
+				color = yellow;
+			}else {
+				color = green;
+			}
+
+			div = document.createElement('div');
+			div.id = row +i;
+			div.className = "innerBoxH";
+			div.style.backgroundColor = color;
+			div.addEventListener("click", function() {
+				this.style.backgroundColor = "black";
+				//starts engine
+				var nextDiv = this.nextSibling;
+				var prevDiv = this.previousSibling;
+					if (nextDiv.style.backgroundColor == "red" || prevDiv.style.backgroundColor== "red"){
+						nextDiv.style.backgroundColor = "black";
+						prevDiv.style.backgroundColor = "black";
+						//nextMove
+						nextDiv = nextDiv.nextSibling;
+
+						if (nextDiv.style.backgroundColor == "red"){
+							nextDiv.style.backgroundColor = "black";
+							//nextMove
+							nextDiv = nextDiv.nextSibling;
+
+
+							if (nextDiv.style.backgroundColor == "red"){
+								nextDiv.style.backgroundColor = "black";
+								//nextMove
+								nextDiv = nextDiv.nextSibling;
+
+								if (nextDiv.style.backgroundColor == "red"){
+									nextDiv.style.backgroundColor = "black";
+
+								}
+							}
+						}
+					}
+
+
+			})
+
+			document.getElementById("box").appendChild(div);
+		}
+	}
+</script>
+</body>
+</html>
