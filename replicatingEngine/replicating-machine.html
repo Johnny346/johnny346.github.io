@@ -42,7 +42,6 @@
 <script type="text/javascript">
 	//var userColor = prompt("enter the number of red");
 	//var box = document.createElement(addBox());
-	var row;
 	var color;
 	var IDs = [];
 	var machine = [];
@@ -50,7 +49,7 @@
 	//document.getElementById('box').innerHTML = addbox();
 	//creates 9 vertical rows
 
-		addBox();
+	addBox();
 
 	//add horizontal rows using unique id for each div
 function addBox() {
@@ -69,7 +68,7 @@ function addBox() {
 		var yellow = "yellow";
 		var rn = Math.floor(Math.random()*10);
 		//assign color to div based on a random number
-		if(rn <= 4){
+		if(rn >= 1){
 			color = red;
 		}else if(rn <=5) {
 			color = blue;
@@ -86,27 +85,46 @@ function addBox() {
 
 		//add event listener to each div element
 		div.addEventListener("click", function() {
-			//add div to machine array
-			$(this).each(function(){
-				machine.push(this.id);
-			});
-			this.style.backgroundColor = "black";
-			var nextDiv = this.nextSibling;
-			var prevDiv = this.previousSibling;
-				//move right
-				var nID = this.id;
+				//add div to machine array
+				$(this).each(function(){
+					machine.push(this.id);
+				});
+				this.style.backgroundColor = "black";
+				var nextDiv = this.nextSibling;
+				var prevDiv = this.previousSibling;
+					//move right
+					var nID = this.id;
 
-			//run replicate function
-			replicate(nextDiv,prevDiv,nID);
-			alert(machine.length);
-			alert(redDivs.length);
+				//run replicate function
+				replicate(nextDiv,prevDiv,nID);
+				//alert(machine.length);
+				//alert(redDivs.length);
+				//check length of machine
+				if(machine.length <= redDivs.length){
+
+				var p = 0;
+					while(machine.length > p){
+						p++;
+						var nxtMachine = this.id;
+							nxtMachine = parseInt(nxtMachine)+ p;
+							nxtMachine = document.getElementById(nxtMachine);
+							$(nxtMachine).animate({
+											backgroundColor: "white"
+									}, 2000 );
+							$(nxtMachine).animate({
+									backgroundColor: "black"
+							}, 2000 );
+					}
+					//replicate next machine
+					//replicate(nxtMachine,prevDiv,nxtMachine);
+				}
 			})
 		//add div to box element
 		document.getElementById("box").appendChild(div);
 	}
 
 }
-alert(IDs.length);
+//alert(IDs.length);
 
 function replicate(nextDiv,prevDiv,nID){
 		if (nextDiv.style.backgroundColor == "red"){
@@ -232,23 +250,7 @@ function replicate(nextDiv,prevDiv,nID){
 		}*/
 }
 
-//check length of machine
-/*if(machine.length >= 4){
-	var nxtMachine;
 
-	nxtMachine = (this.id);
-	nxtMachine = document.getElementById(nxtMachine);
-
-	$(nxtMachine).animate({
-					backgroundColor: "white"
-			}, 1000 );
-	$(nxtMachine).animate({
-					backgroundColor: "black"
-			}, 1000 );
-	var prevDiv = nxtMachine.previousSibling;
-	//replicate next machine
-	replicate(nxtMachine,prevDiv,nxtMachine);
-}*/
 for(var i=0; i<=IDs.length; i++){
 	var redD = IDs[i+1];
 	redD = document.getElementById(redD);
