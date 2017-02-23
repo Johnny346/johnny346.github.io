@@ -97,7 +97,13 @@
 <p id="desciption">An element represents a single atom, this machine uses these atoms to build itself up based on local elements.</p>
 <p>This element represents the machine</p>
 <div class="innerBoxW" style="background-color:black"></div>
+<p>Qty of red elements is: <span id="red-count"></span></p>
+<p>Qty of blue elements is: <span id="blue-count"></span></p>
+<p>Qty of yellow elements is: <span id="yellow-count"></span></p>
+<p>Qty of green elements is: <span id="green-count"></span></p>
+<p>Machine size is: <span id="machine-count">0</span></p>
 <div class="container-fluid" id="box"></div>
+
 
 <script type="text/javascript">
 	//var userColor = prompt("enter the number of red");
@@ -107,6 +113,12 @@
 	var machine = [];
 	var redDivs = [];
 	var userColor;
+	var r = 0;
+	var b = 0;
+	var y = 0;
+	var g = 0;
+	var machineCount = document.getElementById("machine-count");
+
 	//document.getElementById('box').innerHTML = addbox();
 	//creates 9 vertical rows
 	addBox();
@@ -114,7 +126,7 @@
 function addBox() {
 //start self replicating engine
 	var div = document.createElement("div");
-	for(var i=0;i<=208;i++) {
+	for(var i=0;i<=206;i++) {
 		//add dev to id array
 		$(div).each(function(){
 			IDs.push(this.id);
@@ -128,12 +140,16 @@ function addBox() {
 		//assign color to div based on a random number
 		if(rn <= 4){
 			color = red;
+			r++;
 		}else if(rn <=5) {
 			color = blue;
+			b++;
 		}else if(rn <=8) {
 			color = yellow;
+			y++;
 		}else {
 			color = green;
+			g++;
 		}
 		//create div element
 		div = document.createElement('div');
@@ -142,17 +158,14 @@ function addBox() {
 		div.style.backgroundColor = color;
 		//add event listener to each div element
 		div.addEventListener("click", function() {
-				//add div to machine array
-				$(this).each(function(){
-					machine.push(this.id);
-				});
+
 				userColor = this.style.backgroundColor;
 				var nextDiv = this.nextSibling;
 				var prevDiv = this.previousSibling;
 					//move right
 					var nID = this.id;
-				var lstDiv = document.getElementById("208");
-				if(this.id == "208" || userColor == lstDiv.style.backgroundColor){
+				var lstDiv = document.getElementById("206");
+				if(this.id == "206" || userColor == lstDiv.style.backgroundColor){
 					$(lstDiv).animate({
 						backgroundColor: "white"
 					}, 2000 );
@@ -161,33 +174,12 @@ function addBox() {
 
 					}, 2000 );
 					lstDiv.className = "innerBoxW";
+
 				}else{}
 				//run replicate function
-				replicate(nextDiv,prevDiv,nID);
-				//alert(machine.length);
-				//alert(redDivs.length);
-				//check length of machine
-				if(machine.length <= redDivs.length){
-					var p = 0;
-					while(machine.length <= redDivs.length){
-						p++;
-						var nxtMachine = this.id;
-							nxtMachine = parseInt(nxtMachine)+ p;
-							nxtMachine = document.getElementById(nxtMachine);
-							if (nxtMachine.style.backgroundColor != userColor){
-							} else{
-								$(nxtMachine).animate({
-										backgroundColor: "white"
-										}, 2000 );
-								$(nxtMachine).animate({
-										backgroundColor: "black"
-								}, 2000 );
-							}
-					}
+				replicate();
 
-					//replicate next machine
-					replicate();
-				}
+
 			})
 		//add div to box element
 		document.getElementById("box").appendChild(div);
@@ -195,16 +187,17 @@ function addBox() {
 }
 //alert(IDs.length);
 function replicate(){
+	//add div to machine array
 
 	for(var i=0; i<=IDs.length-1; i++){
 		var redD = IDs[i+1];
 		var lstDiv = IDs.length-1;
 
-
 		redD = document.getElementById(redD);
 
 		//alert(lstDiv.id);
 		if(redD.style.backgroundColor == userColor){
+			machineCount.innerHTML = redDivs.length +2;
 				$(redD).each(function(){
 					redDivs.push(this.id);
 				});
@@ -220,7 +213,18 @@ function replicate(){
 		}
 
 	}
+	$(this).each(function(){
+			machine.push(this.id);
+		});
+
 }
+var showRCount = document.getElementById("red-count");
+	showRCount.innerHTML = r;
+var showBCount = document.getElementById("blue-count");
+	showBCount.innerHTML = b;
+var showYCount = document.getElementById("yellow-count");
+	showYCount.innerHTML = y;
+var showGCount = document.getElementById("green-count");
+	showGCount.innerHTML = g;
+
 </script>
-</body>
-</html>
