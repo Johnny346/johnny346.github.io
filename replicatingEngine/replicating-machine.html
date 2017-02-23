@@ -9,18 +9,19 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	<!--<link rel="stylesheet" href="style.css" />-->
 	<style>
 	body {
 		text-align: center;
-		width: 100%;
+		
 	}
-	#box {
-		width: 1180px;
-		height: 500px;
-		margin-left: 5%;
-		border: 1px solid black;
-	}
+#box {
+	width: 1180px;
+	height: 500px;
+	margin-left: 5%;
+	border: 1px solid black;
+}
 	.innerBoxH {
 		width: 49px;
 		height: 49px;
@@ -29,10 +30,59 @@
 		display: inline-block;
 		margin: 1px;
 	}
+	.innerBoxW {
+		width: 49px;
+		height: 49px;
+		border-radius: 25%;
+		margin: 1px;
+		display: inline-block;
+	}
 	.innerBoxH:hover {
-		background-color: black;
+		background-color: blue;
+		border-radius: 25%;
 		cursor: pointer;
 	}
+
+@media screen and (max-width:1170px){
+		#box {
+			width: 90%;
+			height: auto;
+		}
+		.innerBoxH {
+			width: 49px;
+			height: 49px;
+			border: 1px solid black;
+			border-radius: 50%;
+			display: inline-block;
+			margin: 1px;
+		}
+		.innerBoxW {
+			width: 49px;
+			height: 49px;
+			border-radius: 25%;
+			margin: 1px;
+			display: inline-block;
+		}
+		
+}@media screen and (max-width:450px){
+		
+		.innerBoxH {
+			width: 29px;
+			height: 29px;
+			border: 1px solid black;
+			border-radius: 50%;
+			display: inline-block;
+			margin: 1px;
+		}
+		.innerBoxW {
+			width: 29px;
+			height: 29px;
+			border-radius: 25%;
+			margin: 1px;
+			display: inline-block;
+		}
+		
+}
 </style>
 </head>
 <body>
@@ -118,6 +168,7 @@ function addBox() {
 								$(nxtMachine).animate({
 										backgroundColor: "black"
 								}, 2000 );
+
 							}
 					}
 			
@@ -146,15 +197,12 @@ function replicate(){
 				}, 2000 );
 				$(redD).animate({
 						backgroundColor: "black"
+						
 				}, 2000 );
-					
+				redD.className = "innerBoxW";	
 		}
 	}
 }
-
-
-
-
 </script>
 </body>
 </html>
