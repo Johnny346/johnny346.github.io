@@ -64,8 +64,7 @@
 			display: inline-block;
 		}
 		
-}
-@media screen and (max-width:450px){
+}@media screen and (max-width:450px){
 		
 		.innerBoxH {
 			width: 29px;
@@ -83,6 +82,7 @@
 			display: inline-block;
 		}
 		
+		
 }
 #desciption {
 	padding: 5%;
@@ -92,9 +92,9 @@
 <body>
 <div><h1>Self Replicating Machine</h1></div>
 <br/>
-<div><h4>Developed from the ideas of John Von Neumanns self replicating machines</h4></div>
+<div><h3>Developed from the ideas John Von Neumanns self replicating machines</h3></div>
 <p>Click on the Element to build the machine</p>
-<p id="desciption">An element represents a single atom, this machine uses these atoms to build itself up based on local elements.</p>
+<p id="desciption">An elememt represents a sinlge atom, and this machine uses these atoms to build itself up based on local elements.</p>
 <div id="box"></div>
 
 <script type="text/javascript">
@@ -153,7 +153,17 @@ function addBox() {
 				var prevDiv = this.previousSibling;
 					//move right
 					var nID = this.id;
-
+				var lstDiv = document.getElementById("206");
+				if(this.id == "206"){
+				$(lstDiv).animate({
+					backgroundColor: "white"
+				}, 2000 );
+				$(lstDiv).animate({
+						backgroundColor: "black"
+						
+				}, 2000 );
+					lstDiv.className = "innerBoxW";
+				}else{}
 				//run replicate function
 				replicate(nextDiv,prevDiv,nID);
 				//alert(machine.length);
@@ -195,11 +205,13 @@ function replicate(){
 		
 	for(var i=0; i<=IDs.length-1; i++){
 		var redD = IDs[i+1];
-		 redD++;
+		var lstDiv = IDs.length-1;
+		
 		
 		redD = document.getElementById(redD);
-		if(redD.style.backgroundColor == userColor){
 		
+		//alert(lstDiv.id);
+		if(redD.style.backgroundColor == userColor){
 				$(redD).each(function(){
 					redDivs.push(this.id);
 				});
@@ -213,6 +225,7 @@ function replicate(){
 				redD.className = "innerBoxW";
 				
 		}
+		
 	}
 }
 </script>
