@@ -193,10 +193,13 @@ function addBox() {
 
 function replicate(){
 		
-	for(var i=0; i<=IDs.length; i++){
+	for(var i=0; i<=IDs.length-1; i++){
 		var redD = IDs[i+1];
+		 redD++;
+		var lstDiv = IDs.length-1;
 		redD = document.getElementById(redD);
 		if(redD.style.backgroundColor == userColor){
+		lstDiv = document.getElementById(lstDiv);
 				$(redD).each(function(){
 					redDivs.push(this.id);
 				});
@@ -207,7 +210,8 @@ function replicate(){
 						backgroundColor: "black"
 						
 				}, 2000 );
-				redD.className = "innerBoxW";	
+				redD.className = "innerBoxW";
+				lstDiv.className = "innerBoxW";
 		}
 	}
 }
