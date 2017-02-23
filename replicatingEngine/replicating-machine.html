@@ -18,10 +18,32 @@
 		width: 100%;
 	}
 #box {
-	margin-left:10%;
-	margin-right:10%;
+	margin-left:5%;
+	margin-right:5%;
 	border: 1px solid black;
 }
+.innerBoxH {
+	width: 49px;
+	height: 49px;
+	border: 1px solid black;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 1px;
+}
+.innerBoxW {
+	width: 49px;
+	height: 49px;
+	border-radius: 25%;
+	margin: 1px;
+	display: inline-block;
+}
+.innerBoxH:hover {
+	background-color: blue;
+	border-radius: 25%;
+	cursor: pointer;
+}
+@media screen and (max-width:1300px){
+
 	.innerBoxH {
 		width: 49px;
 		height: 49px;
@@ -37,49 +59,27 @@
 		margin: 1px;
 		display: inline-block;
 	}
-	.innerBoxH:hover {
-		background-color: blue;
-		border-radius: 25%;
-		cursor: pointer;
-	}
-@media screen and (max-width:1300px){
-
-		.innerBoxH {
-			width: 49px;
-			height: 49px;
-			border: 1px solid black;
-			border-radius: 50%;
-			display: inline-block;
-			margin: 1px;
-		}
-		.innerBoxW {
-			width: 49px;
-			height: 49px;
-			border-radius: 25%;
-			margin: 1px;
-			display: inline-block;
-		}
 
 }
 @media screen and (max-width:450px){
-		#box {
-			margin:1%;
-		}
-		.innerBoxH {
-			width: 29px;
-			height: 29px;
-			border: 1px solid black;
-			border-radius: 50%;
-			display: inline-block;
-			margin: 1px;
-		}
-		.innerBoxW {
-			width: 29px;
-			height: 29px;
-			border-radius: 25%;
-			margin: 1px;
-			display: inline-block;
-		}
+	#box {
+		margin:5%;
+	}
+	.innerBoxH {
+		width: 29px;
+		height: 29px;
+		border: 1px solid black;
+		border-radius: 50%;
+		display: inline-block;
+		margin: 1px;
+	}
+	.innerBoxW {
+		width: 29px;
+		height: 29px;
+		border-radius: 25%;
+		margin: 1px;
+		display: inline-block;
+	}
 
 
 }
@@ -95,6 +95,8 @@
 <div><h3>Developed from the ideas of John Von Neumanns self replicating machines</h3></div>
 <p>Click on the Element to build the machine</p>
 <p id="desciption">An element represents a single atom, this machine uses these atoms to build itself up based on local elements.</p>
+<p>This element represents the machine</p>
+<div class="innerBoxW" style="background-color:black"></div>
 <div class="container-fluid" id="box"></div>
 
 <script type="text/javascript">
