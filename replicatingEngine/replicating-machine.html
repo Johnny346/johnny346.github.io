@@ -1,27 +1,28 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Self replicator</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-	<!--<link rel="stylesheet" href="style.css" />-->
-	<style>
-	body {
-		text-align: center;
-		width: 100%;
-	}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Self replicator</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<!--<link rel="stylesheet" href="style.css" />-->
+<style>
+body {
+	text-align: center;
+	width: 100%;
+}
+
 #box {
 	margin-left:5%;
 	margin-right:5%;
 	border: 1px solid black;
 }
+
 .innerBoxH {
 	width: 49px;
 	height: 49px;
@@ -30,6 +31,7 @@
 	display: inline-block;
 	margin: 1px;
 }
+
 .innerBoxW {
 	width: 49px;
 	height: 49px;
@@ -37,13 +39,14 @@
 	margin: 1px;
 	display: inline-block;
 }
+
 .innerBoxH:hover {
 	background-color: blue;
 	border-radius: 25%;
 	cursor: pointer;
 }
-@media screen and (max-width:1300px){
 
+@media screen and (max-width:1300px){
 	.innerBoxH {
 		width: 49px;
 		height: 49px;
@@ -59,8 +62,8 @@
 		margin: 1px;
 		display: inline-block;
 	}
-
 }
+
 @media screen and (max-width:450px){
 	#box {
 		margin:5%;
@@ -80,132 +83,122 @@
 		margin: 1px;
 		display: inline-block;
 	}
-
-
 }
+
 #desciption {
 	padding-left: 5%;
 	padding-right:5%;
 }
+
 </style>
+
 </head>
 <body>
-<div><h1>Self Replicating Machine</h1></div>
-<br/>
-<div><h3>Developed from the ideas of John Von Neumanns self replicating machines</h3></div>
-<p>Click on the Element to build the machine</p>
-<p id="desciption">An element represents a single atom, this machine uses these atoms to build itself up based on local elements.</p>
-<p>This element represents the machine</p>
-<div class="innerBoxW" style="background-color:black"></div>
-<p>Qty of red elements is: <span id="red-count"></span></p>
-<p>Qty of blue elements is: <span id="blue-count"></span></p>
-<p>Qty of yellow elements is: <span id="yellow-count"></span></p>
-<p>Qty of green elements is: <span id="green-count"></span></p>
-<p>Machine size is: <span id="machine-count">0</span></p>
-<div class="container-fluid" id="box"></div>
+	<h1>Self Replicating Machine</h1>
+	<br/>
+	<h3>Developed from the ideas of Von Neumanns self replicating machines</h3>
+	<p id="desciption">An element represents a single atom, this machine uses these atoms to build itself up based on local elements</p>
+	<p>These machines in theory could continue to build them selfs with enough resources</p>
+	<p>Click on the Elements to build the machine</p>
+	<p>This element represents the machine</p>
+	<div class="innerBoxW" style="background-color:black"></div>
+	<p>Qty of red elements is: <span id="red-count"></span></p>
+	<p>Qty of blue elements is: <span id="blue-count"></span></p>
+	<p>Qty of yellow elements is: <span id="yellow-count"></span></p>
+	<p>Qty of green elements is: <span id="green-count"></span></p>
+	<p>Machine size is: <span id="machine-count">0</span> elements</p>
+	<div class="container-fluid" id="box"></div>
+	<script type="text/javascript">
 
+		var color;
+		var IDs = [];
+		var machine = [];
+		var redDivs = [];
+		var userColor;
+		var r = 0;
+		var b = 0;
+		var y = 0;
+		var g = 0;
+		var machineCount = document.getElementById("machine-count");
 
-<script type="text/javascript">
-	//var userColor = prompt("enter the number of red");
-	//var box = document.createElement(addBox());
-	var color;
-	var IDs = [];
-	var machine = [];
-	var redDivs = [];
-	var userColor;
-	var r = 0;
-	var b = 0;
-	var y = 0;
-	var g = 0;
-	var machineCount = document.getElementById("machine-count");
-
-	//document.getElementById('box').innerHTML = addbox();
-	//creates 9 vertical rows
-	addBox();
-	//add horizontal rows using unique id for each div
-function addBox() {
-//start self replicating engine
-	var div = document.createElement("div");
-	for(var i=0;i<=206;i++) {
-		//add dev to id array
-		$(div).each(function(){
-			IDs.push(this.id);
-		});
-		//get random colors
-		var red = "red";
-		var green = "green";
-		var blue = "blue";
-		var yellow = "yellow";
-		var rn = Math.floor(Math.random()*10);
-		//assign color to div based on a random number
-		if(rn <= 4){
-			color = red;
-			r++;
-		}else if(rn <=5) {
-			color = blue;
-			b++;
-		}else if(rn <=8) {
-			color = yellow;
-			y++;
-		}else {
-			color = green;
-			g++;
-		}
-		//create div element
-		div = document.createElement('div');
-		div.id = i;
-		div.className = "innerBoxH";
-		div.style.backgroundColor = color;
-		//add event listener to each div element
-		div.addEventListener("click", function() {
+		addBox();
+		//add horizontal rows using unique id for each div
+	function addBox() {
+	//start self replicating engine
+		var div = document.createElement("div");
+		for(var i=0;i<=206;i++) {
+			//add dev to id array
+			$(div).each(function(){
+				IDs.push(this.id);
+			});
+			//get random colors
+			var red = "red";
+			var green = "green";
+			var blue = "blue";
+			var yellow = "yellow";
+			var rn = Math.floor(Math.random()*10);
+			//assign color to div based on a random number
+			if(rn <= 4){
+				color = red;
+				r++;
+			}else if(rn <=5) {
+				color = blue;
+				b++;
+			}else if(rn <=8) {
+				color = yellow;
+				y++;
+			}else {
+				color = green;
+				g++;
+			}
+			//create div element
+			div = document.createElement('div');
+			div.id = i;
+			div.className = "innerBoxH";
+			div.style.backgroundColor = color;
+			//add event listener to each div element
+			div.addEventListener("click", function() {
 
 				userColor = this.style.backgroundColor;
-				var nextDiv = this.nextSibling;
-				var prevDiv = this.previousSibling;
-					//move right
-					var nID = this.id;
 				var lstDiv = document.getElementById("206");
+
+				//check if id clicked is the last id and if so add to machine count array
 				if(this.id == "206" || userColor == lstDiv.style.backgroundColor){
 					$(this).each(function(){
 						redDivs.push(this.id);
-					});	
+					});
 					$(lstDiv).animate({
 						backgroundColor: "white"
 					}, 2000 );
 					$(lstDiv).animate({
 							backgroundColor: "black"
-
 					}, 2000 );
 					lstDiv.className = "innerBoxW";
-
-				}else{}
+				}
 				//run replicate function
 				replicate();
-
-
 			})
-		//add div to box element
-		document.getElementById("box").appendChild(div);
+			//add div to box element
+			document.getElementById("box").appendChild(div);
+		}
 	}
-}
-//alert(IDs.length);
-function replicate(){
-	//add div to machine array
 
-	for(var i=0; i<=IDs.length-1; i++){
-		var redD = IDs[i+1];
-		var lstDiv = IDs.length-1;
+	function replicate(){
+		//add div to machine array
+		for(var i=0; i<=IDs.length-1; i++){
+			var redD = IDs[i+1];
 
-		redD = document.getElementById(redD);
 
-		//alert(lstDiv.id);
-		if(redD.style.backgroundColor == userColor){
-			machineCount.innerHTML = redDivs.length +1;
-				$(redD).each(function(){
-					redDivs.push(this.id);
-				});
-			   $(redD).animate({
-					backgroundColor: "white"
+			redD = document.getElementById(redD);
+
+			if(redD.style.backgroundColor == userColor){
+				//show machine count to user
+				machineCount.innerHTML = redDivs.length +1;
+					$(redD).each(function(){
+						redDivs.push(this.id);
+					});
+				$(redD).animate({
+						backgroundColor: "white"
 				}, 2000 );
 				$(redD).animate({
 						backgroundColor: "black"
@@ -213,24 +206,25 @@ function replicate(){
 				}, 2000 );
 				redD.className = "innerBoxW";
 
-		}
+			}
 
-	}
-	$(this).each(function(){
+		}
+		$(this).each(function(){
 			machine.push(this.id);
 		});
 
-}
-var showRCount = document.getElementById("red-count");
-	showRCount.innerHTML = r;
-var showBCount = document.getElementById("blue-count");
-	showBCount.innerHTML = b;
-var showYCount = document.getElementById("yellow-count");
-	showYCount.innerHTML = y;
-var showGCount = document.getElementById("green-count");
-	showGCount.innerHTML = g;
+	}
+	//show color count to user
+	var showRCount = document.getElementById("red-count");
+		showRCount.innerHTML = r;
+	var showBCount = document.getElementById("blue-count");
+		showBCount.innerHTML = b;
+	var showYCount = document.getElementById("yellow-count");
+		showYCount.innerHTML = y;
+	var showGCount = document.getElementById("green-count");
+		showGCount.innerHTML = g;
 
-</script>
+	</script>
 </body>
 </html>
 	
