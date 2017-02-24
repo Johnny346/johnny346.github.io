@@ -166,6 +166,9 @@ function addBox() {
 					var nID = this.id;
 				var lstDiv = document.getElementById("206");
 				if(this.id == "206" || userColor == lstDiv.style.backgroundColor){
+					$(this).each(function(){
+						redDivs.push(this.id);
+					});	
 					$(lstDiv).animate({
 						backgroundColor: "white"
 					}, 2000 );
