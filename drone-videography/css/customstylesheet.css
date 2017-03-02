@@ -2,12 +2,10 @@ body {
 	margin: 0 auto;
 	font-size: 16px;
 	line-height: 1.5;
-	background-color: #e9f9f6;
 }
 
 #page {
 	width: 100%;
-	text-align: center;
 }
 
 #headerNav {
@@ -21,6 +19,7 @@ body {
 	width: 80%;
 	display: inline-block;
 	float: right;
+	text-align: center;
 }
 
 /*navigation menu*/
@@ -46,9 +45,9 @@ body {
 }
 
 .menu-side {
-	background-color: rgba(126, 180, 178, 1);
+	background-color: rgba(144, 185, 180, 1);
 	border-left: 1px solid #000;
-	color: #000000;
+	color: #ffffff;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -72,7 +71,7 @@ body {
 }
 
 .list-nav a {
-	color: #000000;
+	color: #ffffff;
 	text-decoration: none;
 	font-size: 1.3em;
 	display: block;
@@ -86,7 +85,7 @@ body {
 }
 
 .navbar-nav li a {
-	color: #000000;
+	color: #ffffff;
 	text-decoration: none;
 	font-size: 1.3em;
 	display: block;
@@ -131,6 +130,45 @@ body {
 	padding: 0;
 }
 
+#section2-about, #section3-services,#section4-pricing, #section5-equipment, #section6-faq, #section7-contact {
+	padding: 5%;
+	height: 500px;
+	background-color: #efefef;
+	color: #000000;
+}
+
+#priceInput {
+	color: black;
+}
+.container-box {
+	padding: 5%;
+}
+
+.hide-projects {
+	display: none;
+}
+
+.show-projects {
+	display: block;
+	transition: all .2s ease-out;
+}
+
+#section4-pricing {
+	height: auto;
+}
+
+#section2-about h2, #section3-services h2,#section4-pricing h2, #section5-equipment h2, #section6-faq h2, #section7-contact h2 {
+	padding: 1%;
+	border: 4px solid #40C1E6;
+	margin-left: 35%;
+	margin-right: 35%;
+}
+
+footer {
+	margin-right: 1.4%;
+	margin-left: 1.4%;
+}
+
 @media screen and (max-width: 1070px) {
 	.menu-side {
 		left: -20%;
@@ -170,6 +208,11 @@ body {
 		width: 100%;
 		display: block;
 	}
+
+	footer {
+		margin-right: 1.6%;
+		margin-left: 1.6%;
+	}
 }
 
 .carousel-inner > .item > img,
@@ -191,6 +234,16 @@ body {
 	.menu-side {
 		left: -60%;
 	}
+
+	#section2-about h2, #section3-services h2,#section4-pricing h2, #section5-equipment h2, #section6-faq h2, #section7-contact h2 {
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+
+	#section2-about, #section3-services,#section4-pricing, #section5-equipment, #section6-faq, #section7-contact {
+		height: 100%;
+	}
+
 }
 
 @media screen and (max-width: 405px) {
