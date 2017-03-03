@@ -19,10 +19,11 @@
 			<h3>NimbleDrones</h3>
 			<a class="menu-toggle" href="#">Menu</a>
 		</div>
-
 			<nav class="menu-side navbar ">
-				<img src="http://s20.postimg.org/u3j26tsdp/broken_landscape.jpg" alt="Chania" width="100" height="100">
+				<img src="images/dr.png" alt="Logo" width="220" height="150">
 				<!--<h3>Nimble Drones</h3>-->
+				<br/>
+				<br/>
 				<div class="list-nav">
 					<ul class="nav navbar-nav">
 						<li><a href="#section1">Projects</a></li>
@@ -30,14 +31,13 @@
 						<li><a href="#section3-services">Services</a></li>
 						<li><a href="#section4-pricing">Pricing</a></li>
 						<li><a href="#section5-equipment">Equipment</a></li>
-						<li><a href="#section6-faq">Faq + Safety standards</a></li>
+						<li><a href="#section6-faq">FAQ and Safety</a></li>
 						<!--<li><a href="about.html">Project Stats</a></li>-->
 						<li><a href="#section7-contact">Contact</a></li>
 						<!--<li><a href="contactform.html">Weather Forecast</a></li>-->
 					</ul>
 				</div>
 			</nav>
-
 		<div id="pageContent">
 			<div class="container-fluid" id="carousel-section">
 				<!-- carousel section -->
@@ -117,7 +117,7 @@
 						<div class="col-sm-4">
 							<div class="thumbnail container-box">
 								<a href="http://johnny346.github.io/murphys-goat-farm/index.html">
-									<img src="images/pd.jpg" alt="website goat farm house cheese page">
+									<img src="images/dr.png" alt="website goat farm house cheese page">
 								</a>
 								<div class="caption">
 									<a href="http://johnny346.github.io/murphys-goat-farm/index.html">
@@ -245,14 +245,10 @@
 					<p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo cunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 				<!--Price calculator section-->
 					<div data-ng-app="" data-ng-init="quantity=1;price=40">
-
 						<h2>Cost Calculator</h2>
-
 						Hours: <input id="priceInput" type="number" ng-model="quantity">
 						<h3>Price per hour: 40</h3>
-
 						<p><b>Total in Euro:</b> {{quantity * price}}</p>
-
 					</div>
 				</section>
 			</div>
@@ -287,11 +283,8 @@
 					<div class="container">
 						<div class="navbar-text pull-left ">
 							<div class="navbar-details">
-								<p>
-								<script>var year = new Date();document.write("&copy;" + " " + year.getFullYear() + " " + "All Rights Reserved.");</script>
-								</p>
-								<p>Johnnymul346@gmail.com</p>
-								<p>+353879007991</p>
+								<p>NimbleDrones@gmail.com</p>
+								<p><script>var year = new Date();document.write("&copy;" + " " + year.getFullYear() + " " + "All Rights Reserved");</script></p>
 							</div>
 						</div>
 						<div class="navbar-text navbar-footer pull-right">
@@ -310,19 +303,15 @@
 				var body = $("body");
 				$(".menu-toggle").bind("click", function(){
 					body.toggleClass("menu-open");
-
 					if (body.hasClass("menu-open")){
 						var page = $("demo");
-
 						$(".demo").bind("click", function(){
 							body.toggleClass("menu-open");
 							body.removeClass("menu-open");
 							})
 					}
-
 					return false;
 					})
-
 				})();
 		</script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -347,11 +336,7 @@
 						$("#extra-projects").fadeIn(1000);
 						extraPojects = document.getElementById("extra-projects").className = "display-projects";
 						projectDisplay.innerHTML = "Projects";
-
 				}
 			}
-
-
-
 	</script>
 </html>
