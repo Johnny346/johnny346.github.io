@@ -266,8 +266,8 @@ body {
 	}
 
 	#logo-img {
-	width: 90%;
-}
+		width: 90%;
+	}
 
 }
 
@@ -278,6 +278,12 @@ body {
 	}
 	#menuHead a {
 		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 460px) {
+
+	#pageContent {
+		margin-top: 10%;
 	}
 }
 
