@@ -62,8 +62,23 @@ body {
 	display: none;
 }
 
+#menuHead {
+	background-color: rgba(85, 87, 102, 1);
+	color: #ffffff;
+}
+
+#menuHead a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
 .container {
 	width: 100%;
+}
+
+.container-fluid {
+		padding: 0;
+		margin: 0;
 }
 
 .list-nav {
@@ -228,6 +243,11 @@ footer {
 	ul.navbar-nav {
 		margin:.2em;
 	}
+
+	footer {
+		margin: 0;
+	}
+
 }
 
 @media screen and (max-width: 650px) {
@@ -244,12 +264,24 @@ footer {
 		height: 100%;
 	}
 
+	#pageContent {
+		width: 100%;
+	}
+
+	.container-fluid {
+		padding: 0;
+		margin: 0;
+	}
+
 }
 
 @media screen and (max-width: 405px) {
 	.menu-side {
 		left: -70%;
 		width: 60%;
+	}
+	#menuHead a {
+		margin-top: 20px;
 	}
 }
 
