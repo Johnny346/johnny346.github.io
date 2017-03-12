@@ -65,10 +65,17 @@
 	button1.addEventListener("click",q1);
 
 	function q1() {
-		section1.className = "hide";
-		s1.className = "nobckGroundLI";
-		section2.className = "show";
-		s2.className = "bckGroundLI";
+		var errorMsg = document.getElementById("error1");
+
+		if (!document.getElementById('r1').checked && !document.getElementById('r2').checked) {
+			errorMsg.innerHTML = "you must select one";
+		}else if(document.getElementById('r1').checked || document.getElementById('r2').checked){
+			section1.className = "hide";
+			s1.className = "nobckGroundLI";
+			section2.className = "show";
+			s2.className = "bckGroundLI";
+		}
+
 	}
 
 	//question2 section
@@ -76,10 +83,16 @@
 	button2.addEventListener("click",q2);
 
 	function q2() {
-		section2.className = "hide";
-		s2.className = "nobckGroundLI";
-		section3.className = "show";
-		s3.className = "bckGroundLI";
+		var errorMsg = document.getElementById("error2");
+		if(!document.getElementById('qs2a1').checked && !document.getElementById('qs2a2').checked){
+			errorMsg.innerHTML = "you must select one";
+		}else if(document.getElementById('qs2a1').checked || document.getElementById('qs2a2').checked){
+			section2.className = "hide";
+			s2.className = "nobckGroundLI";
+			section3.className = "show";
+			s3.className = "bckGroundLI";
+		}
+
 	}
 
 	//question3 section
