@@ -13,48 +13,7 @@
 	var section4= document.getElementById("section4");
 	var section5= document.getElementById("section5");
 
-	//setting event listeners to Qs buttons
-	s1.addEventListener("click",showQs1);
-	function showQs1() {
-			section1.className = "show";
-			section2.className = "hide";
-			section3.className = "hide";
-			section4.className = "hide";
-			section5.className = "hide";
-	}
 
-	s2.addEventListener("click",showQs2);
-	function showQs2() {
-			section1.className = "hide";
-			section2.className = "show";
-			section3.className = "hide";
-			section4.className = "hide";
-			section5.className = "hide";
-	}
-	s3.addEventListener("click",showQs3);
-	function showQs3() {
-			section1.className = "hide";
-			section2.className = "hide";
-			section3.className = "show";
-			section4.className = "hide";
-			section5.className = "hide";
-	}
-	s4.addEventListener("click",showQs4);
-	function showQs4() {
-			section1.className = "hide";
-			section2.className = "hide";
-			section3.className = "hide";
-			section4.className = "show";
-			section5.className = "hide";
-	}
-	s5.addEventListener("click",showQs5);
-	function showQs5() {
-			section1.className = "hide";
-			section2.className = "hide";
-			section3.className = "hide";
-			section4.className = "hide";
-			section5.className = "show";
-	}
 
 	//set background color for active Qs link
 	s1.className = "bckGroundLI";
@@ -150,6 +109,49 @@
 		var answer4;
 		var answer5;
 
+		//setting event listeners to Qs buttons
+	s1.addEventListener("click",showQs1);
+	function showQs1() {
+			section1.className = "show";
+			section2.className = "hide";
+			section3.className = "hide";
+			section4.className = "hide";
+			section5.className = "hide";
+	}
+
+	s2.addEventListener("click",showQs2);
+	function showQs2() {
+			section1.className = "hide";
+			section2.className = "show";
+			section3.className = "hide";
+			section4.className = "hide";
+			section5.className = "hide";
+	}
+	s3.addEventListener("click",showQs3);
+	function showQs3() {
+			section1.className = "hide";
+			section2.className = "hide";
+			section3.className = "show";
+			section4.className = "hide";
+			section5.className = "hide";
+	}
+	s4.addEventListener("click",showQs4);
+	function showQs4() {
+			section1.className = "hide";
+			section2.className = "hide";
+			section3.className = "hide";
+			section4.className = "show";
+			section5.className = "hide";
+	}
+	s5.addEventListener("click",showQs5);
+	function showQs5() {
+			section1.className = "hide";
+			section2.className = "hide";
+			section3.className = "hide";
+			section4.className = "hide";
+			section5.className = "show";
+	}
+
 		var qs5 = document.getElementById("qs5").value;
 		var errorMsg = document.getElementById("error5");
 		//qs1
@@ -209,6 +211,12 @@
 			if(count < 5){
 				var section6FeedBack = document.getElementById("section6");
 				section6FeedBack.className = "section6";
+			}
+			var feedbackf = document.getElementById("feedbackMsg");
+			if(count >= 3){
+				feedbackf.innerHTML = "Well Done";
+			}else{
+				feedbackf.innerHTML = "Better luck next time";
 			}
 		}else {
 			//tell user to enter text
