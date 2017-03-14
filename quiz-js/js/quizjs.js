@@ -323,6 +323,8 @@
 			s3.className = "bckGroundLI";
 			s4.className = "bckGroundLI";
 			s5.className = "bckGroundLI";
+		var quizHeading = document.getElementById("quiz-heading");
+			quizHeading.className = "hide";
 		//show answers and feedback
 
 		var fbm1 = document.getElementById("fbm1");
