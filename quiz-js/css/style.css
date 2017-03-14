@@ -67,10 +67,20 @@ li a {
 	display: block;
 }
 
+.bckGroundLIR {
+	background-color: red;
+	border-radius: 20px;
+}
+
 .bckGroundLI {
 	background-color: lightblue;
+	border-radius: 20px;
 }
 
 .nobckGroundLI {
 	background-color: none;
+}
+
+.Qs {
+	padding: 8px;
 }

@@ -13,10 +13,22 @@
 		<h1>Quiz</h1>
 		<h2>On The Internet</h2>
 		<p>Take the quiz and test your general knowledge about the Internet</p>
+		<p>You can click back a question to review or change your answer!</p>
 		<br/>
 	</header>
 	<section>
-		<h2>Answer all sections</h2>
+		<section id="section6" class="hide">
+			<!--result and feedback-->
+			<h2 id="feedbackMsg"></h2>
+			<h3>Your Score: <span id="correctAns"></span>/5</h3>
+			<hr/>
+			<p>Qs1: <span id="fbm1"></span></p>
+			<p>Qs2: <span id="fbm2"></span></p>
+			<p>Qs3: <span id="fbm3"></span></p>
+			<p>Qs4: <span id="fbm4"></span></p>
+			<p>Qs5: <span id="fbm5"></span></p>
+		</section>
+		<h3>Answer all sections</h3>
 		<!--Quiz section-->
 		<ul id="showQuestion">
 			<!--links to other questions-->
@@ -28,7 +40,7 @@
 		</ul>
 		<section id="section1" class="show">
 			<!-- questions 1-->
-			<h3>Qs1  Which is larger a Terabyte or Petabyte?</h3>
+			<h3><span class="Qs">Qs1</span>  Which is larger a Terabyte or Petabyte?</h3>
 			<form name="qs1Form" id="form1">
 				<input type="radio" name="qs1" id="r1" value="Tbyte"> Terabyte<br/>
 				<input type="radio" name="qs1" id="r2" value="Pbyte"> Petabyte<br/>
@@ -40,7 +52,7 @@
 
 		<section id="section2" class="hide">
 			<!-- questions 2-->
-			<h3>Qs2  What is an ISP?</h3>
+			<h3><span class="Qs">Qs2</span> What is an ISP?</h3>
 			<form name="qs2Form" id="form2">
 				<input type="radio" name="qs2" id="qs2a1" value="answer1">A piece of computer equipment that allows you to communicate with other computers <br/>
 				<input type="radio" name="qs2" id="qs2a2" value="answer2">Internet Service Provider<br/>
@@ -52,7 +64,7 @@
 
 		<section id="section3" class="hide">
 			<!-- questions 3-->
-			<h3>Qs3  What is the most popular browser?</h3>
+			<h3><span class="Qs">Qs3</span> What is the most popular browser?</h3>
 			<ul>
 				<li>Firefox</li>
 				<li>Chrome</li>
@@ -60,7 +72,7 @@
 				<li>Opera</li>
 				<li>Safari</li>
 			</ul>
-			<input id="qs3" type="text" name="thirdQs" required/>
+			<input id="qs3" type="text" name="thirdQs" maxlength="13" required/>
 			<p id="error3"></p>
 			<br/>
 			<button type="button" id="button3">Submit</button>
@@ -68,8 +80,8 @@
 
 		<section id="section4" class="hide">
 			<!-- questions 4-->
-			<h3>Qs4  True or false, HTTP stands for Hyper Text Transfor Protocol?</h3>
-			<input id="qs4" type="text" name="forthQs" required/>
+			<h3><span class="Qs">Qs4</span> True or false, HTTP stands for Hyper Text Transfor Protocol?</h3>
+			<input id="qs4" type="text" name="forthQs" maxlength="6" required/>
 			<p id="error4"></p>
 			<br/>
 			<button type="button" id="button4">Submit</button>
@@ -77,23 +89,11 @@
 
 		<section id="section5" class="hide">
 			<!-- questions 5-->
-			<h3>Qs5  True or false, The internet is more than 37 years old?</h3>
-			<input id="qs5" type="text" name="fifthQs" required/>
+			<h3><span class="Qs">Qs5</span> True or false, The internet is more than 37 years old?</h3>
+			<input id="qs5" type="text" name="fifthQs" maxlength="6" required/>
 			<p id="error5"></p>
 			<br/>
 			<button type="button" id="button5">Final Submit</button>
-		</section>
-
-		<section id="section6" class="hide">
-			<!--result and feedback-->
-			<h2 id="feedbackMsg"></h2>
-			<h3>Your Score: <span id="correctAns"></span>/5</h3>
-			<hr/>
-			<p>Qs1: <span id="fbm1"></span></p>
-			<p>Qs2: <span id="fbm2"></span></p>
-			<p>Qs3: <span id="fbm3"></span></p>
-			<p>Qs4: <span id="fbm4"></span></p>
-			<p>Qs5: <span id="fbm5"></span></p>
 		</section>
 	</section>
 

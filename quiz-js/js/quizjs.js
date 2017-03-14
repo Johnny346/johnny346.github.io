@@ -34,6 +34,17 @@
 			section2.className = "show";
 			s2.className = "bckGroundLI";
 		}
+			//setting event listeners to Qs buttons
+	s1.addEventListener("click",showQs1);
+	function showQs1() {
+			section1.className = "show";
+			section2.className = "hide";
+			section3.className = "hide";
+			section4.className = "hide";
+			section5.className = "hide";
+			//show button clicked
+			s1.className = "bckGroundLIR";
+	}
 
 	}
 
@@ -52,6 +63,18 @@
 			s3.className = "bckGroundLI";
 		}
 
+	s2.addEventListener("click",showQs2);
+	function showQs2() {
+			section1.className = "hide";
+			section2.className = "show";
+			section3.className = "hide";
+			section4.className = "hide";
+			section5.className = "hide";
+			//show button clicked
+			s2.className = "bckGroundLIR";
+
+	}
+
 	}
 
 	//question3 section
@@ -62,19 +85,39 @@
 	function q3() {
 		var errorMsg = document.getElementById("error3");
 		var qs3 = document.getElementById("qs3").value;
-		if(qs3.length > 0){
+		if(qs3.length < 5){
+			section3.className = "show";
+			//tell user to enter text
+			errorMsg.innerHTML = "you must enter text";
+		}else {
 			//clear error message
 			section3.className = "hide";
 			s3.className = "nobckGroundLI";
 			errorMsg.innerHTML = "";
 			section4.className = "show";
 			s4.className = "bckGroundLI";
-		}else {
-			section3.className = "show";
-			//tell user to enter text
-			errorMsg.innerHTML = "you must enter text";
 		}
 
+	s2.addEventListener("click",showQs2);
+	function showQs2() {
+			section1.className = "hide";
+			section2.className = "show";
+			section3.className = "hide";
+			section4.className = "hide";
+			section5.className = "hide";
+			//show button clicked
+			s2.className = "bckGroundLIR";
+	}
+	s3.addEventListener("click",showQs3);
+	function showQs3() {
+			section1.className = "hide";
+			section2.className = "hide";
+			section3.className = "show";
+			section4.className = "hide";
+			section5.className = "hide";
+			//show button clicked
+			s3.className = "bckGroundLIR";
+	}
 	}
 	//question4 section
 	var button4 = document.getElementById("button4");
@@ -83,19 +126,61 @@
 	function q4() {
 		var qs4 = document.getElementById("qs4").value;
 		var errorMsg = document.getElementById("error4");
-		if(qs4.length > 0){
+		if(qs4.length < 4){
+			section4.className = "show";
+			//tell user to enter text
+			errorMsg.innerHTML = ("you must enter text");
+		}else {
 			section4.className = "hide";
 			s4.className = "nobckGroundLI";
 			//clear error message
 			errorMsg.innerHTML = "";
 			section5.className = "show";
 			s5.className = "bckGroundLI";
-		}else {
-			section4.className = "show";
-			//tell user to enter text
-			errorMsg.innerHTML = ("you must enter text");
 		}
+//setting event listeners to Qs buttons
+	s1.addEventListener("click",showQs1);
+	function showQs1() {
+			section1.className = "show";
+			section2.className = "hide";
+			section3.className = "hide";
+			section4.className = "hide";
+			section5.className = "hide";
+			//show button clicked
+			s1.className = "bckGroundLIR";
+	}
 
+	s2.addEventListener("click",showQs2);
+
+	function showQs2() {
+			section1.className = "hide";
+			section2.className = "show";
+			section3.className = "hide";
+			section4.className = "hide";
+			section5.className = "hide";
+			//show button clicked
+			s2.className = "bckGroundLIR";
+	}
+	s3.addEventListener("click",showQs3);
+	function showQs3() {
+			section1.className = "hide";
+			section2.className = "hide";
+			section3.className = "show";
+			section4.className = "hide";
+			section5.className = "hide";
+			//show button clicked
+			s3.className = "bckGroundLIR";
+	}
+	s4.addEventListener("click",showQs4);
+	function showQs4() {
+			section1.className = "hide";
+			section2.className = "hide";
+			section3.className = "hide";
+			section4.className = "show";
+			section5.className = "hide";
+			//show button clicked
+			s4.className = "bckGroundLIR";
+	}
 	}
 
 	//question5 section
@@ -117,6 +202,8 @@
 			section3.className = "hide";
 			section4.className = "hide";
 			section5.className = "hide";
+			//show button clicked
+			s1.className = "bckGroundLI";
 	}
 
 	s2.addEventListener("click",showQs2);
@@ -126,6 +213,8 @@
 			section3.className = "hide";
 			section4.className = "hide";
 			section5.className = "hide";
+			//show button clicked
+			s2.className = "bckGroundLI";
 	}
 	s3.addEventListener("click",showQs3);
 	function showQs3() {
@@ -134,6 +223,8 @@
 			section3.className = "show";
 			section4.className = "hide";
 			section5.className = "hide";
+			//show button clicked
+			s3.className = "bckGroundLI";
 	}
 	s4.addEventListener("click",showQs4);
 	function showQs4() {
@@ -142,6 +233,8 @@
 			section3.className = "hide";
 			section4.className = "show";
 			section5.className = "hide";
+			//show button clicked
+			s4.className = "bckGroundLI";
 	}
 	s5.addEventListener("click",showQs5);
 	function showQs5() {
@@ -150,6 +243,8 @@
 			section3.className = "hide";
 			section4.className = "hide";
 			section5.className = "show";
+			//show button clicked
+			s5.className = "bckGroundLI";
 	}
 
 		var qs5 = document.getElementById("qs5").value;
@@ -186,10 +281,13 @@
 			answer4 = "Correct";
 			count++;
 		}else {
-			answer4 = "Wrong HTTP does stands for Hyper Text Transfor Protocol";
+			answer4 = "Wrong HTTP does stand for Hyper Text Transfor Protocol";
 		}
 		//qs5
-		if(qs5.length > 0){
+		if(qs5.length < 4){
+			//tell user to enter text
+			errorMsg.innerHTML = "you must enter text";
+		}else {
 			section5.className = "hide";
 			//clear error message
 			errorMsg.innerHTML = "";
@@ -218,10 +316,13 @@
 			}else{
 				feedbackf.innerHTML = "Better luck next time";
 			}
-		}else {
-			//tell user to enter text
-			errorMsg.innerHTML = "you must enter text";
 		}
+		//show button clicked
+			s1.className = "bckGroundLI";
+			s2.className = "bckGroundLI";
+			s3.className = "bckGroundLI";
+			s4.className = "bckGroundLI";
+			s5.className = "bckGroundLI";
 		//show answers and feedback
 
 		var fbm1 = document.getElementById("fbm1");
