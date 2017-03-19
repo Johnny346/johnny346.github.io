@@ -53,6 +53,7 @@ body {
 	top: 0;
 	left: 0;
 	width: 20%;
+	height: 100%;
 	padding: 10px;
 	z-index: 1600;
 	border-radius: 0;
@@ -71,11 +72,6 @@ body {
 #menuHead {
 	background-color: #222222;
 	color: #ffffff;
-}
-
-#menuHead a {
-	color: #ffffff;
-	text-decoration: none;
 }
 
 .container {
@@ -112,7 +108,7 @@ body {
 
 .navbar-nav a:hover,.navbar-nav .active a {
 	color: #40badc;
-	background-color: #fff !important;
+	background-color: #fff;
 }
 
 .side-details {
@@ -179,8 +175,8 @@ body {
 #section1 h2,#section2-about h2, #section3-services h2,#section4-pricing h2, #section5-equipment h2, #section6-faq h2, #section7-contact h2 {
 	padding: 1%;
 	border: 4px solid #40C1E6;
-	margin-left: 35%;
-	margin-right: 35%;
+	margin-left: 40%;
+	margin-right: 40%;
 	background-color: #ffffff;
 }
 
@@ -216,8 +212,8 @@ body {
 	}
 
 	#logo-img {
-		width: 180px;
-		height: 120px;
+		width: 170px;
+		height: 115px;
 	}
 
 	#headerNav {
@@ -252,9 +248,9 @@ body {
 		font-size: 1em;
 	}
 
-	#section2-about h2, #section3-services h2,#section4-pricing h2, #section5-equipment h2, #section6-faq h2, #section7-contact h2 {
-		margin-left: 20%;
-		margin-right: 20%;
+	#section1 h2, #section2-about h2, #section3-services h2,#section4-pricing h2, #section5-equipment h2, #section6-faq h2, #section7-contact h2 {
+		margin-left: 25%;
+		margin-right: 25%;
 	}
 
 	#section2-about, #section3-services,#section4-pricing, #section5-equipment, #section6-faq, #section7-contact {
@@ -284,9 +280,7 @@ body {
 	#faqAndSaftety {
 		line-height: 2.5;
 	}
-	.navbar-nav li a {
-		padding: 5%;
-	}
+
 }
 
 @media screen and (min-width: 800px) {
@@ -294,6 +288,11 @@ body {
 	.carousel-inner > .item > a > img {
 		width: 100%;
 		height: 470px;
+	}
+
+	#menuHead img {
+		margin-top: -10px;
+		padding: 0;
 	}
 }
 
@@ -305,14 +304,9 @@ body {
 	}
 }
 
-@media screen and (max-height: 375px) {
-	.menu-side {
-		position: absolute;
-	}
+@media screen and (max-height: 520px) {
+
 	.navbar-nav li a {
-		padding: 7%;
-	}
-	#faqAndSaftety {
-		line-height: 2.5;
+		padding: 2%;
 	}
 }
