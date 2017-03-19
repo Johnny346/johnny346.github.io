@@ -273,13 +273,25 @@ background-repeat: no-repeat;">
 				<!--Contact section-->
 				<section id="section7-contact">
 					<h2>Contact</h2>
-
+						<div class="row contact-details">
+							<div class="col-md-12">
+								<p>Contact us and we'll get back to you within 24 hours.</p>
+								<p><span class="glyphicon glyphicon-map-marker"></span>Cork City, Co. Cork, Ireland</p>
+								<p><span class="glyphicon glyphicon-phone"></span> +353 860000000</p>
+								<p><span class="glyphicon glyphicon-envelope"></span> NimbleDrones@gmail.com</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div id="googleMap"></div>
+							</div>
+						</div>
 				</section>
 			</div>
 			<footer>
 				<div class="navbar navbar-inverse navbar-bottom navbar-fixed-bottom">
 					<div class="container">
-						<div class="navbar-text pull-left ">
+						<div class="navbar-text pull-left">
 							<div class="navbar-details">
 								<p>NimbleDrones@gmail.com</p>
 								<p><script>var year = new Date();document.write("&copy;" + " " + year.getFullYear() + " " + "All Rights Reserved");</script></p>
@@ -294,6 +306,31 @@ background-repeat: no-repeat;">
 			</footer>
 		</div>
 	</div>
+	<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+	var myCenter = new google.maps.LatLng(51.8969, -8.4863);
+
+	function initialize() {
+	var mapProp = {
+		center:myCenter,
+		zoom:12,
+		scrollwheel:false,
+		draggable:false,
+		mapTypeId:google.maps.MapTypeId.ROADMAP
+	};
+
+	var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+	var marker = new google.maps.Marker({
+		position:myCenter,
+	});
+
+		marker.setMap(map);
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script>
 			(function(){

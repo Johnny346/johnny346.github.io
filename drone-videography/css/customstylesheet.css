@@ -60,6 +60,7 @@ body {
 	font-size: 1.4em;
 }
 
+/*logo image on side bar nav*/
 #logo-img {
 	width: 200px;
 	height: 130px;
@@ -91,6 +92,7 @@ body {
 	padding-left: 10px;
 }
 
+/*menu nav*/
 .navbar-nav li {
 	display: block;
 	width: 100%;
@@ -142,7 +144,7 @@ body {
 	padding: 0;
 }
 
-#section2-about, #section3-services,#section4-pricing, #section5-equipment, #section6-faq, #section7-contact {
+#section2-about, #section3-services,#section4-pricing, #section5-equipment, #section6-faq {
 	padding: 5%;
 	margin: 0;
 	margin-left: -1.3%;
@@ -151,12 +153,38 @@ body {
 	color: #000000;
 }
 
+#section7-contact {
+
+}
+
+.contact-details {
+	padding-top: 5%;
+}
+
+.lightBluebg {
+	background-color: #99adc866;
+}
+
 #priceInput {
 	color: black;
 }
 
+/*google map*/
+#googleMap {
+	height: 290px;
+	width: 100%;
+	margin-bottom: 18px;
+}
+
 .container-box {
 	padding: 0;
+	margin: 0;
+	border-radius: 10px;
+}
+
+.container-box img {
+	width: 400px;
+	border-radius: 10px;
 }
 
 .hide-projects {
@@ -175,11 +203,12 @@ body {
 #section1 h2,#section2-about h2, #section3-services h2,#section4-pricing h2, #section5-equipment h2, #section6-faq h2, #section7-contact h2 {
 	padding: 1%;
 	border: 4px solid #40C1E6;
-	margin-left: 40%;
-	margin-right: 40%;
+	margin-left: 35%;
+	margin-right: 35%;
 	background-color: #ffffff;
 }
 
+/*media queries*/
 @media screen and (max-width: 1070px) {
 	.menu-side {
 		left: -23%;
@@ -249,8 +278,8 @@ body {
 	}
 
 	#section1 h2, #section2-about h2, #section3-services h2,#section4-pricing h2, #section5-equipment h2, #section6-faq h2, #section7-contact h2 {
-		margin-left: 25%;
-		margin-right: 25%;
+		margin-left: 20%;
+		margin-right: 20%;
 	}
 
 	#section2-about, #section3-services,#section4-pricing, #section5-equipment, #section6-faq, #section7-contact {
@@ -277,9 +306,6 @@ body {
 	#pageContent {
 		margin-top: 10%;
 	}
-	#faqAndSaftety {
-		line-height: 2.5;
-	}
 
 }
 
@@ -293,6 +319,10 @@ body {
 	#menuHead img {
 		margin-top: -10px;
 		padding: 0;
+	}
+
+	#logo-img {
+		margin-left: 15px;
 	}
 }
 
