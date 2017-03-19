@@ -276,10 +276,6 @@ body {
 		left: -70%;
 		width: 60%;
 	}
-
-	#menuHead a {
-		margin-top: 20px;
-	}
 }
 @media screen and (max-width: 460px) {
 	#pageContent {
