@@ -354,6 +354,15 @@ body {
 		width: 90%;
 	}
 
+	.subSection h1 {
+		position: absolute;
+		display: inline-block;
+		color: #ffffff;
+		margin-left: 8%;
+		text-align: center;
+		font-size: 1.6em;
+	}
+
 }
 
 @media screen and (max-width: 405px) {
