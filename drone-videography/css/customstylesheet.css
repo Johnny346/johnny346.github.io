@@ -355,11 +355,7 @@ body {
 	}
 
 	.subSection h1 {
-		position: absolute;
-		display: inline-block;
-		color: #ffffff;
-		margin-left: 8%;
-		text-align: center;
+		margin-left: 3%;
 		font-size: 1.6em;
 	}
 
@@ -372,6 +368,10 @@ body {
 	}
 }
 @media screen and (max-width: 460px) {
+	.subSection h1 {
+		margin-left: 1%;
+		font-size: 1.6em;
+	}
 	#pageContent {
 		margin-top: 10%;
 	}
