@@ -315,6 +315,11 @@ body {
 		width: 100%;
 		display: block;
 	}
+	
+	.subSection h1 {
+		left: 0%;
+		right: 0%;
+	}
 }
 
 .carousel-inner > .item > img,
@@ -356,8 +361,10 @@ body {
 	}
 
 	.subSection h1 {
-		margin-left: 3%;
-		font-size: 1.6em;
+		padding-top: 5%;
+		font-size: 2.3em;
+		left: 20%;
+		right: 0%;
 	}
 
 }
@@ -369,10 +376,6 @@ body {
 	}
 }
 @media screen and (max-width: 460px) {
-	.subSection h1 {
-		margin-left: 1%;
-		font-size: 1.6em;
-	}
 	#pageContent {
 		margin-top: 10%;
 	}
