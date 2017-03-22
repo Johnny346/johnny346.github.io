@@ -144,16 +144,18 @@ body {
 	height: 100%;
 	z-index: -1;
 	width: 100%;
+	position: relative;
 }
 
 .subSection h1 {
 	position: absolute;
 	display: inline-block;
 	color: #ffffff;
-	margin-left: 20%;
-	padding-top: 80px;
+	padding-top: 8%;
 	text-align: center;
 	font-size: 2.3em;
+	left: 20%;
+	right: 0%;
 }
 
 
