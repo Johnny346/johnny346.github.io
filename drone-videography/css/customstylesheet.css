@@ -24,6 +24,14 @@ body {
 	text-align: center;
 }
 
+.bckgrdGrey {
+	background-color: #efefef;
+}
+
+.nobckgrdcolor {
+	background-color: none;
+}
+
 /*navigation menu*/
 .menu {
 	overflow-x: hidden;
