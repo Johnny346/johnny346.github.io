@@ -25,7 +25,7 @@ body {
 }
 
 .bckgrdGrey {
-	background-color: #efefef;
+	background-color: blue;
 }
 
 .nobckgrdcolor {
@@ -166,9 +166,6 @@ body {
 	right: 0%;
 }
 
-
-
-
 /*footer*/
 .navbar-fixed-bottom {
 	position: relative;
@@ -239,6 +236,11 @@ body {
 	color: black;
 }
 
+.projectVideos:hover {
+	width: 98%;
+	cursor: pointer;
+}
+
 /*google map*/
 #googleMap {
 	height: 290px;
@@ -285,6 +287,7 @@ body {
 	margin: 0;
 	text-align: left;
 }
+
 #section6-faq h2:first-child {
 	margin: 0;
 }
@@ -391,6 +394,10 @@ body {
 		font-size: 1.6em;
 	}
 
+	#faqAndSaftety {
+		line-height: .9;
+	}
+
 }
 
 @media screen and (max-width: 405px) {
@@ -408,7 +415,9 @@ body {
 		padding-top: 10%;
 		font-size: 1.4em;
 	}
+
 	#section6-faq h2 {
+		padding: 4px;
 		font-size: 1.1em;
 	}
 

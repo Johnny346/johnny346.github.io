@@ -35,7 +35,7 @@
 						<li><a href="#section3-services">Services</a></li>
 						<li><a href="#section4-pricing">Pricing</a></li>
 						<li><a href="#section5-equipment">Equipment</a></li>
-						<li id="faqAndSaftety"><a href="#section6-faq">FAQ and Safety</a></li>
+						<li><a href="#section6-faq" id="faqAndSaftety">FAQ and Safety</a></li>
 						<!--<li><a href="about.html">Project Stats</a></li>-->
 						<li><a href="#section7-contact">Contact</a></li>
 						<!--<li><a href="contactform.html">Weather Forecast</a></li>-->
@@ -107,11 +107,11 @@ background-repeat: no-repeat;-->
 					<!--Projects section-->
 					<h2>Projects</h2>
 					<div class="row">
-						<div class="col-sm-4">
-							<div class="thumbnail container-box">
-								<a href="#">
+						<div class="col-sm-4" id="firstImage">
+							<div class="thumbnail container-box projectVideos">
+
 									<img src="https://s-media-cache-ak0.pinimg.com/originals/d6/15/a0/d615a0dbdc72723bfbca08ad17ef65e7.jpg" alt="">
-								</a>
+
 								<div class="caption">
 									<a href="#">
 										Landscape
@@ -119,11 +119,11 @@ background-repeat: no-repeat;-->
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-4">
-							<div class="thumbnail container-box">
-								<a href="#">
-									<img src="https://www.historicenvironment.scot/media/2653/kings-knot-stirling.jpg?anchor=center&mode=crop&width=500&height=300&rnd=131063114300000000" alt="">
-								</a>
+						<div class="col-sm-4" id="secondImage">
+							<div class="thumbnail container-box projectVideos">
+
+									<img  src="https://www.historicenvironment.scot/media/2653/kings-knot-stirling.jpg?anchor=center&mode=crop&width=500&height=300&rnd=131063114300000000" alt="">
+
 								<div class="caption">
 									<a href="#">
 										Landscape
@@ -131,11 +131,11 @@ background-repeat: no-repeat;-->
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-4">
-							<div class="thumbnail container-box">
-								<a href="#">
+						<div class="col-sm-4" id="thirdImage">
+							<div class="thumbnail container-box projectVideos">
+
 									<img src="http://www.technocrazed.com/wp-content/uploads/2015/12/Landscape-wallpaper-36.jpg" alt="">
-								</a>
+
 								<div class="caption">
 									<a href="#">
 										Landscape
@@ -150,7 +150,7 @@ background-repeat: no-repeat;-->
 					<div id="extra-projects" class="hide-projects">
 						<div class="row">
 							<div class="col-sm-4">
-								<div class="thumbnail container-box">
+								<div class="thumbnail container-box projectVideos">
 								<a href="#">
 									<img src="images/dr.png" alt="">
 								</a>
@@ -162,7 +162,7 @@ background-repeat: no-repeat;-->
 							</div>
 							</div>
 							<div class="col-sm-4">
-								<div class="thumbnail container-box">
+								<div class="thumbnail container-box projectVideos">
 								<a href="#">
 									<img src="images/dr.png" alt="">
 								</a>
@@ -174,7 +174,7 @@ background-repeat: no-repeat;-->
 							</div>
 							</div>
 							<div class="col-sm-4">
-								<div class="thumbnail container-box">
+								<div class="thumbnail container-box projectVideos">
 								<a href="#">
 									<img src="images/dr.png" alt="">
 								</a>
@@ -188,7 +188,7 @@ background-repeat: no-repeat;-->
 						</div>
 						<div class="row">
 							<div class="col-sm-4">
-								<div class="thumbnail container-box">
+								<div class="thumbnail container-box projectVideos">
 									<a href="#">
 										<img src="images/dr.png" alt="">
 									</a>
@@ -200,7 +200,7 @@ background-repeat: no-repeat;-->
 								</div>
 							</div>
 							<div class="col-sm-4">
-								<div class="thumbnail container-box">
+								<div class="thumbnail container-box projectVideos">
 									<a href="#">
 										<img src="images/dr.png" alt="">
 									</a>
@@ -212,7 +212,7 @@ background-repeat: no-repeat;-->
 							</div>
 							</div>
 							<div class="col-sm-4">
-								<div class="thumbnail container-box">
+								<div class="thumbnail container-box projectVideos">
 									<a href="#">
 										<img src="images/dr.png" alt="">
 									</a>
@@ -456,14 +456,14 @@ background-repeat: no-repeat;-->
 
 					function openSection() {
 						safeS.className = "show";
-						safetySection.className ="bckgrdGrey";
-						faqs.className = "nobckgrdcolor";
+						safetySection.style.backgroundColor = "#efefef";
+						faqs.style.backgroundColor = "";
 						accordion.className = "hide";
 						}
 					function openSection2() {
 						safeS.className = "hide";
-						faqs.className ="bckgrdGrey";
-						safetySection.className = "nobckgrdcolor";
+						safetySection.style.backgroundColor = "";
+						faqs.style.backgroundColor = "#efefef";
 						accordion.className = "show";
 						}
 				//toggle side menu code
@@ -483,7 +483,16 @@ background-repeat: no-repeat;-->
 		</script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+<script type="text/javascript">
 
+//loop through projects
+//add to project array
+//add event listener to each project
+//function if project is clicked
+// overlay appears hides other projects
+// project which was clicked is made larger
+//has X button to close down
+</script>
 
 
 	<script type="text/javascript">
