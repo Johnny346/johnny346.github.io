@@ -144,16 +144,18 @@ body {
 	height: 100%;
 	z-index: -1;
 	width: 100%;
+	position: relative;
 }
 
 .subSection h1 {
 	position: absolute;
 	display: inline-block;
 	color: #ffffff;
-	margin-left: 20%;
-	padding-top: 80px;
+	padding-top: 5%;
 	text-align: center;
 	font-size: 2.3em;
+	left: 20%;
+	right: 0%;
 }
 
 
@@ -331,6 +333,11 @@ body {
 		width: 100%;
 		display: block;
 	}
+	
+	.subSection h1 {
+		left: 0%;
+		right: 0%;
+	}
 }
 
 .carousel-inner > .item > img,
@@ -372,7 +379,7 @@ body {
 	}
 
 	.subSection h1 {
-		margin-left: 3%;
+		padding-top: 8%;
 		font-size: 1.6em;
 	}
 
@@ -385,12 +392,12 @@ body {
 	}
 }
 @media screen and (max-width: 460px) {
-	.subSection h1 {
-		margin-left: 1%;
-		font-size: 1.6em;
-	}
 	#pageContent {
 		margin-top: 10%;
+	}
+	.subSection h1 {
+		padding-top: 10%;
+		font-size: 1.4em;
 	}
 
 }
