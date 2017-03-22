@@ -333,7 +333,7 @@ body {
 		width: 100%;
 		display: block;
 	}
-	
+
 	.subSection h1 {
 		left: 0%;
 		right: 0%;
@@ -361,7 +361,7 @@ body {
 		left: -60%;
 	}
 
-	#section1 h2, #section2-about h2, #section3-services h2,#section4-pricing h2, #section5-equipment h2, #section6-faq h2, #section7-contact h2 {
+	#section1 h2, #section2-about h2, #section3-services h2,#section4-pricing h2, #section5-equipment h2, #section7-contact h2 {
 		margin-left: 20%;
 		margin-right: 20%;
 	}
