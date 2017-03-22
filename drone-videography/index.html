@@ -315,7 +315,8 @@ background-repeat: no-repeat;-->
 			<div class="container-fluid">
 				<!--FAQ section-->
 				<section id="section6-faq">
-					<h2>FAQ</h2>
+					<h2 id="faqs">FAQ</h2>
+					<h2 id="safetySection">Safety Precautions</h2>
 					<script>
 						$( function() {
 							$( "#accordion" ).accordion();
@@ -323,7 +324,7 @@ background-repeat: no-repeat;-->
 					</script>
 
 					<div id="accordion">
-						<h3>Section 1</h3>
+						<h3>FAQ 1</h3>
 						<div>
 							<p>
 							Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
@@ -332,7 +333,7 @@ background-repeat: no-repeat;-->
 							odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
 							</p>
 						</div>
-						<h3>Section 2</h3>
+						<h3>FAQ 2</h3>
 						<div>
 							<p>
 							Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
@@ -341,7 +342,7 @@ background-repeat: no-repeat;-->
 							suscipit faucibus urna.
 							</p>
 						</div>
-						<h3>Section 3</h3>
+						<h3>FAQ 3</h3>
 						<div>
 							<p>
 							Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
@@ -355,7 +356,7 @@ background-repeat: no-repeat;-->
 							<li>List item three</li>
 							</ul>
 						</div>
-						<h3>Section 4</h3>
+						<h3>FAQ 4</h3>
 						<div>
 							<p>
 							Cras dictum. Pellentesque habitant morbi tristique senectus et netus
@@ -371,10 +372,11 @@ background-repeat: no-repeat;-->
 						</div>
 					</div>
 				<!--Safety section-->
+					<div class="hide" id="safeS">
+						<h3>The drone we use is the Maviv Pro</h3>
+						<p>Capture aerial views smoothly in Ultra HD with this DJI Mavic Pro camera drone. Its FlightAutonomy technology uses ultrasonic range finders and vision sensors to proactively detect and avoid obstacles for safer, obstruction-free flight. This compact and foldable DJI Mavic Pro camera drone has a 7km transmission range thanks to its FCC-compliant remote controller.</p>
+					</div>
 
-					<h2>Safety Precautions</h2>
-					<h3>The drone we use is the Maviv Pro</h3>
-					<p>Capture aerial views smoothly in Ultra HD with this DJI Mavic Pro camera drone. Its FlightAutonomy technology uses ultrasonic range finders and vision sensors to proactively detect and avoid obstacles for safer, obstruction-free flight. This compact and foldable DJI Mavic Pro camera drone has a 7km transmission range thanks to its FCC-compliant remote controller.</p>
 				</section>
 			</div>
 			<div class="container-fluid">
@@ -440,8 +442,26 @@ background-repeat: no-repeat;-->
 	google.maps.event.addDomListener(window, 'load', initialize);
 	</script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
 		<script>
 			(function(){
+				//FAQ section and satefy section buttons
+				var safetySection = document.getElementById("safetySection");
+				var safeS = document.getElementById("safeS");
+				var faqs = document.getElementById("faqs");
+				var accordion = document.getElementById("accordion");
+					safetySection.addEventListener("click", openSection);
+					faqs.addEventListener("click", openSection2);
+
+
+					function openSection() {
+						safeS.className = "show";
+						accordion.className = "hide";
+						}
+					function openSection2() {
+						safeS.className = "hide";
+						accordion.className = "show";
+						}
 				//toggle side menu code
 				var body = $("body");
 				$(".menu-toggle").bind("click", function(){
