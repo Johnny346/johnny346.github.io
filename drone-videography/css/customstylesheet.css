@@ -362,7 +362,7 @@ body {
 
 	.subSection h1 {
 		padding-top: 8%;
-		font-size: 2em;
+		font-size: 1.6em;
 	}
 
 }
@@ -376,6 +376,10 @@ body {
 @media screen and (max-width: 460px) {
 	#pageContent {
 		margin-top: 10%;
+	}
+	.subSection h1 {
+		padding-top: 10%;
+		font-size: 1.4em;
 	}
 
 }
