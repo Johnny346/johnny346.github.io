@@ -237,7 +237,6 @@ body {
 }
 
 .projectVideos:hover {
-	width: 98%;
 	cursor: pointer;
 }
 
@@ -298,6 +297,10 @@ body {
 
 .show {
 	display: block;
+}
+
+#faqAndSaftety {
+	line-height: .9;
 }
 /*media queries*/
 @media screen and (max-width: 1070px) {
@@ -367,6 +370,19 @@ body {
 
 }
 
+@media screen and (min-width: 500px) {
+	a.fancybox img {
+        border: none;
+        box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+        -o-transform: scale(1,1); -ms-transform: scale(1,1); -moz-transform: scale(1,1); -webkit-transform: scale(1,1); transform: scale(1,1); -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;
+    } 
+    a.fancybox:hover img {
+        position: relative; z-index: 999; -o-transform: scale(1.03,1.03); -ms-transform: scale(1.03,1.03); -moz-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03); transform: scale(1.03,1.03);
+    }
+
+}
+
+
 @media screen and (max-width: 650px) {
 	.menu-side {
 		left: -60%;
@@ -394,9 +410,6 @@ body {
 		font-size: 1.6em;
 	}
 
-	#faqAndSaftety {
-		line-height: .9;
-	}
 
 }
 
