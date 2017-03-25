@@ -56,7 +56,7 @@ body {
 }
 
 .menu-side {
-	background-color: #1F6596;
+	background-color: #2779b3;
 	border-left: 1px solid #000;
 	color: #ffffff;
 	position: fixed;
@@ -359,6 +359,10 @@ body {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
 	width: 100%;
+}
+
+#safetyList {
+	text-align: left;
 }
 
 @media screen and (max-width: 900px) {
