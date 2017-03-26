@@ -23,6 +23,7 @@ body {
 	float: right;
 	font-size: 1.2em;
 	text-align: center;
+	z-index: -1;
 }
 
 .bckgrdGrey {
@@ -67,6 +68,7 @@ body {
 	padding: 10px;
 	border-radius: 0;
 	font-size: 1.6em;
+	z-index: 1;
 	font-family: 'PT Sans Narrow', sans-serif;
 }
 
