@@ -310,6 +310,11 @@ body {
 #faqAndSaftety {
 	line-height: .9;
 }
+
+.float-left {
+	text-align: left;
+}
+
 /*media queries*/
 @media screen and (max-width: 1070px) {
 	.menu-side {
@@ -428,6 +433,9 @@ body {
 		font-size: 1.6em;
 	}
 
+	.ui-accordion-content-active {
+		height: 100%;
+	}
 
 }
 
