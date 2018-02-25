@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Project Surfcast</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<div class="page">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#description">DESCRIPTION</a></li>
+					<li><a href="#details">DETAILS</a></li>
+					<li><a href="#demo">DEMO</a></li>
+					<li><a href="#components">COMPONENTS</a></li>
+					<li><a href="#build">BUILD</a></li>
+					<li><a href="#code">CODE</a></li>
+					<li><a href="#conclusion">CONCLUSION</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+		<div class="jumbotron text-center">
+			<h1>Project:<span class="orangeText"> SURFCAST</span></h1>
+			<h3 class="color-white">An LED Lamp which enables you to instantly be informed about the local surf forecast<br> In an unobtrusive way, while seamlessly integrating into your daily routine</h3>
+			<p><a href="https://github.com/Johnny346"><i class="fa fa-git"></i></a>  John Mulcahy</p>
+		</div>
+
+	<!-- Container (description Section) -->
+	<div id="description" class="container-fluid container-padding-fix">
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="images/main4.jpg" width="320px" height="500px">
+			</div>
+			<div class="col-sm-8">
+				<h2>Description</h2>
+				<hr>
+				<h3>A Raspberry Pi Project</h3>
+				<p class="color-black description-p">
+					Designed for surfers or any water sport enthusiast, whether your miles from the beach or always feel the need to have a connection with the local surf. This lamp will bring the waves to you!
+					<br>
+					The motion activated lamp will download the most current and accurate local surf forecast and display it using 120 integrated LEDs. Enabling you to effortlessly glanse at this lamp and make a decision to go for a surf.<br>
+					There are many ways to get the surf forecast and any outdoor adventurer will inherently be familier with them but this lamp makes it almost effortless.
+				</p>
+				<h3>Accreditation</h3>
+				<p>The forecast data generated is done completly by <a href="www.magicseaweed.com">www.magicseaweed.com</a> and full accreditation to there service for this data is given with much appreciation.</p><p>This is a Personal Raspberry Pi project and is not done in sponsorship, partnership or is in anyway associated with magicseaweed.com</p>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<!-- Container (details Section) -->
+	<div id="details" class="container-fluid container-padding-fix">
+		<div class="row">
+			<div class="col-sm-8">
+				<h2>Details</h2>
+				<div class="">
+					<h3>Key features and Functionality</h3>
+					<ul class="">
+						<li>Motion activated sensor that starts the forecast display, this sensor can be easliy programmed to be triggered after various motion intervals</li>
+						<li>Displays a 24 hour surf forecast, a new forecast is fetched through the MagicSeaWeed API once the forecast is older than 24 hours</li>
+						<li>A wave set is represented by a row of LEDs which shows the height of the wave by the color it bears and its speed by its motion through the display</li>
+						<li>Displays Primary, secondary and combined wave heights and periods between wave sets in 3 hour time blocks, starting from next 3 hours to 24 hours a head</li>
+						<li>Has the ability to select multiple beach locations which is dependant by the MagicSeaWeed API service</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<br>
+				<br>
+				<h3>Basically 3 projects in 1!</h3>
+				<div>
+					<ul class="">
+						<li>Retrieve surf forecast API thorugh Java program</li>
+						<li>Display forecast to LEDs using Python</li>
+						<li>Hardware assembly project</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<!-- Container (demo Section) -->
+	<div id="demo" class="container-fluid container-padding-fix">
+		<div class="row">
+			<div class="col-sm-6">
+				<h2>Demo video</h2>
+				<div class="iframe-style text-center">
+					<h3>With Cover</h3>
+					<iframe height="350" width="500" src="https://www.youtube.com/embed/XdlmoLAbbiQ" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<br>
+				<br>
+				<div class="iframe-style text-center">
+					<h3>Without Cover</h3>
+					<iframe height="350" width="500" src="https://www.youtube.com/embed/XdlmoLAbbiQ" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<h3 class="text-center">Reading the display and what it means</h3>
+		<div class="row">
+			<div class="col-sm-6">
+				<img class="img-responsive" src="images/wave-display-graph.png" height="350px" width="550px">
+			</div>
+			<div class="col-sm-6 demo-paragraph">
+				<p>In general the greater the wave period, the better the swell. The amount of time it takes for two successive wave crests to pass through a determined point is called swell period or wave interval. The swell period is critical surf knowledge because it ultimately measures the quality of the upcoming surf session.</p>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<!-- Container (Components Section) -->
+	<div id="components" class="container-fluid container-padding-fix">
+		<div class="row">
+			<div class="col-sm-6">
+				<h2>Components</h2>
+				<div class="">
+					<ul class="">
+						<p>(Links and prices)</p>
+						<li>1 X <a href="https://www.adafruit.com/product/3055">Raspberry Pi</a> @ 35.00</li>
+						<li>2 X <a href="https://www.adafruit.com/product/2959">Adafruit NeoPixel Digital RGB LED Strip - 60 LED/m </a> @ 24.95 per/m</li>
+						<li>1 X <a href="https://www.adafruit.com/product/3174">wires spool diff colors  25ft</a> @ 27.50</li>
+						<li>1 X <a href="https://www.adafruit.com/product/189">Motion sensor</a> @ 9.95</li>
+						<li>1 X <a href="https://www.adafruit.com/product/1787">74AHCT125 - Quad Level-Shifter (3V to 5V)</a> @ 1.50</li>
+						<li>1 X <a href="https://www.adafruit.com/product/658">5V 10A switching power supply</a> @ 25.00</li>
+						<li>1 X <a href="https://www.adafruit.com/product/368">Female DC Power adapter - 2.1mm jack to screw terminal block</a> @ 2.00</li>
+						<li>1 X <a href="https://www.adafruit.com/product/239">Full sized breadboard</a> @ 5.95</li>
+						<li>1 X <a href="https://www.adafruit.com/product/2029">Assembled Pi Cobbler Plus for Pi B+/A+/Pi 2/Pi 3</a> @ 6.95</li>
+						<li>1 X <a href="https://www.adafruit.com/product/1609">Adafruit Perma-Proto Half-sized Breadboard PCB - Single</a> @ 4.50</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<img src="">
+				<p>text</p>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<!-- Container (build Section) -->
+	<div id="build" class="container-fluid container-padding-fix">
+		<div class="row">
+			<div class="col-sm-4">
+				<h2>Build and Design</h2>
+				<div class="">
+					<ul class="">
+						<li>DESCRIPTION</li>
+						<li>DESCRIPTION</li>
+						<li>DESCRIPTION</li>
+						<li>DESCRIPTION</li>
+						<li>DESCRIPTION</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-8">
+				<img src="">
+				<p>text</p>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<!-- Container (code Section) -->
+	<div id="code" class="container-fluid container-padding-fix">
+		<h2>Code Implementation</h2>
+		<ul class="nav nav-tabs code-section-tabs">
+			<li class="active"><a data-toggle="tab" href="#home">Java code</a></li>
+			<li><a data-toggle="tab" href="#menu1">Python code</a></li>
+			<li><a data-toggle="tab" href="#menu2">Bash script</a></li>
+			<li><a data-toggle="tab" href="#menu3">Code flowchart</a></li>
+		</ul>
+
+		<div class="tab-content">
+			<div id="home" class="tab-pane active text-center">
+				<script src="https://gist.github.com/Johnny346/d28273e1a70eaf2fa04fafd70cbae538.js"></script>
+					<h2>Code Discussion</h2>
+					<p>ffffffffffffffffffffffffffff</p>
+			</div>
+			<div id="menu1" class="tab-pane text-center">
+				<script src="https://gist.github.com/Johnny346/efcde211faaaca30c969989f1bee3e1d.js"></script>
+					<h2>Code Discussion</h2>
+					<p>ffffffffffffffffffffffffffff</p>
+			</div>
+			<div id="menu2" class="tab-pane text-center">
+				<h2>Code Discussion</h2>
+				<p>ffffffffffffffffffffffffffff</p>
+			</div>
+			<div id="menu3" class="tab-pane text-center">
+				<img src="images/flowchart.png" class="img-responsive">
+				<h2>FlowChart Discussion</h2>
+				<p>ffffffffffffffffffffffffffff</p>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<!-- Container (conclusion Section) -->
+	<div id="conclusion" class="container-fluid container-padding-fix">
+		<div class="row">
+			<div class="col-sm-4">
+				<h2>Conclusion</h2>
+				<div class="">
+					<ul class="">
+						<li>DESCRIPTION</li>
+						<li>DESCRIPTION</li>
+						<li>DESCRIPTION</li>
+						<li>DESCRIPTION</li>
+						<li>DESCRIPTION</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-8">
+				<img src="">
+				<p>text</p>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<footer class="container-fluid text-center">
+		<a href="#myPage" title="To Top">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+		<p class="color-about">
+			&copy 2018 PROJECT SURFCAST
+		</p>
+	</footer>
+</div>
+<script>
+	$(document).ready(function(){
+		// Add smooth scrolling to all links in navbar + footer link
+		$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+		// Prevent default anchor click behavior
+		event.preventDefault();
+
+		// Store hash
+		var hash = this.hash;
+
+		// Using jQuery's animate() method to add smooth page scroll
+		// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+		$('html, body').animate({
+		scrollTop: $(hash).offset().top
+		}, 900, function(){
+
+		// Add hash (#) to URL when done scrolling (default click behavior)
+		window.location.hash = hash;
+		});
+	});
+
+	$(window).scroll(function() {
+		$(".slideanim").each(function(){
+			var pos = $(this).offset().top;
+
+			var winTop = $(window).scrollTop();
+			if (pos < winTop + 600) {
+			  $(this).addClass("slide");
+			}
+			});
+		});
+	})
+</script>
+</body>
+</html>
