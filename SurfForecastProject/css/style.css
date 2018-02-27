@@ -314,16 +314,21 @@ footer {
 	}
 }
 
-@media screen and (max-width: 480px) {
-	.logo {
-		font-size: 150px;
+@media screen and (max-width: 800px) {
+	.jumbotron h3 {
+		padding: 0;
 	}
+}
+
+@media screen and (max-width: 766px) {
 	.navbar-brand{
 		display: block;
 	}
+}
 
-	.jumbotron h3 {
-		padding: 0;
+@media screen and (max-width: 480px) {
+	.logo {
+		font-size: 150px;
 	}
 }
 
