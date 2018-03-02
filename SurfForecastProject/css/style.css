@@ -35,6 +35,11 @@ h4 {
 	margin-bottom: 30px;
 }
 
+iframe {
+	width: 560px;
+	height: 315px;
+}
+
 .color-white {
 	color: #fff;
 }
@@ -241,6 +246,13 @@ h4 {
 /*color red for the line (hr)*/
 hr {
 	border-color: #091427;
+}
+
+@media screen and (max-width: 630px) {
+	iframe {
+		width: 90%;
+		height: 200px;
+	}
 }
 
 @media screen and (max-width: 413px) {
