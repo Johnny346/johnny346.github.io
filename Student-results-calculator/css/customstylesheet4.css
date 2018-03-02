@@ -1,0 +1,160 @@
+﻿body {
+	text-align: center;
+	margin: auto;
+	
+	
+}
+
+.navbarTop {
+	padding-bottom: 50px;
+	background-color: #fff;
+}
+.navbar-brand {
+	width: 150px;
+	padding-left: 100px;
+}
+@media all and (max-width: 767px) and (min-width: 0px) {
+ .navbar-brand {
+	display: none;
+}
+}
+@media all and (max-width: 767px) and (min-width: 0px) {
+ #brand-name{
+	display: inline-block;
+	float: left;
+}
+}
+@media all and (max-width: 5000px) and (min-width: 768px) {
+ #brand-name{
+	display: none;
+	
+}
+}
+@media all and (max-width: 767px) and (min-width: 0px) {
+ .navbar {
+	height: 20px;
+}
+}
+#left-button{
+	float: left;
+	margin: 10px;
+}
+.container-fluid > .collapse > ul {
+	display:inline-block;
+    float:none;
+	margin: 60px auto 0px auto;
+	text-align: center;
+}
+@media all and (max-width: 878px) and (min-width: 768px) {
+ .container-fluid > .collapse > ul {
+    display: inline-block;
+    float: right;
+	margin-top: 120px;
+	padding-right: 75px;
+	text-align: center;
+  }
+  .navbar-brand {
+	width: 150px;
+	padding-left: 30px;
+}
+}
+@media all and (max-width: 1039px) and (min-width: 879px) {
+ .container-fluid > .collapse > ul {
+	display:inline-block;
+    float: left;
+	margin-top: 170px;
+	 
+	text-align: center;
+}
+}
+@media all and (max-width: 1500px) and (min-width: 1205px) {
+ .container-fluid > .collapse > ul {
+	
+    padding-right: 140px;
+}
+}
+
+.nav > li > a {
+	
+    display: block;
+    padding: 10px;
+    padding-right: 45px;
+}
+.act{
+    color: black;
+}
+.con {
+	
+    width: 100%;
+    height: 470px;
+    background-image: url(../images/goatfarm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+}​
+.navbar-collapse {
+  text-align:center;
+}
+.navbarTop{
+	width: 100%;
+    display: inline-block;
+    text-align: center; 
+    margin: auto;
+	border-style: none;
+	
+}
+
+.imageBox > h1 {
+	margin-top:  350px;
+	padding: 30px;
+	text-align: center;
+	z-index: 1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	color: white;
+	font: 60px Georgia;
+	font-weight: lighter;
+}
+@media all and (max-width: 600px) and (min-width: 445px) {
+ .imageBox > h1 {
+	margin-top:  250px;
+	padding: 30px;
+	text-align: center;
+	z-index: 1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	color: white;
+}
+}
+@media all and (max-width: 445px) and (min-width: 0px) {
+ .imageBox > h1 {
+	margin-top:  120px;
+	padding: 30px;
+	text-align: center;
+	z-index: 1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	color: white;
+}
+}	
+
+.navbar-fixed-bottom {
+	position: absolute;
+	
+}
+
+
+
+.navbar-fixed-bottom {
+	position: relative;
+	background-color: white;
+	border-top-style: 2px grey;
+	
+}

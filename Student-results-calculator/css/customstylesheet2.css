@@ -1,0 +1,136 @@
+
+.btn {
+	cursor: default;
+	background-color: #FFF;
+	border-radius: 4px;
+	text-align: left;
+}
+
+.caret {
+	position: absolute;
+	right: 16px;
+	top: 16px;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+	background-color: #FFF;
+}
+
+.btn-group.open .dropdown-toggle {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6)
+}
+
+.btn-group {
+	width: 100%
+}
+
+.dropdown-menu {
+	width: 100%;
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	font-size: 150%;
+	background-color: rgba(168, 167, 133, 0.43);
+	text-align: center;
+}
+
+.navbarTop {
+	background-color: rgba(198, 20, 20, 0.85);
+	border-color: rgba(198, 20, 20, 0.85);
+}
+
+.navbar p {
+	font-size: 22px;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.navbarTop  h1 {
+	font-size: 40px;
+	color: white;
+	padding-top: 30px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.containerBox {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 50px;
+	background-color: rgba(242, 244, 255, 0.8);
+}
+
+.box2 {
+	background-color: rgba(199, 224, 255, 0.3);
+}
+
+.containerBox3 {
+	margin-top: 50px;
+	background-color: rgba(242, 244, 255, 0.8);
+}
+
+.navbar-bottom {
+	position: relative;
+	height: 170px;
+	padding-top: 40px;
+	background-color: rgba(198, 20, 20, 0.85);
+}
+
+.navbar-inverse .navbar {
+	background-color: rgba(198, 20, 20, 0.85);
+	border-color: rgba(198, 20, 20, 0.85);
+}
+
+.navbar-details p {
+	display: inline;
+	padding-right: 90px;
+	font-size: 15px;
+	margin-top: 60px;
+}
+
+.navbar-footer a,i {
+	display: inline;
+	font-size: 12px;
+	color: white;
+}
+
+.container {
+	width: 1170px;
+	padding-top: 20px;
+}
+
+input[type="text"] {
+	padding: 2px;
+	border: solid 2px #dcdcdc;
+	transition: box-shadow 0.3s, border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="text"].focus {
+	border: solid 2px #707070;
+	box-shadow: 0 0 5px 1px #969696;
+}
+
+@media screen and (max-width: 400px) {
+	.navbar-bottom {
+		height: 120px;
+		background-color: rgba(198, 20, 20, 0.85);
+	}
+
+	.navbar-footer a, i {
+		display: inline;
+		color: white;
+	}
+
+	.navbar-bottom h5 {
+		color: white;
+	}
+	.navbar-details p {
+		display: inline;
+		padding-right: 90px;
+		font-size: 70%;
+	}
+}
+
+
