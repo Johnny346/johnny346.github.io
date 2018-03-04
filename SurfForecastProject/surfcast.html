@@ -53,15 +53,16 @@
 			<div class="col-sm-8">
 				<h2>Description</h2>
 				<hr>
-				<h3>A Raspberry Pi Project</h3>
+				<h3>This is a Raspberry Pi Project</h3>
 				<p class="color-black description-p">
-					Designed for surfers or any water sport enthusiast, whether your miles from the beach or always feel the need to have a connection with the local surf. This lamp will bring the waves to you!
+					The Raspberry Pi is a mini computer which is designed to be lightweight and cheap but almost a fully functional computer. This makes it perfect for small projects such as this.<br>
+					The Surfcast project is designed for surfers or any water sport enthusiast, whether your miles from the beach or always feel the need to have a connection with the local surf. This lamp will bring the waves to you!
 					<br>
 					The motion activated lamp will download the most current and accurate local surf forecast and display it using 120 integrated LEDs. Enabling you to effortlessly glanse at this lamp and make a decision to go for a surf.<br>
-					There are many ways to get the surf forecast and any outdoor adventurer will inherently be familier with them but this lamp makes it almost effortless.
+					There are many ways to get the surf forecast but this lamp makes it almost effortless.
 				</p>
 				<h3>Accreditation</h3>
-				<p>The forecast data generated is done completly by <a href="www.magicseaweed.com">www.magicseaweed.com</a> and full accreditation to there service for this data is given with much appreciation.</p><p>This is a Personal Raspberry Pi project and is not done in sponsorship, partnership or is in anyway associated with magicseaweed.com</p>
+				<p>The forecast data generated is done completly by <a href="www.magicseaweed.com">www.magicseaweed.com</a> and full accreditation to there service for this data is given with much appreciation.</p>
 			</div>
 		</div>
 	</div>
@@ -147,7 +148,7 @@
 					</ul>
 			</div>
 			<div class="col-sm-6">
-				<h4>Adafruit Neopixel soldering/wiring tutorial <a href="https://cdn-learn.adafruit.com/downloads/pdf/neopixels-on-raspberry-pi.pdf" download>link</a></h4>
+				<h4>Adafruit Neopixel soldering/wiring tutorial, <a href="https://cdn-learn.adafruit.com/downloads/pdf/neopixels-on-raspberry-pi.pdf" download>(PDF download)</a></h4>
 				<img class="img-responsive" src="images/soldering-diagram.PNG">
 				<br>
 			</div>
@@ -200,25 +201,24 @@
 		</ul>
 
 		<div class="tab-content">
-			<div id="home" class="tab-pane active text-center">
+			<div id="home" class="tab-pane active">
 				<script src="https://gist.github.com/Johnny346/d28273e1a70eaf2fa04fafd70cbae538.js"></script>
-					<h2>Code Discussion</h2>
-					<p>ffffffffffffffffffffffffffff</p>
+				<h2>Code Discussion</h2><!-- java code section -->
+				<p>This java code first checks to see if a previous file with the json forecast data exists and if not creates a new file to be written to. A connection to the magicseaweed website is then tested whether it is accessible or not, if it is then it checks to see how old the previous file is, if its older than 24 hours it will begin to stream the json data in and write it to the file for use by the python script.<br> IF the file is not older than 24 hours it will just use the current file, this ensures that the API service is not called more than once a day which is in the terms of use of the magicseaweed API service. In the end a valid json file should exist.</p>
 			</div>
-			<div id="menu1" class="tab-pane text-center">
+			<div id="menu1" class="tab-pane"><!-- Python code section  -->
 				<script src="https://gist.github.com/Johnny346/efcde211faaaca30c969989f1bee3e1d.js"></script>
-					<h2>Code Discussion</h2>
-					<p>ffffffffffffffffffffffffffff</p>
+				<h2>Code Discussion</h2>
+				<p>The Python code is the main program which generates the display values to go to the LEDs. After loading the imports it runs a subprocesses which is the java program, running this ensures the json data is current and upto date. The Motion senser is also initialised and the count motion is set to zero.</p>
+				<p>The function which are used are defined next such as assignWaveColor function and displayWaveAcion function. It goes into a loop which continuously monitors movement from the motion sensor, when there has been motion for a continuous 15 seconds it begins to gather data from the json file and loop through this while outputting the information to the LEDs. Once the entire json file has been looped through and the display is finished the script is paused for 15 minutes so as not to display agai. Ater this the motion sensor begins again and the prooces starts over.</p>
 			</div>
-			<div id="menu2" class="tab-pane text-center">
+			<div id="menu2" class="tab-pane"><!-- bash code section  -->
 				<script src="https://gist.github.com/Johnny346/63688ccc5a5232c98b0c4ad3110043ce.js"></script>
 				<h2>Code Discussion</h2>
-				<p>ffffffffffffffffffffffffffff</p>
+				<p>This is a simple bash script which runs automatically when the Raspberry Pi is switched on.</p><p>Launching the refresh Network bash script as Raspberry pi losses connection and the network config must be restarted. It navigates to the home directory, then to home/pi/rpi_ws281x/python/examples directory where it executes the python display script.</p>
 			</div>
-			<div id="menu3" class="tab-pane text-center">
+			<div id="menu3" class="tab-pane"><!-- flowchart section  -->
 				<img src="images/flowchart.png" class="img-responsive">
-				<h2>FlowChart Discussion</h2>
-				<p>ffffffffffffffffffffffffffff</p>
 			</div>
 		</div>
 	</div>
@@ -229,11 +229,12 @@
 			<div class="col-sm-12">
 				<h2>Conclusion</h2>
 
-				<p>This was a fun project to make and has a lot of possibilities to add to its functionaltiy as it can display various colours through the leds, further improvement of the wave display will be made by adding more waves in the display.</p>
+				<p>This was a fun project to make and has a lot of possibilities to add to its functionaltiy as it can display various colours through the leds, further improvement of the wave display will be made by adding more wave details in the display.</p>
 				<p>The ability to display other types of weather such as temperature, wind and precipitation is another opportunity to add to this project by implementing another API service and creating a general weather display script</p>
 				<h4>Issues in this project:</h4>
 				<p>The main issue was the Raspberry Pi's wifi connection which seems to drop out frequently, the main purpose for the wifi is to connect to the API service and also to update the RPIs time from a server on the internet as there is no inbuilt clock hardware on the RPI. To resolve this issue it required running a subprocess which refreshes the network in order to regain connectivity. This is an issue with the Raspberry Pi model B itself as of 02/03/2018.</p>
-				<p>The total cost of this project was: &euro;130.00</p>
+				<p>The total cost of this project was &euro;130.00</p>
+				<p>I hope this project will be useful to other poeple who are interested in building similar projects. If you had any questions send to me at johnmulcahy346@gmail.com</p>
 			</div>
 
 		</div>
