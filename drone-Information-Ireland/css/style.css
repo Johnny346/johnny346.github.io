@@ -41,16 +41,18 @@ body {
 
 .pageTitle {
 	border: 1px solid #7DAEFD;
-	margin: 13px;
-	margin-top: 0;
-	border-radius: 15px;
+	margin-top: -6px;
 	height: 75px;
-	padding-top: 10px;
 	background-color: #2f9cec; /* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(#2f9cec, #efefef); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(#2f9cec, #efefef); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(#2f9cec, #efefef); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(#2f9cec, #efefef); /* Standard syntax */
+}
+
+.homeTitle {
+	margin-top: 0;
+	padding-top:13px;
 }
 
 .page header img {
@@ -190,11 +192,11 @@ nav li {
 	padding: 15px;
 	border-radius: 15px;
 	text-align: center;
-	background-color: #2ed71c; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(#2ed71c, #efefef); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#2ed71c, #efefef); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#2ed71c, #efefef); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#2ed71c, #efefef); /* Standard syntax */
+	background-color: #fe8126; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#fe8126, #efefef); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#fe8126, #efefef); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#fe8126, #efefef); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#fe8126, #efefef); /* Standard syntax */
 }
 
 .firstArticle img {
