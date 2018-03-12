@@ -55,14 +55,15 @@
 				<hr>
 				<h3>This is a Raspberry Pi Project</h3>
 				<p class="color-black description-p">
-					The Raspberry Pi is a mini computer which is designed to be lightweight and cheap but almost a fully functional computer. This makes it perfect for small projects such as this.<br>
-					The Surfcast project is designed for surfers or any water sport enthusiast, whether your miles from the beach or always feel the need to have a connection with the local surf. This lamp will bring the waves to you!
+					The Raspberry Pi is a mini computer which is designed to be lightweight and cheap but almost a fully functional computer. This makes it perfect for small projects such as this.<br>This is a relatively easy project to build and can be done over a few weekends, all of the components necessary are mentioned with links of where to buy and linked pdf tutorial on wiring. The Surfcast project is designed for surfers or any water sport enthusiast, whether your miles from the beach or always feel the need to have a connection with the local surf. This lamp will bring the waves to you!
 					<br>
 					The motion activated lamp will download the most current and accurate local surf forecast and display it using 120 integrated LEDs. Enabling you to effortlessly glanse at this lamp and make a decision to go for a surf.<br>
 					There are many ways to get the surf forecast but this lamp makes it almost effortless.
 				</p>
 				<h3>Accreditation</h3>
-				<p>The forecast data generated is done completly by <a href="www.magicseaweed.com">www.magicseaweed.com</a> and full accreditation to there service for this data is given with much appreciation.</p>
+				<p>The forecast data generated is done completly by <a href="www.magicseaweed.com">www.magicseaweed.com</a> and full accreditation to there service for this data is given with much appreciation.
+					<br/>
+					The C++ module which drives the underlying code to send input to the LEDs is taken from rpi_ws281x library by Jeremy Garff which is a publicly available library, this is needed to run the Adafruits neopixel LEDs on the Raspberry Pi. The display code which is written in python is makes use of this C++ module.</p>
 			</div>
 		</div>
 	</div>
@@ -76,10 +77,9 @@
 					<h3>Key features and Functionality</h3>
 					<ul class="">
 						<li>Motion activated sensor that starts the forecast display, this sensor can be easliy programmed to be triggered after various motion intervals</li>
-						<li>Displays a 24 hour surf forecast, a new forecast is fetched through the MagicSeaWeed API once the forecast is older than 24 hours</li>
+						<li>Display's a 24 hour surf forecast, a new forecast is fetched through the MagicSeaWeed API once the forecast is older than 24 hours</li>
 						<li>A wave set is represented by a row of LEDs which shows the height of the wave by the color it bears and its relative motion by its speed through the display</li>
-						<li>Displays Primary, secondary and combined wave heights and periods between wave sets in 3 hour time blocks, starting from next 3 hours to 24 hours a head</li>
-						<li>Has the ability to select multiple beach locations which is dependant by the MagicSeaWeed API service</li>
+						<li>Display's Primary, secondary and combined wave heights and periods between wave sets in 3 hour time blocks, starting from next 3 hours to 24 hours a head</li>
 					</ul>
 				</div>
 			</div>
@@ -104,12 +104,12 @@
 		<div class="row">
 			<div class="col-sm-6">
 				<h3>With Cover</h3>
-				<iframe src="https://www.youtube.com/embed/Duu7DXayc6g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/hJe4XVkMYPg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
 
 			<div class="col-sm-6">
 				<h3>Without Cover</h3>
-				<iframe src="https://www.youtube.com/embed/TQiHtb5B5GU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/qCK6b3rL_no" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
