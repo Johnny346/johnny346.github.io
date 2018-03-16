@@ -77,9 +77,10 @@
 					<h3>Key features and Functionality</h3>
 					<ul class="">
 						<li>Motion activated sensor that starts the forecast display, this sensor can be easliy programmed to be triggered after various motion intervals</li>
-						<li>Display's a 24 hour surf forecast, a new forecast is fetched through the MagicSeaWeed API once the forecast is older than 24 hours</li>
-						<li>A wave set is represented by a row of LEDs which shows the height of the wave by the color it bears and its relative motion by its speed through the display</li>
+						<li>Display's a 24 hour surf forecast, a new forecast is downloaded through the MagicSeaWeed API once the forecast is older than 24 hours</li>
+						<li>A wave is represented by a rows of LEDs which show the height of the waves by the color they bear and their relative motion by its speed through the display using the sets period value.</li>
 						<li>Display's Primary, secondary and combined wave heights and periods between wave sets in 3 hour time blocks, starting from next 3 hours to 24 hours a head</li>
+						<li>This project has the ability to get other local weather information such as precipitation, temperature and wind I hope to add these in another update.</li>
 					</ul>
 				</div>
 			</div>
@@ -88,11 +89,9 @@
 				<br>
 				<h3>Basically 3 projects in 1!</h3>
 				<div>
-					<ul>
-						<li>Retrieve surf forecast API thorugh Java program</li>
-						<li>Display forecast to LEDs using Python</li>
-						<li>Hardware assembly project</li>
-					</ul>
+					<p>Retrieve surf forecast API thorugh Java program</p>
+					<p>Display forecast to LEDs using Python</p>
+					<p>Hardware assembly project</p>
 				</div>
 			</div>
 		</div>
@@ -122,8 +121,8 @@
 			</div>
 			<div class="col-sm-6">
 				<p>In general the greater the wave period, the better the swell. The amount of time it takes for two successive wave crests to pass through a determined point is called swell period or wave interval. The swell period is critical surf knowledge because it ultimately measures the quality of the upcoming surf session.</p>
-				<p>A wave is represented by  a row of LEDs in the lamp and there colour is determined by the wave height.</p>
-				<p>The surf forecast is split into 3 hour time blocks and each time block has a primary swell, secondary swell and combined or average swell to give a total of 3 waves per time block, these period swell values determines the speed of the wave in the lamp to give a feeling of the quality of waves set in the forecast.</p>
+				<p>A wave is represented by rows of LEDs in the lamp and there colour is determined by the wave height.</p>
+				<p>The surf forecast is split into 3 hour time blocks, each time block first shows the primary swell then the secondary swell and lastly a combined or average swell to give a total of 3 waves sets per time block.<br/>  Their period swell value determines the speed of the waves moving through the lamp to give a feeling of the quality of wave sets in the forecast.</p>
 			</div>
 		</div>
 	</div>
