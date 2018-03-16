@@ -350,15 +350,9 @@ section .droneUsesSection {
 	padding-bottom: 30px;
 }
 
-section .droneUsesSection img {
-	padding-left: 80px;
-}
-
 section .droneUsesSection p {
-	width: 300px;
-	display: inline;
-	float: left;
-	margin-right: 120px;
+	width: 33em;
+
 }
 
 /*drone footage*/
